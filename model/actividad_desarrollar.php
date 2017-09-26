@@ -63,7 +63,7 @@ class actividad_desarrollar  extends Conexion
 		while ($row = mysqli_fetch_array($result)) {
 			$actividad_desarrollar->setAtributo('PU06IDACTDES',$row[0]);
 			$actividad_desarrollar->setAtributo('PU06DESAD',$row[1]);
-	;
+	
 		}
 		return $actividad_desarrollar;
 	}
