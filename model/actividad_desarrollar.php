@@ -53,7 +53,7 @@ class actividad_desarrollar  extends Conexion
 
 	public function eliminar()
 	{
-		$sql = "call SP04_ACTDES_ELIMINAR()";
+		$sql = "call SP04_ACTDES_ELIMINAR('$this->PU06IDACTDES')";
 		$this->conexion->consultaSimple($sql);
 	}
 
