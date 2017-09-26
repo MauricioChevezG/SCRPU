@@ -7,7 +7,7 @@ class Conexion
 	private $dbInfo = array('host' => 'localhost',
 							'user' => 'root',
 							'pass' => '',
-							'db' => 'testmvc' );
+							'db' => 'pu_ingenieria' );
 	private $database;
 
 	function __construct()
