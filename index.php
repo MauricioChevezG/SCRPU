@@ -1,6 +1,7 @@
 <?php
-
-$controller = 'espacio_geografico';
+ //`pu12tipdesec`tipo_desarrollo Tipo de Desarrollo
+//`PU12IDTDESEC``PU12TIPODES`
+$controller = 'tipo_desarrollo';
 
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))
