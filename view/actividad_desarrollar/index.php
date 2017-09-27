@@ -54,7 +54,7 @@ $result = $this->actividad_desarrollar->listar();
           <?php else: ?>
             <div class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay Actividades registradas.
+               <strong>¡Información!</strong> No hay información registrada.
               </center>
             </div>
           <?php endif ?>

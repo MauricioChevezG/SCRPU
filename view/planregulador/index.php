@@ -54,7 +54,7 @@ $result = $this->planregulador->listar();
           <?php else: ?>
             <div class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay plan regulador.
+             <strong>¡Información!</strong> No hay información registrada.
               </center>
             </div>
           <?php endif ?>
