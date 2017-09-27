@@ -2,7 +2,7 @@
 require_once 'conexion.php';
 //`pu12tipdesec`
 //`PU12IDTDESEC``PU12TIPODES`
-class tipo_desarrollo  extends Conexion
+class class12tipdesec  extends Conexion
 {
 	
 	private $PU12IDTDESEC;
@@ -29,8 +29,8 @@ class tipo_desarrollo  extends Conexion
 	{
 		$sql = "SELECT * FROM pu12tipdesec WHERE PU12IDTDESEC ='". $PU12IDTDESEC ."';";
 		$result = $this->conexion->consultaRetorno($sql);
-		$tipo_desarrollo = $this->convertTotipo_desarrollo($result);
-		return $tipo_desarrollo;
+		$class12tipdesec = $this->convertToclass12tipdesec($result);
+		return $class12tipdesec;
 	}
 
 	public function listar()
@@ -58,15 +58,15 @@ class tipo_desarrollo  extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertTotipo_desarrollo($result)
+	public function convertToclass12tipdesec($result)
 	{
-		$tipo_desarrollo = new tipo_desarrollo();
+		$class12tipdesec = new class12tipdesec();
 		while ($row = mysqli_fetch_array($result)) {
-			$tipo_desarrollo->setAtributo('PU12IDTDESEC',$row[0]);
-			$tipo_desarrollo->setAtributo('PU12TIPODES',$row[1]);
+			$class12tipdesec->setAtributo('PU12IDTDESEC',$row[0]);
+			$class12tipdesec->setAtributo('PU12TIPODES',$row[1]);
 	
 		}
-		return $tipo_desarrollo;
+		return $class12tipdesec;
 	}
 }
  ?>

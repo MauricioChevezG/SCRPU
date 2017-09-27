@@ -10,7 +10,7 @@
     <h2>Agregar Nuevo Tipo de Desarrollo</h2>
   </center>
   <div class="container">
-    <form action="?c=tipo_desarrollo&m=agregar" method="post">
+    <form action="?c=class12tipdesec&m=agregar" method="post">
     
       <div class="form-group">
         <label for="PU12IDTDESEC">PU12IDTDESEC</label>
@@ -22,7 +22,7 @@
         <input type="text" class="form-control" id="PU12TIPODES" name="PU12TIPODES">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=tipo_desarrollo&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class12tipdesec&m=index" class="btn btn-default" role="button">Regresar</a>    
      </form>
    </div>
 </body>

@@ -1,5 +1,5 @@
 <?php 
-$result = $this->espacio_geografico->listar(); 
+$result = $this->class09desceg->listar(); 
  // `pu09desceg`
 //`PU09IDDEG``PU09DESCREG`
 ?>
@@ -13,7 +13,7 @@ $result = $this->espacio_geografico->listar();
 <body>
   <div class="container">
     <h2>Tabla de Espacio Geográfico:</h2>   
-    <a href="?c=espacio_geografico&m=agregar" class="btn btn-primary" role="button">Registrar Espacio Geográfico:</a>
+    <a href="?c=class09desceg&m=agregar" class="btn btn-primary" role="button">Registrar Espacio Geográfico:</a>
    
     <br>
     <br>
@@ -38,15 +38,15 @@ $result = $this->espacio_geografico->listar();
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=espacio_geografico&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class09desceg&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=espacio_geografico&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class09desceg&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=espacio_geografico&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class09desceg&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>

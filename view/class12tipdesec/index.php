@@ -1,5 +1,5 @@
 <?php 
-$result = $this->tipo_desarrollo->listar(); 
+$result = $this->class12tipdesec->listar(); 
 
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ $result = $this->tipo_desarrollo->listar();
 <body>
   <div class="container">
     <h2>Tabla de Tipo de Desarrollo</h2>   
-    <a href="?c=tipo_desarrollo&m=agregar" class="btn btn-primary" role="button">Registrar Tipo de Desarrollo</a>
+    <a href="?c=class12tipdesec&m=agregar" class="btn btn-primary" role="button">Registrar Tipo de Desarrollo</a>
        
     <br><br><br>      
     <?php if ($result->num_rows): ?>
@@ -35,15 +35,15 @@ $result = $this->tipo_desarrollo->listar();
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=tipo_desarrollo&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class12tipdesec&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=tipo_desarrollo&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class12tipdesec&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=tipo_desarrollo&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class12tipdesec&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>
