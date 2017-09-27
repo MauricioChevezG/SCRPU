@@ -13,11 +13,11 @@
 				<div class="panel-heading">Detalle del Espacio Geográfico</div>
 				<div class="panel-body">
 					<ul class="list-group">
-						<li class="list-group-item"><strong>ID de Espacio Geográfico: </strong><?php echo $this->espacio_geografico09->getAtributo('PU09IDDEG');?></li>
-						<li class="list-group-item"><strong>Descripcion de Espacio Geográfico: </strong><?php echo $this->espacio_geografico09->getAtributo('PU09DESCREG');?></li>
+						<li class="list-group-item"><strong>ID de Espacio Geográfico: </strong><?php echo $this->espacio_geografico->getAtributo('PU09IDDEG');?></li>
+						<li class="list-group-item"><strong>Descripcion de Espacio Geográfico: </strong><?php echo $this->espacio_geografico->getAtributo('PU09DESCREG');?></li>
 						
 					</ul>
-					<a href="?c=espacio_geografico09&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=espacio_geografico&m=index" class="btn btn-default" role="button">Regresar</a>  
 
 				</div>
 			</div>

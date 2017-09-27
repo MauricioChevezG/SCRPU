@@ -2,7 +2,7 @@
 require_once 'conexion.php';
 //`pu09desceg`
 //`PU09IDDEG``PU09DESCREG`
-class espacio_geografico09  extends Conexion
+class espacio_geografico  extends Conexion
 {
 	
 	private $PU09IDDEG;
@@ -29,8 +29,8 @@ class espacio_geografico09  extends Conexion
 	{
 		$sql = "SELECT * FROM pu09desceg WHERE PU09IDDEG ='". $PU09IDDEG ."';";
 		$result = $this->conexion->consultaRetorno($sql);
-		$espacio_geografico09 = $this->convertToespacio_geografico09($result);
-		return $espacio_geografico09;
+		$espacio_geografico = $this->convertToespacio_geografico($result);
+		return $espacio_geografico;
 	}
 
 	public function listar()
@@ -58,15 +58,15 @@ class espacio_geografico09  extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertToespacio_geografico09($result)
+	public function convertToespacio_geografico($result)
 	{
-		$espacio_geografico09 = new espacio_geografico09();
+		$espacio_geografico = new espacio_geografico();
 		while ($row = mysqli_fetch_array($result)) {
-			$espacio_geografico09->setAtributo('PU09IDDEG',$row[0]);
-			$espacio_geografico09->setAtributo('PU09DESCREG',$row[1]);
+			$espacio_geografico->setAtributo('PU09IDDEG',$row[0]);
+			$espacio_geografico->setAtributo('PU09DESCREG',$row[1]);
 	
 		}
-		return $espacio_geografico09;
+		return $espacio_geografico;
 	}
 }
  ?>
