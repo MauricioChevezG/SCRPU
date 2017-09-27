@@ -53,7 +53,7 @@
           <?php else: ?>
             <div class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay clientes registrados.
+                <strong>¡Información!</strong> No hay información registrada.
               </center>
             </div>
           <?php endif ?>

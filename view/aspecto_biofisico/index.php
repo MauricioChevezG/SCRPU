@@ -1,27 +1,29 @@
 <?php 
-$result = $this->nicoya->listar(); 
-//nicoya
-  //`PU06IDACTDES``PU06DESAD`
+$result = $this->aspecto_biofisico->listar(); 
+//`pu10aspbio`Aspectos Biofísicos
+//`PU10IDASBIO``PU10DESCABIO`aspecto_biofisico
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista nicoya</title>
+	<title>Vista Aspectos Biofísicos</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de nicoya</h2>   
-    <a href="?c=nicoya&m=agregar" class="btn btn-primary" role="button">Registrar nicoya</a>
-    <input href="?c=nicoya&m=" type="text" class="form-control" role="text">   
-    <br><br>    
+    <h2>Tabla de Aspectos Biofísicos:</h2>   
+    <a href="?c=aspecto_biofisico&m=agregar" class="btn btn-primary" role="button">Registrar Aspectos Biofísicos:</a>
+   
+    <br>
+    <br>
+      <br>   
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>ID Aspectos Biofísicos:</th>
+            <th>Descripcion Aspectos Biofísicos:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -36,15 +38,15 @@ $result = $this->nicoya->listar();
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=nicoya&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=aspecto_biofisico&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=nicoya&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=aspecto_biofisico&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=nicoya&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=aspecto_biofisico&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>

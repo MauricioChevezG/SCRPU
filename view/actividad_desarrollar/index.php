@@ -7,21 +7,21 @@ $result = $this->actividad_desarrollar->listar();
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista actividad_desarrollar</title>
+	<title>Vista Actividad a Desarrollar</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de actividad_desarrollar</h2>   
-    <a href="?c=actividad_desarrollar&m=agregar" class="btn btn-primary" role="button">Registrar actividad_desarrollar</a>
-    <input href="?c=actividad_desarrollar&m=" type="text" class="form-control" role="text">   
-    <br><br>    
+    <h2>Tabla de Actividad a Desarrollar</h2>   
+    <a href="?c=actividad_desarrollar&m=agregar" class="btn btn-primary" role="button">Registrar Actividad a Desarrollar</a>
+       
+    <br><br><br>      
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>ID Actividad a Desarrollar</th>
+            <th>Descripción Actividad a Desarrollar</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -54,7 +54,7 @@ $result = $this->actividad_desarrollar->listar();
           <?php else: ?>
             <div class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay Actividades registradas.
+               <strong>¡Información!</strong> No hay información registrada.
               </center>
             </div>
           <?php endif ?>
