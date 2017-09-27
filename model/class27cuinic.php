@@ -1,7 +1,7 @@
 <?php  
 require_once 'conexion.php';
 
-class nicoya  extends Conexion
+class class27cuinic  extends Conexion
 {
 	private $PU27IDUBIC;
 	private $PU27DSCUBIC;
@@ -28,8 +28,8 @@ class nicoya  extends Conexion
 	{
 		$sql = "SELECT * FROM pu27cuinic WHERE PU27IDUBIC ='". $PU27IDUBIC ."';";
 		$result = $this->conexion->consultaRetorno($sql);
-		$nicoya = $this->convertTonicoya($result);
-		return $nicoya;
+		$class27cuinic = $this->convertToclass27cuinic($result);
+		return $class27cuinic;
 	}
 
 	public function listar()
@@ -57,15 +57,15 @@ class nicoya  extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertTonicoya($result)
+	public function convertToclass27cuinic($result)
 	{
-		$nicoya = new nicoya();
+		$class27cuinic = new class27cuinic();
 		while ($row = mysqli_fetch_array($result)) {
-			$nicoya->setAtributo('PU27IDUBIC',$row[0]);
-			$nicoya->setAtributo('PU27DSCUBIC',$row[1]);
+			$class27cuinic->setAtributo('PU27IDUBIC',$row[0]);
+			$class27cuinic->setAtributo('PU27DSCUBIC',$row[1]);
 		
 		}
-		return $nicoya;
+		return $class27cuinic;
 	}
 }
  ?>

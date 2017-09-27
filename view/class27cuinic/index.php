@@ -1,21 +1,19 @@
 <?php 
-$result = $this->nicoya->listar(); 
-//nicoya
-  //`PU06IDACTDES``PU06DESAD`
+$result = $this->class27cuinic->listar(); 
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista nicoya</title>
+	<title>Vista class27cuinic</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de nicoya</h2>   
-    <a href="?c=nicoya&m=agregar" class="btn btn-primary" role="button">Registrar nicoya</a>
-    <input href="?c=nicoya&m=" type="text" class="form-control" role="text">   
-    <br><br>    
+    <h2>Tabla de class27cuinic</h2>   
+    <a href="?c=class27cuinic&m=agregar" class="btn btn-primary" role="button">Registrar class27cuinic</a>
+    <br><br>    <br> 
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
@@ -36,15 +34,15 @@ $result = $this->nicoya->listar();
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=nicoya&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class27cuinic&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=nicoya&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class27cuinic&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=nicoya&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class27cuinic&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>

@@ -13,11 +13,11 @@
 				<div class="panel-heading">Detalle Ubicacion</div>
 				<div class="panel-body">
 					<ul class="list-group">
-						<li class="list-group-item"><strong>ID Ubicacion: </strong><?php echo $this->nicoya->getAtributo('PU27IDUBIC');?></li>
-						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->nicoya->getAtributo('PU27DSCUBIC');?></li>
+						<li class="list-group-item"><strong>ID Ubicacion: </strong><?php echo $this->class27cuinic->getAtributo('PU27IDUBIC');?></li>
+						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->class27cuinic->getAtributo('PU27DSCUBIC');?></li>
 						
 					</ul>
-					<a href="?c=nicoya&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class27cuinic&m=index" class="btn btn-default" role="button">Regresar</a>  
 
 				</div>
 			</div>
