@@ -1,7 +1,7 @@
 <?php 
 require_once 'conexion.php';
 
-class samara_28  extends Conexion
+class class28cuisam  extends Conexion
 {
 	private $PU28IDUBIC;
 	private $PU28DSCUBIC;
@@ -28,8 +28,8 @@ class samara_28  extends Conexion
 	{
 		$sql = "SELECT * FROM pu28cuisam WHERE PU28IDUBIC ='". $PU28IDUBIC ."';";
 		$result = $this->conexion->consultaRetorno($sql);
-		$samara_28 = $this->convertTosamara_28($result);
-		return $samara_28;
+		$class28cuisam = $this->convertToclass28cuisam($result);
+		return $class28cuisam;
 	}
 
 	public function listar()
@@ -57,15 +57,15 @@ class samara_28  extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertTosamara_28($result)
+	public function convertToclass28cuisam($result)
 	{
-		$samara_28 = new samara_28();
+		$class28cuisam = new class28cuisam();
 		while ($row = mysqli_fetch_array($result)) {
-			$samara_28->setAtributo('PU28IDUBIC',$row[0]);
-			$samara_28->setAtributo('PU28DSCUBIC',$row[1]);
+			$class28cuisam->setAtributo('PU28IDUBIC',$row[0]);
+			$class28cuisam->setAtributo('PU28DSCUBIC',$row[1]);
 		
 		}
-		return $samara_28;
+		return $class28cuisam;
 	}
 }
  ?>

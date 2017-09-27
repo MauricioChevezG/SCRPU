@@ -10,7 +10,7 @@
     <h2>Agregar Ubicacion Samara</h2>
   </center>
   <div class="container">
-    <form action="?c=samara_28&m=agregar" method="post">
+    <form action="?c=class28cuisam&m=agregar" method="post">
     
       <div class="form-group">
         <label for="PU28IDUBIC">ID UBICACION</label>
@@ -22,7 +22,7 @@
         <input type="text" class="form-control" id="PU28DSCUBIC" name="PU28DSCUBIC">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=samara_28&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class28cuisam&m=index" class="btn btn-default" role="button">Regresar</a>    
      </form>
    </div>
 </body>

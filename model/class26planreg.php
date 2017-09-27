@@ -1,7 +1,7 @@
 <?php 
 require_once 'conexion.php';
 
-class planregulador  extends Conexion
+class class26planreg  extends Conexion
 {
 	private $PU26IDPLAN;
 	private $PU26PLNDESC;
@@ -28,8 +28,8 @@ class planregulador  extends Conexion
 	{
 		$sql = "SELECT * FROM pu26planreg WHERE PU26IDPLAN ='". $PU26IDPLAN ."';";
 		$result = $this->conexion->consultaRetorno($sql);
-		$planregulador = $this->convertToPlanregulador($result);
-		return $planregulador;
+		$class26planreg = $this->convertToclass26planreg($result);
+		return $class26planreg;
 	}
 
 	public function listar()
@@ -57,15 +57,15 @@ class planregulador  extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertToPlanregulador($result)
+	public function convertToclass26planreg($result)
 	{
-		$planregulador = new planregulador();
+		$class26planreg = new class26planreg();
 		while ($row = mysqli_fetch_array($result)) {
-			$planregulador->setAtributo('PU26IDPLAN',$row[0]);
-			$planregulador->setAtributo('PU26PLNDESC',$row[1]);
+			$class26planreg->setAtributo('PU26IDPLAN',$row[0]);
+			$class26planreg->setAtributo('PU26PLNDESC',$row[1]);
 		
 		}
-		return $planregulador;
+		return $class26planreg;
 	}
 }
  ?>

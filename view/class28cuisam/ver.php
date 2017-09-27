@@ -13,11 +13,11 @@
 				<div class="panel-heading">Detalle Ubicacion</div>
 				<div class="panel-body">
 					<ul class="list-group">
-					<li class="list-group-item"><strong>ID Ubicacion:</strong><?php echo $this->samara_28->getAtributo('PU28IDUBIC');?></li>
-						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->samara_28->getAtributo('PU28DSCUBIC');?></li>
+					<li class="list-group-item"><strong>ID Ubicacion:</strong><?php echo $this->class28cuisam->getAtributo('PU28IDUBIC');?></li>
+						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->class28cuisam->getAtributo('PU28DSCUBIC');?></li>
 						
 					</ul>
-					<a href="?c=samara_28&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class28cuisam&m=index" class="btn btn-default" role="button">Regresar</a>  
 
 				</div>
 			</div>

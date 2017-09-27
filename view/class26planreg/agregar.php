@@ -10,7 +10,7 @@
     <h2>Agregar Plan Regulador</h2>
   </center>
   <div class="container">
-    <form action="?c=planregulador&m=agregar" method="post">
+    <form action="?c=class26planreg&m=agregar" method="post">
     
       <div class="form-group">
         <label for="PU26IDPLAN">ID PLAN REGULADOR</label>
@@ -22,7 +22,7 @@
         <input type="text" class="form-control" id="PU26PLNDESC" name="PU26PLNDESC">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=planregulador&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class26planreg&m=index" class="btn btn-default" role="button">Regresar</a>    
      </form>
    </div>
 </body>

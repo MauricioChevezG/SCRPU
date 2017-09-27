@@ -1,21 +1,21 @@
 <?php 
-$result = $this->samara_28->listar(); 
-//samara_28
+$result = $this->class26planreg->listar(); 
+//class26planreg
   //`PU06IDACTDES``PU06DESAD`
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista SAMARA</title>
+	<title>Vista class26planreg</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de SAMARA</h2>   
-    <a href="?c=samara_28&m=agregar" class="btn btn-primary" role="button">Registrar Samara</a>
-    <input href="?c=samara_28&m=" type="text" class="form-control" role="text">   
-    <br><br>    
+    <h2>Tabla de class26planreg</h2>   
+    <a href="?c=class26planreg&m=agregar" class="btn btn-primary" role="button">Registrar class26planreg</a>
+     
+    <br><br> <br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
@@ -36,15 +36,15 @@ $result = $this->samara_28->listar();
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=samara_28&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class26planreg&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=samara_28&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class26planreg&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=samara_28&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class26planreg&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>
@@ -54,7 +54,7 @@ $result = $this->samara_28->listar();
           <?php else: ?>
             <div class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay Samara.
+             <strong>¡Información!</strong> No hay información registrada.
               </center>
             </div>
           <?php endif ?>
