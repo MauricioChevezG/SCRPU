@@ -1,7 +1,7 @@
 <?php 
-$result = $this->aspecto_biofisico->listar(); 
+$result = $this->class10aspbio->listar(); 
 //`pu10aspbio`Aspectos Biofísicos
-//`PU10IDASBIO``PU10DESCABIO`aspecto_biofisico
+//`PU10IDASBIO``PU10DESCABIO`class10aspbio
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,7 +13,7 @@ $result = $this->aspecto_biofisico->listar();
 <body>
   <div class="container">
     <h2>Tabla de Aspectos Biofísicos:</h2>   
-    <a href="?c=aspecto_biofisico&m=agregar" class="btn btn-primary" role="button">Registrar Aspectos Biofísicos:</a>
+    <a href="?c=class10aspbio&m=agregar" class="btn btn-primary" role="button">Registrar Aspectos Biofísicos:</a>
    
     <br>
     <br>
@@ -38,15 +38,15 @@ $result = $this->aspecto_biofisico->listar();
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=aspecto_biofisico&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class10aspbio&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=aspecto_biofisico&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class10aspbio&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=aspecto_biofisico&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class10aspbio&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>

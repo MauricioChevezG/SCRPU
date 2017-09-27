@@ -10,7 +10,7 @@
     <h2>Agregar Nuevo Aspectos Biofísicos</h2>
   </center>
   <div class="container">
-    <form action="?c=aspecto_biofisico&m=agregar" method="post">
+    <form action="?c=class10aspbio&m=agregar" method="post">
     
       <div class="form-group">
         <label for="PU10IDASBIO">PU10IDASBIO</label>
@@ -22,7 +22,7 @@
         <input type="text" class="form-control" id="PU10DESCABIO" name="PU10DESCABIO">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=aspecto_biofisico&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class10aspbio&m=index" class="btn btn-default" role="button">Regresar</a>    
      </form>
    </div>
 </body>

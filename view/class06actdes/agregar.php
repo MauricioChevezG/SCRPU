@@ -10,7 +10,7 @@
     <h2>Agregar Nueva Actividad a Desarrollar</h2>
   </center>
   <div class="container">
-    <form action="?c=actividad_desarrollar&m=agregar" method="post">
+    <form action="?c=class06actdes&m=agregar" method="post">
     
       <div class="form-group">
         <label for="PU06IDACTDES">PU06IDACTDES</label>
@@ -22,7 +22,7 @@
         <input type="text" class="form-control" id="PU06DESAD" name="PU06DESAD">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=actividad_desarrollar&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class06actdes&m=index" class="btn btn-default" role="button">Regresar</a>    
      </form>
    </div>
 </body>

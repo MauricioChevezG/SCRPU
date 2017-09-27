@@ -1,7 +1,7 @@
 <?php 
 require_once 'conexion.php';
 
-class actividad_desarrollar  extends Conexion
+class class06actdes  extends Conexion
 {
 	
 	private $PU06IDACTDES;
@@ -28,8 +28,8 @@ class actividad_desarrollar  extends Conexion
 	{
 		$sql = "SELECT * FROM pu06actdes WHERE PU06IDACTDES ='". $PU06IDACTDES ."';";
 		$result = $this->conexion->consultaRetorno($sql);
-		$actividad_desarrollar = $this->convertToactividad_desarrollar($result);
-		return $actividad_desarrollar;
+		$class06actdes = $this->convertToclass06actdes($result);
+		return $class06actdes;
 	}
 
 	public function listar()
@@ -57,15 +57,15 @@ class actividad_desarrollar  extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertToactividad_desarrollar($result)
+	public function convertToclass06actdes($result)
 	{
-		$actividad_desarrollar = new actividad_desarrollar();
+		$class06actdes = new class06actdes();
 		while ($row = mysqli_fetch_array($result)) {
-			$actividad_desarrollar->setAtributo('PU06IDACTDES',$row[0]);
-			$actividad_desarrollar->setAtributo('PU06DESAD',$row[1]);
+			$class06actdes->setAtributo('PU06IDACTDES',$row[0]);
+			$class06actdes->setAtributo('PU06DESAD',$row[1]);
 	
 		}
-		return $actividad_desarrollar;
+		return $class06actdes;
 	}
 }
  ?>

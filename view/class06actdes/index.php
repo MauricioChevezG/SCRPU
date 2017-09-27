@@ -1,6 +1,6 @@
 <?php 
-$result = $this->actividad_desarrollar->listar(); 
-//actividad_desarrollar
+$result = $this->class06actdes->listar(); 
+//class06actdes
   //`PU06IDACTDES``PU06DESAD`
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ $result = $this->actividad_desarrollar->listar();
 <body>
   <div class="container">
     <h2>Tabla de Actividad a Desarrollar</h2>   
-    <a href="?c=actividad_desarrollar&m=agregar" class="btn btn-primary" role="button">Registrar Actividad a Desarrollar</a>
+    <a href="?c=class06actdes&m=agregar" class="btn btn-primary" role="button">Registrar Actividad a Desarrollar</a>
        
     <br><br><br>      
     <?php if ($result->num_rows): ?>
@@ -36,15 +36,15 @@ $result = $this->actividad_desarrollar->listar();
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=actividad_desarrollar&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class06actdes&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=actividad_desarrollar&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class06actdes&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=actividad_desarrollar&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class06actdes&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>

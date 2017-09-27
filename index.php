@@ -1,6 +1,6 @@
 <?php
 
-$controller = 'tipo_desarrollo';
+$controller = 'class10aspbio';
 
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))
