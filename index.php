@@ -1,6 +1,6 @@
 <?php
 
-$controller = 'nicoya';
+$controller = 'tipsue_35';
 
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))
