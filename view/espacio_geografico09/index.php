@@ -14,7 +14,7 @@ $result = $this->espacio_geografico09->listar();
   <div class="container">
     <h2>Tabla de Espacio Geográfico:</h2>   
     <a href="?c=espacio_geografico09&m=agregar" class="btn btn-primary" role="button">Registrar Espacio Geográfico:</a>
-    <input href="?c=espacio_geografico09&m=" type="text" class="form-control" role="text">   
+   
     <br>
     <br>
       <br>   

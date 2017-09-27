@@ -1,6 +1,6 @@
 <?php
 
-$controller = 'espacio_geografico09';
+$controller = 'actividad_desarrollar';
 
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))

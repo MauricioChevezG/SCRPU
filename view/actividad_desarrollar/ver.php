@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Detalle actividad_desarrollar</title>
+	<title>Detalle Actividad a Desarrollar</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   
 </head>
@@ -10,7 +10,7 @@
 		<br>
 		<div class="row">
 			<div class="panel panel-default">
-				<div class="panel-heading">Detalle del actividad_desarrollar</div>
+				<div class="panel-heading">Detalle del Actividad a Desarrollar</div>
 				<div class="panel-body">
 					<ul class="list-group">
 						<li class="list-group-item"><strong>ID: </strong><?php echo $this->actividad_desarrollar->getAtributo('PU06IDACTDES');?></li>
