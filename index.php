@@ -1,5 +1,5 @@
 <?php
-$controller = 'class32capuso';
+$controller = 'puestos';
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))
 {
