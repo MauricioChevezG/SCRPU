@@ -2,7 +2,7 @@
 <?php 
 require_once 'conexion.php';
 
-class capuso_32  extends Conexion
+class class32capuso  extends Conexion
 {
 	private $PU32IDCUSO;
 	private $PU32DESUSO;
@@ -29,8 +29,8 @@ class capuso_32  extends Conexion
 	{
 		$sql = "SELECT * FROM pu32capuso WHERE PU32IDCUSO ='". $PU32IDCUSO ."';";
 		$result = $this->conexion->consultaRetorno($sql);
-		$capuso_32 = $this->convertTocapuso_32($result);
-		return $capuso_32;
+		$class32capuso = $this->convertToclass32capuso($result);
+		return $class32capuso;
 	}
 
 	public function listar()
@@ -58,15 +58,15 @@ class capuso_32  extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertTocapuso_32($result)
+	public function convertToclass32capuso($result)
 	{
-		$capuso_32 = new capuso_32();
+		$class32capuso = new class32capuso();
 		while ($row = mysqli_fetch_array($result)) {
-			$capuso_32->setAtributo('PU32IDCUSO',$row[0]);
-			$capuso_32->setAtributo('PU32DESUSO',$row[1]);
+			$class32capuso->setAtributo('PU32IDCUSO',$row[0]);
+			$class32capuso->setAtributo('PU32DESUSO',$row[1]);
 		
 		}
-		return $capuso_32;
+		return $class32capuso;
 	}
 }
  ?>

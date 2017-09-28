@@ -13,11 +13,11 @@
 				<div class="panel-heading">Detalle Ubicacion</div>
 				<div class="panel-body">
 					<ul class="list-group">
-					<li class="list-group-item"><strong>ID Ubicacion:</strong><?php echo $this->capuso_32->getAtributo('PU32IDCUSO');?></li>
-						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->capuso_32->getAtributo('PU32DESUSO');?></li>
+					<li class="list-group-item"><strong>ID Ubicacion:</strong><?php echo $this->class32capuso->getAtributo('PU32IDCUSO');?></li>
+						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->class32capuso->getAtributo('PU32DESUSO');?></li>
 						
 					</ul>
-					<a href="?c=capuso_32&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class32capuso&m=index" class="btn btn-default" role="button">Regresar</a>  
 
 				</div>
 			</div>

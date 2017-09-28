@@ -1,6 +1,6 @@
 <?php 
-$result = $this->capuso_32->listar(); 
-//capuso_32
+$result = $this->class32capuso->listar(); 
+//class32capuso
   //`PU06IDACTDES``PU06DESAD`
 ?>
 <!DOCTYPE html>
@@ -13,8 +13,8 @@ $result = $this->capuso_32->listar();
 <body>
   <div class="container">
     <h2>Tabla de CAPUSO</h2>   
-    <a href="?c=capuso_32&m=agregar" class="btn btn-primary" role="button">Registrar CAPUSO</a>
-    <input href="?c=capuso_32&m=" type="text" class="form-control" role="text">   
+    <a href="?c=class32capuso&m=agregar" class="btn btn-primary" role="button">Registrar CAPUSO</a>
+    <input href="?c=class32capuso&m=" type="text" class="form-control" role="text">   
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
@@ -36,15 +36,15 @@ $result = $this->capuso_32->listar();
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=capuso_32&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class32capuso&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=capuso_32&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class32capuso&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=capuso_32&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class32capuso&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>
