@@ -1,22 +1,26 @@
-<?php $result = $this->puestos->listar(); ?>
+<?php 
+$result = $this->class07terrft->listar(); 
+//class07terrft
+  //`PU06IDACTDES``PU06DESAD`
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista puestos</title>
+	<title>Vista class07terrft</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de puestos</h2>   
-    <a href="?c=puestos&m=agregar" class="btn btn-primary" role="button">Registrar puesto</a>    
-    <br><br>    
+    <h2>Tabla de Terreno Frente a Ruta</h2>   
+    <a href="?c=class07terrft&m=agregar" class="btn btn-primary" role="button">Registrar Terreno Frente a Ruta</a>
+    <br><br><br>        
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Código del Puesto</th>
-            <th>Nombre del puesto</th>
+            <th>Código</th>
+            <th>Nombre del Terreno Frente a Ruta</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -25,20 +29,21 @@
             <tr>
               <td><?php echo $row[0]; ?></td>
               <td><?php echo $row[1]; ?></td>
+         
               <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=puestos&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class07terrft&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=puestos&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class07terrft&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=puestos&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class07terrft&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>
@@ -48,7 +53,7 @@
           <?php else: ?>
             <div class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay puestos registrados.
+                <strong>¡Información!</strong> No hay Terrenos registrados.
               </center>
             </div>
           <?php endif ?>

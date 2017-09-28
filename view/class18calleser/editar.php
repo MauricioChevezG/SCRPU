@@ -8,21 +8,21 @@
 <body>
   <center>
 
-    <h2>Editar Servicio de Electricidad y Agua: <?php echo $this->callefrenteruta->getAtributo('PU18DESCS');?> </h2>
+    <h2>Editar Servicio de Electricidad y Agua: <?php echo $this->class18calleser->getAtributo('PU18DESCS');?> </h2>
   </center>
   <div class="container">
-    <form action="?c=callefrenteruta&m=editar" method="post">
+    <form action="?c=class18calleser&m=editar" method="post">
       <div class="form-group">
         <label for="PU18IDCSCLS">ID</label>
-        <input type="text" class="form-control" id="PU18IDCSCLS" name="PU18IDCSCLS" value="<?php echo $this->callefrenteruta->getAtributo('PU18IDCSCLS');?>" readonly>
+        <input type="text" class="form-control" id="PU18IDCSCLS" name="PU18IDCSCLS" value="<?php echo $this->class18calleser->getAtributo('PU18IDCSCLS');?>" readonly>
       </div>
       <div class="form-group">
         <label for="PU18DESCS">Desripción</label>
-        <input type="text" class="form-control" id="PU18DESCS" name="PU18DESCS" value="<?php echo $this->callefrenteruta->getAtributo('PU18DESCS');?>" >
+        <input type="text" class="form-control" id="PU18DESCS" name="PU18DESCS" value="<?php echo $this->class18calleser->getAtributo('PU18DESCS');?>" >
       </div>
      
       <button type="submit" class="btn btn-success">Editar</button> 
-      <a href="?c=callefrenteruta&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class18calleser&m=index" class="btn btn-default" role="button">Regresar</a>    
     </form>
   </div>
 </body>

@@ -25,35 +25,35 @@ class puestos  extends Conexion
 
 	public function buscar($PU03IDPUES)
 	{
-		$sql = "SELECT * FROM PU03PUESTOS WHERE PU03IDPUES ='".$PU03IDPUES."';";
-		$result = $this->conexion->ConsultaRetorno($sql);
-		$puestos = $this->convertToPuestos($result);
-		return $puestos;
+		$sql = "CALL SP02_PUESTOS_BUSCAR ('".$PU03IDPUES."');";
+		$result = $this->conexion->consultaRetorno($sql);
+		$cliente = $this->convertToPuestos($result);
+		return $cliente;
 	}
 
 	public function listar()
 	{
 		$sql = "SELECT * FROM pu03puestos ;";
-		$result = $this->conexion->ConsultaRetorno($sql);
+		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
 
 	public function guardar()
 	{
-		$sql = "CALL SP02_PUESTOS_GUARDAR ('$this->PU03IDPUES','$this->PU03PUESTO');";
-		$this->conexion->ConsultaSimple($sql);
+		$sql = "CALL SP02_PUESTOS_GUARDAR ('$this->PU03IDPUES','$this->PU03PUESTO')";
+		$this->conexion->consultaSimple($sql);
 	}
 
 	public function actualizar()
 	{
 		$sql = "CALL SP02_PUESTOS_ACTUALIZAR ('$this->PU03IDPUES','$this->PU03PUESTO');";
-		$this->conexion->ConsultaSimple($sql);
+		$this->conexion->consultaSimple($sql);
 	}
 
 	public function eliminar()
 	{
 		$sql = "CALL SP02_PUESTOS_ELIMINAR ('$this->PU03IDPUES');";
-		$this->conexion->ConsultaSimple($sql);
+		$this->conexion->consultaSimple($sql);
 	}
 
 	public function convertToPuestos($result)

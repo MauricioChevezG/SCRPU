@@ -13,11 +13,11 @@
 				<div class="panel-heading">Detalle del Servicio de Electricidad y Agua</div>
 				<div class="panel-body">
 					<ul class="list-group">
-						<li class="list-group-item"><strong>ID CALLE FRENTE RUTA: </strong><?php echo $this->callefrenteruta->getAtributo('PU18IDCSCLS');?></li>
-						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->callefrenteruta->getAtributo('PU18DESCS');?></li>
+						<li class="list-group-item"><strong>ID CALLE FRENTE RUTA: </strong><?php echo $this->class18calleser->getAtributo('PU18IDCSCLS');?></li>
+						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->class18calleser->getAtributo('PU18DESCS');?></li>
 						
 					</ul>
-					<a href="?c=callefrenteruta&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class18calleser&m=index" class="btn btn-default" role="button">Regresar</a>  
 
 				</div>
 			</div>

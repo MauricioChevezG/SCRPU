@@ -3,7 +3,7 @@ require_once 'conexion.php';
 /**
 * Existencia de casas frente a calle publica
 */
-class callefrenteruta extends Conexion
+class class18calleser extends Conexion
 {
 	private $PU18IDCSCLS;
 	private $PU18DESCS;
@@ -25,8 +25,8 @@ class callefrenteruta extends Conexion
 	public function buscar($PU18IDCSCLS){
 		$sql = "SELECT * FROM PU18CALLESER WHERE PU18IDCSCLS = '".$PU18IDCSCLS."';";
 		$result = $this->conexion->ConsultaRetorno($sql);
-		$callefrenteruta = $this->convertTocallefrenteruta($result);
-		return $callefrenteruta;
+		$class18calleser = $this->convertToclass18calleser($result);
+		return $class18calleser;
 	}
 
 	public function listar(){
@@ -50,13 +50,13 @@ class callefrenteruta extends Conexion
 		$this->conexion->ConsultaSimple($sql);
 	}
 
-	public function convertTocallefrenteruta($result){
-		$callefrenteruta = new callefrenteruta();
+	public function convertToclass18calleser($result){
+		$class18calleser = new class18calleser();
 		while ($row = mysqli_fetch_array($result)) {
-			$callefrenteruta->setAtributo('PU18IDCSCLS',$row[0]);
-			$callefrenteruta->setAtributo('PU18DESCS',$row[1]);
+			$class18calleser->setAtributo('PU18IDCSCLS',$row[0]);
+			$class18calleser->setAtributo('PU18DESCS',$row[1]);
 		}
-		return $callefrenteruta;
+		return $class18calleser;
 	}
 }
  ?>

@@ -1,5 +1,5 @@
 <?php
-$controller = 'class35tipsue';
+$controller = 'class08regcor';
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))
 {

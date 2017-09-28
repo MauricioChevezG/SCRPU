@@ -1,7 +1,7 @@
 <?php 
 require_once 'conexion.php';
 
-class terrenoFR  extends Conexion
+class class07terrft  extends Conexion
 {
 	
 	private $PU07IDTFR;
@@ -28,8 +28,8 @@ class terrenoFR  extends Conexion
 	{
 		$sql = "call SP07_TFR_BUSCAR('".$PU07IDTFR."')";
 		$result = $this->conexion->consultaRetorno($sql);
-		$terrenoFR = $this->convertToterrenoFR($result);
-		return $terrenoFR;
+		$class07terrft = $this->convertToclass07terrft($result);
+		return $class07terrft;
 	}
 
 	public function listar()
@@ -57,15 +57,15 @@ class terrenoFR  extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertToterrenoFR($result)
+	public function convertToclass07terrft($result)
 	{
-		$terrenoFR = new terrenoFR();
+		$class07terrft = new class07terrft();
 		while ($row = mysqli_fetch_array($result)) {
-			$terrenoFR->setAtributo('PU07IDTFR',$row[0]);
-			$terrenoFR->setAtributo('PU07NOMTFR',$row[1]);
+			$class07terrft->setAtributo('PU07IDTFR',$row[0]);
+			$class07terrft->setAtributo('PU07NOMTFR',$row[1]);
 	
 		}
-		return $terrenoFR;
+		return $class07terrft;
 	}
 }
  ?>

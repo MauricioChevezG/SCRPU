@@ -1,4 +1,4 @@
-<?php $result = $this->callefrenteruta->listar(); ?>
+<?php $result = $this->class18calleser->listar(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <h2>Tabla de Existencia De Casas Frente A Calle Publica</h2>   
-    <a href="?c=callefrenteruta&m=agregar" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-pawn"></span> Registrar</a>
+    <a href="?c=class18calleser&m=agregar" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-pawn"></span> Registrar</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
@@ -32,15 +32,15 @@
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=callefrenteruta&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class18calleser&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=callefrenteruta&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class18calleser&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=callefrenteruta&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class18calleser&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>

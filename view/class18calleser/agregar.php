@@ -10,7 +10,7 @@
     <h2>Agregar Nuevo Servicio de Electricidad y Agua</h2>
   </center>
   <div class="container">
-    <form action="?c=callefrenteruta&m=agregar" method="post">
+    <form action="?c=class18calleser&m=agregar" method="post">
      	<div class="form-group">
         <label for="PU18IDCSCLS">ID</label>
         <input type="text" class="form-control" id="PU18IDCSCLS" name="PU18IDCSCLS">
@@ -20,7 +20,7 @@
         <input type="text" class="form-control" id="PU18DESCS" name="PU18DESCS">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=callefrenteruta&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class18calleser&m=index" class="btn btn-default" role="button">Regresar</a>    
      </form>
    </div>
 </body>
