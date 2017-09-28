@@ -13,11 +13,11 @@
 				<div class="panel-heading">Detalle Clases</div>
 				<div class="panel-body">
 					<ul class="list-group">
-					<li class="list-group-item"><strong>ID Clases:</strong><?php echo $this->clases_34->getAtributo('PU34IDCLAS');?></li>
-						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->clases_34->getAtributo('PU34DESCLA');?></li>
+					<li class="list-group-item"><strong>ID Clases:</strong><?php echo $this->class34clases->getAtributo('PU34IDCLAS');?></li>
+						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->class34clases->getAtributo('PU34DESCLA');?></li>
 						
 					</ul>
-					<a href="?c=clases_34&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class34clases&m=index" class="btn btn-default" role="button">Regresar</a>  
 
 				</div>
 			</div>

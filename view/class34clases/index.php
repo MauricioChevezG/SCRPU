@@ -1,6 +1,6 @@
 <?php 
-$result = $this->clases_34->listar(); 
-//clases_34
+$result = $this->class34clases->listar(); 
+//class34clases
   //`PU06IDACTDES``PU06DESAD`
 ?>
 <!DOCTYPE html>
@@ -13,9 +13,9 @@ $result = $this->clases_34->listar();
 <body>
   <div class="container">
     <h2>Tabla de Clases</h2>   
-    <a href="?c=clases_34&m=agregar" class="btn btn-primary" role="button">Registrar Clases</a>
-    <input href="?c=clases_34&m=" type="text" class="form-control" role="text">   
-    <br><br>    
+    <a href="?c=class34clases&m=agregar" class="btn btn-primary" role="button">Registrar Clases</a>
+    
+    <br><br><br>   
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
@@ -36,15 +36,15 @@ $result = $this->clases_34->listar();
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=clases_34&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class34clases&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=clases_34&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class34clases&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=clases_34&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class34clases&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>

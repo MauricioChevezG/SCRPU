@@ -1,7 +1,7 @@
 <?php 
 require_once 'conexion.php';
 
-class tipsue_35  extends Conexion
+class class35tipsue  extends Conexion
 {
 	private $PU35IDTIPS;
 	private $PU35DESTIP;
@@ -28,8 +28,8 @@ class tipsue_35  extends Conexion
 	{
 		$sql = "SELECT * FROM pu35tipsue WHERE PU35IDTIPS ='". $PU35IDTIPS ."';";
 		$result = $this->conexion->consultaRetorno($sql);
-		$tipsue_35 = $this->convertTotipsue_35($result);
-		return $tipsue_35;
+		$class35tipsue = $this->convertToclass35tipsue($result);
+		return $class35tipsue;
 	}
 
 	public function listar()
@@ -57,15 +57,15 @@ class tipsue_35  extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertTotipsue_35($result)
+	public function convertToclass35tipsue($result)
 	{
-		$tipsue_35 = new tipsue_35();
+		$class35tipsue = new class35tipsue();
 		while ($row = mysqli_fetch_array($result)) {
-			$tipsue_35->setAtributo('PU35IDTIPS',$row[0]);
-			$tipsue_35->setAtributo('PU35DESTIP',$row[1]);
+			$class35tipsue->setAtributo('PU35IDTIPS',$row[0]);
+			$class35tipsue->setAtributo('PU35DESTIP',$row[1]);
 		
 		}
-		return $tipsue_35;
+		return $class35tipsue;
 	}
 }
  ?>

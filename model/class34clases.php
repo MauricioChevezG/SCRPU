@@ -1,7 +1,7 @@
 <?php 
 require_once 'conexion.php';
 
-class clases_34  extends Conexion
+class class34clases  extends Conexion
 {
 	private $PU34IDCLAS;
 	private $PU34DESCLA;
@@ -28,8 +28,8 @@ class clases_34  extends Conexion
 	{
 		$sql = "SELECT * FROM pu34clases WHERE PU34IDCLAS ='". $PU34IDCLAS ."';";
 		$result = $this->conexion->consultaRetorno($sql);
-		$clases_34 = $this->convertToclases_34($result);
-		return $clases_34;
+		$class34clases = $this->convertToclass34clases($result);
+		return $class34clases;
 	}
 
 	public function listar()
@@ -57,15 +57,15 @@ class clases_34  extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertToclases_34($result)
+	public function convertToclass34clases($result)
 	{
-		$clases_34 = new clases_34();
+		$class34clases = new class34clases();
 		while ($row = mysqli_fetch_array($result)) {
-			$clases_34->setAtributo('PU34IDCLAS',$row[0]);
-			$clases_34->setAtributo('PU34DESCLA',$row[1]);
+			$class34clases->setAtributo('PU34IDCLAS',$row[0]);
+			$class34clases->setAtributo('PU34DESCLA',$row[1]);
 		
 		}
-		return $clases_34;
+		return $class34clases;
 	}
 }
  ?>

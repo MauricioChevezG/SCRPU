@@ -10,7 +10,7 @@
     <h2>Agregar Tipo Suelo</h2>
   </center>
   <div class="container">
-    <form action="?c=tipsue_35&m=agregar" method="post">
+    <form action="?c=class35tipsue&m=agregar" method="post">
     
       <div class="form-group">
         <label for="PU35IDTIPS">ID UBICACION</label>
@@ -22,7 +22,7 @@
         <input type="text" class="form-control" id="PU35DESTIP" name="PU35DESTIP">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=tipsue_35&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class35tipsue&m=index" class="btn btn-default" role="button">Regresar</a>    
      </form>
    </div>
 </body>

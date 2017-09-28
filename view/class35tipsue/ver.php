@@ -13,11 +13,11 @@
 				<div class="panel-heading">Detalle Tipo Suelo</div>
 				<div class="panel-body">
 					<ul class="list-group">
-					<li class="list-group-item"><strong>ID Tipo Suelo:</strong><?php echo $this->tipsue_35->getAtributo('PU35IDTIPS');?></li>
-						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->tipsue_35->getAtributo('PU35DESTIP');?></li>
+					<li class="list-group-item"><strong>ID Tipo Suelo:</strong><?php echo $this->class35tipsue->getAtributo('PU35IDTIPS');?></li>
+						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->class35tipsue->getAtributo('PU35DESTIP');?></li>
 						
 					</ul>
-					<a href="?c=tipsue_35&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class35tipsue&m=index" class="btn btn-default" role="button">Regresar</a>  
 
 				</div>
 			</div>

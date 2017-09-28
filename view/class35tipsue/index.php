@@ -1,6 +1,6 @@
 <?php 
-$result = $this->tipsue_35->listar(); 
-//tipsue_35
+$result = $this->class35tipsue->listar(); 
+//class35tipsue
   //`PU06IDACTDES``PU06DESAD`
 ?>
 <!DOCTYPE html>
@@ -13,9 +13,9 @@ $result = $this->tipsue_35->listar();
 <body>
   <div class="container">
     <h2>Tabla Tipo Suelo</h2>   
-    <a href="?c=tipsue_35&m=agregar" class="btn btn-primary" role="button">Registrar Tipo Suelo</a>
-    <input href="?c=tipsue_35&m=" type="text" class="form-control" role="text">   
-    <br><br>    
+    <a href="?c=class35tipsue&m=agregar" class="btn btn-primary" role="button">Registrar Tipo Suelo</a>
+  
+    <br><br> <br>   
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
@@ -36,15 +36,15 @@ $result = $this->tipsue_35->listar();
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=tipsue_35&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class35tipsue&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=tipsue_35&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class35tipsue&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=tipsue_35&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class35tipsue&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>
