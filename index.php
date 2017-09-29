@@ -1,5 +1,5 @@
 <?php
-$controller = 'class24infest';
+$controller = 'class0102usuarios';
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))
 {

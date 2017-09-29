@@ -12,7 +12,7 @@ $result = $this->class06actdes->listar();
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de Actividad a Desarrollar</h2>   
+    <h2>Listado de Actividades a Desarrollar</h2>   
     <a href="?c=class06actdes&m=agregar" class="btn btn-primary" role="button">Registrar Actividad a Desarrollar</a>
        
     <br><br><br>      
@@ -20,7 +20,7 @@ $result = $this->class06actdes->listar();
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID Actividad a Desarrollar</th>
+            <th>Código Actividad a Desarrollar</th>
             <th>Descripción Actividad a Desarrollar</th>
             <th style="width: 120px;">Más</th>
           </tr>

@@ -14,8 +14,8 @@
 				<div class="panel-heading">Detalle Afectación de Áreas de protección</div>
 				<div class="panel-body">
 					<ul class="list-group">
-						<li class="list-group-item"><strong>ID Detalle Afectación de Áreas de protección: </strong><?php echo $this->class13aarep->getAtributo('PU13IDAAP');?></li>
-						<li class="list-group-item"><strong>Descripcion Detalle Afectación de Áreas de protección: </strong><?php echo $this->class13aarep->getAtributo('PU13DESCAAP');?></li>
+						<li class="list-group-item"><strong>Código Detalle Afectación de Áreas de protección: </strong><?php echo $this->class13aarep->getAtributo('PU13IDAAP');?></li>
+						<li class="list-group-item"><strong>Descripción Detalle Afectación de Áreas de protección: </strong><?php echo $this->class13aarep->getAtributo('PU13DESCAAP');?></li>
 						
 					</ul>
 					<a href="?c=class13aarep&m=index" class="btn btn-default" role="button">Regresar</a>  

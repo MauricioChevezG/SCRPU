@@ -17,8 +17,8 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>Código del Servicio de Red Vial:</th>
+            <th>Descripción del Servicio de Red Vial:</th>
             <th>Observaciones</th>
             <th style="width: 120px;">Más</th>
           </tr>

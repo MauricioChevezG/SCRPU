@@ -7,21 +7,21 @@ $result = $this->class28cuisam->listar();
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista SAMARA</title>
+	<title>Vista Sámara</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de SAMARA</h2>   
-    <a href="?c=class28cuisam&m=agregar" class="btn btn-primary" role="button">Registrar Samara</a>
+    <h2>Listado de Ubicaciones en Sámara</h2>   
+    <a href="?c=class28cuisam&m=agregar" class="btn btn-primary" role="button">Registrar Ubicación</a>
     
     <br><br> <br>       
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>Código de la Ubicación:</th>
+            <th>Descripción de la Ubicación:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>

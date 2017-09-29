@@ -7,12 +7,12 @@ $result = $this->class24infest->listar();
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista class24infest</title>
+	<title>Vista infraestructura</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de class24infest:</h2>   
+    <h2>Listado de Infraestructura</h2>   
     <a href="?c=class24infest&m=agregar" class="btn btn-primary" role="button">Registrar class24infest:</a>
    
     <br>
@@ -22,8 +22,8 @@ $result = $this->class24infest->listar();
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID class24infest:</th>
-            <th>Descripcion class24infest:</th>
+            <th>Código de infraestructura:</th>
+            <th>Descripcion de infraestructura:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>

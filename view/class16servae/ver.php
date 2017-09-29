@@ -2,8 +2,7 @@
 <html>
 <head>
 	<title>Detalle Servicio de Electricidad y Agua</title>
-	<link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
@@ -13,8 +12,8 @@
 				<div class="panel-heading">Detalle del Servicio de Electricidad y Agua</div>
 				<div class="panel-body">
 					<ul class="list-group">
-						<li class="list-group-item"><strong>ID SERVICIO DE ELECTRICIDAD Y AGUA: </strong><?php echo $this->class16servae->getAtributo('PU16IDSAE');?></li>
-						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->class16servae->getAtributo('PU16DESCAE');?></li>
+						<li class="list-group-item"><strong>Código del Servicio: </strong><?php echo $this->class16servae->getAtributo('PU16IDSAE');?></li>
+						<li class="list-group-item"><strong>Descripción del Servicio: </strong><?php echo $this->class16servae->getAtributo('PU16DESCAE');?></li>
 						
 					</ul>
 					<a href="?c=class16servae&m=index" class="btn btn-default" role="button">Regresar</a>  

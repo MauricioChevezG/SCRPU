@@ -20,8 +20,8 @@ $result = $this->class35tipsue->listar();
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>Código de Tipo Suelo:</th>
+            <th>Descripción de Tipo Suelo:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>

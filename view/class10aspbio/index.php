@@ -12,7 +12,7 @@ $result = $this->class10aspbio->listar();
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de Aspectos Biofísicos:</h2>   
+    <h2>Listado de Aspectos Biofísicos:</h2>   
     <a href="?c=class10aspbio&m=agregar" class="btn btn-primary" role="button">Registrar Aspectos Biofísicos:</a>
    
     <br>
@@ -22,8 +22,8 @@ $result = $this->class10aspbio->listar();
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID Aspectos Biofísicos:</th>
-            <th>Descripcion Aspectos Biofísicos:</th>
+            <th>Código Aspectos Biofísicos:</th>
+            <th>Descripción Aspectos Biofísicos:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>

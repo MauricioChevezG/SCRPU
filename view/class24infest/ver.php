@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Detalle class24infest</title>
+	<title>Detalle infraestructura</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
@@ -9,13 +9,13 @@
 		<br>
 		<div class="row">
 			<div class="panel panel-default">
-				<div class="panel-heading">Detalle del class24infest</div>
+				<div class="panel-heading">Detalle de la infraestructura</div>
 				<div class="panel-body">
 					<ul class="list-group">
-						<li class="list-group-item"><strong>ID de class24infest: </strong>
+						<li class="list-group-item"><strong> Código de la infraestructura: </strong>
 							<?php echo $this->class24infest->getAtributo('PU24IDINFR');?>
 						</li>
-						<li class="list-group-item"><strong>Descripcion de class24infest: </strong>
+						<li class="list-group-item"><strong>Descripción de la infraestructura: </strong>
 							<?php echo $this->class24infest->getAtributo('PU24DESCINF');?>
 						</li>
 					</ul>

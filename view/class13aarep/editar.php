@@ -12,7 +12,7 @@
   <div class="container">
     <form action="?c=class13aarep&m=editar" method="post">
       <div class="form-group">
-        <label for="PU13IDAAP">ID Afectación de Áreas de protección</label>
+        <label for="PU13IDAAP">Código Afectación de Áreas de protección</label>
         <input type="text" class="form-control" id="PU13IDAAP" name="PU13IDAAP" value="<?php echo $this->class13aarep->getAtributo('PU13IDAAP');?>" readonly>
       </div>
       <div class="form-group">

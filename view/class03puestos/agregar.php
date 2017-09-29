@@ -12,7 +12,7 @@
   <div class="container">
     <form action="?c=class03puestos&m=agregar" method="post">
      	<div class="form-group">
-        <label for="PU03IDPUES">Código del Puesto</label>
+        <label for="PU03IDPUES">Código del Puesto:</label>
         <input type="text" class="form-control" id="PU03IDPUES" name="PU03IDPUES">
       </div>
       <div class="form-group">
@@ -20,7 +20,7 @@
         <input type="text" class="form-control" id="PU03PUESTO" name="PU03PUESTO">
       </div>
 
-      <button type="submit" class="btn btn-success">Guardar</button> 
+      <button type="submit" class="btn btn-success">Guardar puesto</button> 
       <a href="?c=class03puestos&m=index" class="btn btn-default" role="button">Regresar</a>    
      </form>
    </div>

@@ -11,15 +11,15 @@ $result = $this->class27cuinic->listar();
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de class27cuinic</h2>   
-    <a href="?c=class27cuinic&m=agregar" class="btn btn-primary" role="button">Registrar class27cuinic</a>
+    <h2>Listado de Ubicaciones en Nicoya</h2>   
+    <a href="?c=class27cuinic&m=agregar" class="btn btn-primary" role="button">Registrar Ubicación:</a>
     <br><br>    <br> 
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>Códgido de la Ubicación:</th>
+            <th>Descripción de la Ubicación:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>

@@ -7,19 +7,19 @@ $result = $this->class07terrft->listar();
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista class07terrft</title>
+	<title>Listado de Terreno Frete a Ruta</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de Terreno Frente a Ruta</h2>   
+    <h2>Listado de Terreno Frente a Ruta</h2>   
     <a href="?c=class07terrft&m=agregar" class="btn btn-primary" role="button">Registrar Terreno Frente a Ruta</a>
     <br><br><br>        
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Código</th>
+            <th>Código del Terreno Frete a Ruta</th>
             <th>Nombre del Terreno Frente a Ruta</th>
             <th style="width: 120px;">Más</th>
           </tr>

@@ -7,21 +7,21 @@ $result = $this->class26planreg->listar();
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista class26planreg</title>
+	<title>Vista Plan Retulador</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de class26planreg</h2>   
-    <a href="?c=class26planreg&m=agregar" class="btn btn-primary" role="button">Registrar class26planreg</a>
+    <h2>Listado del Plan Regulador:</h2>   
+    <a href="?c=class26planreg&m=agregar" class="btn btn-primary" role="button">Registrar Plan Regulador:</a>
      
     <br><br> <br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>Código del Plan Regulador:</th>
+            <th>Descripción del Plan:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>

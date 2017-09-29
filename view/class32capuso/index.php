@@ -7,21 +7,21 @@ $result = $this->class32capuso->listar();
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista CAPUSO</title>
+	<title>Vista  Capacidad de Uso de Suelo</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de CAPUSO</h2>   
-    <a href="?c=class32capuso&m=agregar" class="btn btn-primary" role="button">Registrar CAPUSO</a>
+    <h2>Listado de Capacidad de Uso de Suelo</h2>   
+    <a href="?c=class32capuso&m=agregar" class="btn btn-primary" role="button">Registrar Capacidad de Uso de Suelo</a>
     <input href="?c=class32capuso&m=" type="text" class="form-control" role="text">   
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>Código de Capacidad de Uso de Suelo</th>
+            <th>Descripción de Capacidad de Uso de Suelo</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>

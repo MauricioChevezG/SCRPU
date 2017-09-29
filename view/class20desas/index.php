@@ -9,15 +9,15 @@
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de Desarrolo de Servidumbre</h2>   
+    <h2>Listado de Desarrolo de Servidumbre</h2>   
     <a href="?c=class20desas&m=agregar" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-pawn"></span> Registrar</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>Código del Desarrollo:</th>
+            <th>Descripción del Desarrollo:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>

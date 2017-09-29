@@ -11,7 +11,7 @@ $result = $this->class13aarep->listar();
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de Afectación de Áreas de protección</h2>   
+    <h2>Listado de Afectación de Áreas de protección</h2>   
     <a href="?c=class13aarep&m=agregar" class="btn btn-primary" role="button">Registrar Afectación de Áreas de protección</a>
   
     <br><br><br>      
@@ -19,7 +19,7 @@ $result = $this->class13aarep->listar();
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID Afectación de Áreas de protección</th>
+            <th>Código Afectación de Áreas de protección</th>
             <th>Descripción Afectación de Áreas de protección</th>
             <th style="width: 120px;">Más</th>
           </tr>
@@ -30,7 +30,7 @@ $result = $this->class13aarep->listar();
               <td><?php echo $row[0]; ?></td>
               <td><?php echo $row[1]; ?></td>
          
-              <td><div class="dropdown">
+             <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">

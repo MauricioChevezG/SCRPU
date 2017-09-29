@@ -4,21 +4,20 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista Servicio de Electricidad y Agua</title>
-  <link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap.min.css">
+	<title>Vista Servicio de Agua y Electricidad</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de Servicio de Electricidad y Agua</h2>   
+    <h2>Listado de Servicios:</h2>   
     <a href="?c=class16servae&m=agregar" class="btn btn-primary" role="button">Registrar Servicio de Electricidad y Agua</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>Código del Servicio:</th>
+            <th>Descripción del Servicio:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -51,7 +50,7 @@
           <?php else: ?>
             <div class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay Servicio de Electricidad y Agua.
+                <strong>¡Información!</strong> No hay Servicio de Agua y Electricidad.
               </center>
             </div>
           <?php endif ?>

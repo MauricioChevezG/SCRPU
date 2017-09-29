@@ -13,12 +13,12 @@
     <form action="?c=class26planreg&m=agregar" method="post">
     
       <div class="form-group">
-        <label for="PU26IDPLAN">ID PLAN REGULADOR</label>
+        <label for="PU26IDPLAN">Código del Plan Regulador:</label>
         <input type="text" class="form-control" id="PU26IDPLAN" name="PU26IDPLAN">
       </div>
 
       <div class="form-group">
-        <label for="PU26PLNDESC">PLAN DESCRIPCION</label>
+        <label for="PU26PLNDESC">Descipción del Plan:</label>
         <input type="text" class="form-control" id="PU26PLNDESC" name="PU26PLNDESC">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 

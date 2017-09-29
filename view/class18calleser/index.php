@@ -3,21 +3,20 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista Existencia De Casas Frente A Calle Publica</title>
-  <link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap.min.css">
+	<title>Existencia de Calle en Servidumbre Frente a Ruta:</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de Existencia De Casas Frente A Calle Publica</h2>   
+    <h2> Listado de Existencia de Calle en Servidumbre Frente a Ruta:</h2>   
     <a href="?c=class18calleser&m=agregar" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-pawn"></span> Registrar</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>Código de Existencia de Calle:</th>
+            <th>Descripción de Existencia de Calle;</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -50,8 +49,8 @@
           <?php else: ?>
             <div class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay Existencia De Casas Frente A Calle Publica.
-              </center>
+                <strong>¡Información!</strong> No hay Existencia de Calle en Servidumbre Frente a Ruta.
+                         </center>
             </div>
           <?php endif ?>
         </tbody>

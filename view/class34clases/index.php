@@ -12,7 +12,7 @@ $result = $this->class34clases->listar();
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de Clases</h2>   
+    <h2>Listado de Clases</h2>   
     <a href="?c=class34clases&m=agregar" class="btn btn-primary" role="button">Registrar Clases</a>
     
     <br><br><br>   
@@ -20,8 +20,8 @@ $result = $this->class34clases->listar();
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Descripción</th>
+            <th>Código de Clase:</th>
+            <th>Descripción de Clase:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>

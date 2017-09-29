@@ -11,7 +11,7 @@ $result = $this->class12tipdesec->listar();
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de Tipo de Desarrollo</h2>   
+    <h2>Listado de Tipo de Desarrollo</h2>   
     <a href="?c=class12tipdesec&m=agregar" class="btn btn-primary" role="button">Registrar Tipo de Desarrollo</a>
        
     <br><br><br>      
@@ -19,8 +19,8 @@ $result = $this->class12tipdesec->listar();
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID Tipo de Desarrollo</th>
-            <th>Descripción Tipo de Desarrollo</th>
+            <th>Código del Tipo de Desarrollo:</th>
+            <th>Descripción Tipo de Desarrollo:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>

@@ -13,12 +13,12 @@
     <form action="?c=class06actdes&m=agregar" method="post">
     
       <div class="form-group">
-        <label for="PU06IDACTDES">PU06IDACTDES</label>
+        <label for="PU06IDACTDES">Código de la Actividad a Desarrollar</label>
         <input type="text" class="form-control" id="PU06IDACTDES" name="PU06IDACTDES">
       </div>
 
       <div class="form-group">
-        <label for="PU06DESAD">PU06DESAD</label>
+        <label for="PU06DESAD">Descripción de la Actividad a Desarrollar</label>
         <input type="text" class="form-control" id="PU06DESAD" name="PU06DESAD">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 

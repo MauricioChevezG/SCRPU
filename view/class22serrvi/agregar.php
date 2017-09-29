@@ -12,15 +12,15 @@
   <div class="container">
     <form action="?c=class22serrvi&m=agregar" method="post">
      	<div class="form-group">
-        <label for="PU22IDREDVI">ID</label>
+        <label for="PU22IDREDVI">Código del Servicio de Red Vial:</label>
         <input type="text" class="form-control" id="PU22IDREDVI" name="PU22IDREDVI">
       </div>
       <div class="form-group">
-        <label for="PU22DESSVI">Descripción</label>
+        <label for="PU22DESSVI">Descripción del Servicio de Red Vial:</label>
         <input type="text" class="form-control" id="PU22DESSVI" name="PU22DESSVI">
       </div>
       <div class="form-group">
-        <label for="PU22OBSERV">Observaciones</label>
+        <label for="PU22OBSERV">Observaciones:</label>
         <input type="text" class="form-control" id="PU22OBSERV" name="PU22OBSERV">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 

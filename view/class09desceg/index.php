@@ -12,7 +12,7 @@ $result = $this->class09desceg->listar();
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de Espacio Geográfico:</h2>   
+    <h2>Listado del Espacio Geográfico:</h2>   
     <a href="?c=class09desceg&m=agregar" class="btn btn-primary" role="button">Registrar Espacio Geográfico:</a>
    
     <br>
@@ -22,8 +22,8 @@ $result = $this->class09desceg->listar();
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>ID Espacio Geográfico:</th>
-            <th>Descripcion Espacio Geográfico:</th>
+            <th>Código Espacio Geográfico:</th>
+            <th>Descripción Espacio Geográfico:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
