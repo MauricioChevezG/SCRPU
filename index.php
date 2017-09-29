@@ -1,5 +1,7 @@
 <?php
-$controller = 'servelectagua';
+
+$controller = 'class24infest';
+
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))
 {
