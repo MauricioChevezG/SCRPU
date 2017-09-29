@@ -27,7 +27,7 @@ class class09desceg  extends Conexion
 
 	public function buscar($PU09IDDEG)
 	{
-		$sql = "SELECT * FROM pu09desceg WHERE PU09IDDEG ='". $PU09IDDEG ."';";
+		$sql = "CALL SP05_DESCEG_BUSCAR  ('".$PU09IDDEG."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class09desceg = $this->convertToclass09desceg($result);
 		return $class09desceg;
@@ -35,7 +35,7 @@ class class09desceg  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu09desceg ;";
+		$sql = "CALL SP05_DESCEG_MOSTRAR();"
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

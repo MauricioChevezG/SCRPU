@@ -34,7 +34,7 @@ class class06actdes  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM PU06ACTDES ;";
+		$sql = "call SP04_ACTDES_MOSTRAR()";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

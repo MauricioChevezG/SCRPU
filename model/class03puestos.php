@@ -33,7 +33,7 @@ class class03puestos  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu03puestos ;";
+		$sql = "CALL SP02_PUESTOS_MOSTRAR ();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

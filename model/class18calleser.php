@@ -23,14 +23,14 @@ class class18calleser extends Conexion
 	}
 
 	public function buscar($PU18IDCSCLS){
-		$sql = "SELECT * FROM PU18CALLESER WHERE PU18IDCSCLS = '".$PU18IDCSCLS."';";
+		$sql = "CALL SP18_CALLESER_BUSCAR  ('".$PU18IDCSCLS."');";
 		$result = $this->conexion->ConsultaRetorno($sql);
 		$class18calleser = $this->convertToclass18calleser($result);
 		return $class18calleser;
 	}
 
 	public function listar(){
-		$sql = "SELECT * FROM PU18CALLESER;";
+		$sql = "CALL SP18_CALLESER_MOSTRAR();";
 		$result = $this->conexion->ConsultaRetorno($sql);
 		return $result;
 	}

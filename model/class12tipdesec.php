@@ -27,7 +27,7 @@ class class12tipdesec  extends Conexion
 
 	public function buscar($PU12IDTDESEC)
 	{
-		$sql = "SELECT * FROM pu12tipdesec WHERE PU12IDTDESEC ='". $PU12IDTDESEC ."';";
+		$sql = "CALL SP10_TIPDESEC_BUSCAR  ('".$PU12IDTDESEC."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class12tipdesec = $this->convertToclass12tipdesec($result);
 		return $class12tipdesec;
@@ -35,7 +35,7 @@ class class12tipdesec  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu12tipdesec ;";
+		$sql = "CALL SP10_TIPDESEC_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

@@ -27,7 +27,7 @@ class class10aspbio  extends Conexion
 
 	public function buscar($PU10IDASBIO)
 	{
-		$sql = "SELECT * FROM pu10aspbio WHERE PU10IDASBIO ='". $PU10IDASBIO ."';";
+		$sql = "CALL SP06_ASPBIO_BUSCAR  ('".$PU10IDASBIO."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class10aspbio = $this->convertToclass10aspbio($result);
 		return $class10aspbio;
@@ -35,7 +35,7 @@ class class10aspbio  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu10aspbio ;";
+		$sql = "CALL SP06_ASPBIO_MOSTRAR() ;";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

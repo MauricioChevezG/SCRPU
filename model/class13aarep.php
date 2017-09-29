@@ -27,7 +27,7 @@ class class13aarep  extends Conexion
 
 	public function buscar($PU13IDAAP)
 	{
-		$sql = "SELECT * FROM pu13aarep WHERE PU13IDAAP ='". $PU13IDAAP ."';";
+		$sql = "CALL SP13_AAREP_BUSCAR  ('".$PU13IDAAP."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class13aarep = $this->convertToclass13aarep($result);
 		return $class13aarep;
@@ -35,7 +35,7 @@ class class13aarep  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu13aarep ;";
+		$sql = "CALL SP13_AAREP_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

@@ -25,7 +25,7 @@ class class16servae  extends Conexion
 
 	public function buscar($PU16IDSAE)
 	{
-		$sql = "SELECT * FROM pu16servae WHERE PU16IDSAE ='". $PU16IDSAE ."';";
+		$sql = "CALL SP16_SERVAE_BUSCAR  ('".$PU16IDSAE."');";
 		$result = $this->conexion->ConsultaRetorno($sql);
 		$class16servae = $this->convertToclass16servae($result);
 		return $class16servae;
@@ -33,7 +33,7 @@ class class16servae  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu16servae ;";
+		$sql = "CALL SP16_SERVAE_MOSTRAR();";
 		$result = $this->conexion->ConsultaRetorno($sql);
 		return $result;
 	}

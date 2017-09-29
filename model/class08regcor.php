@@ -27,7 +27,7 @@ class class08regcor  extends Conexion
 
 	public function buscar($PU08IDGPS)
 	{
-		$sql = "CALL SP08_GPS_BUSCAR  ('".$PU08IDGPS."');";
+		$sql = "CALL SP08_REGCOR_BUSCAR  ('".$PU08IDGPS."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class08regcor = $this->convertToclass08regcor($result);
 		return $class08regcor;
@@ -35,7 +35,7 @@ class class08regcor  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu08regcor ;";
+		$sql = "CALL SP08_REGCOR_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
