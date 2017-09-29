@@ -1,5 +1,5 @@
 <?php
-$controller = 'terrenoFR';
+$controller = 'servelectagua';
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))
 {
