@@ -1,4 +1,4 @@
-<?php $result = $this->servicioredvial->listar(); ?>
+<?php $result = $this->class22serrvi->listar(); ?>
 
 <!DOCTYPE html>
 <html>
@@ -11,7 +11,7 @@
 <body>
   <div class="container">
     <h2>Tabla de Servicio de Red Vial</h2>   
-    <a href="?c=servicioredvial&m=agregar" class="btn btn-primary" role="button">Registrar Servicio de Red Vial</a>
+    <a href="?c=class22serrvi&m=agregar" class="btn btn-primary" role="button">Registrar Servicio de Red Vial</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
@@ -35,15 +35,15 @@
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=servicioredvial&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class22serrvi&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=servicioredvial&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class22serrvi&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=servicioredvial&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class22serrvi&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>

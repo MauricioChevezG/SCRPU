@@ -1,22 +1,24 @@
-<?php $result = $this->puestos->listar(); ?>
+<?php $result = $this->class16servae->listar(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista puestos</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Vista Servicio de Electricidad y Agua</title>
+  <link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de puestos</h2>   
-    <a href="?c=puestos&m=agregar" class="btn btn-primary" role="button">Registrar puesto</a>    
+    <h2>Tabla de Servicio de Electricidad y Agua</h2>   
+    <a href="?c=class16servae&m=agregar" class="btn btn-primary" role="button">Registrar Servicio de Electricidad y Agua</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Código del Puesto</th>
-            <th>Nombre del puesto</th>
+            <th>ID</th>
+            <th>Descripción</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -25,20 +27,21 @@
             <tr>
               <td><?php echo $row[0]; ?></td>
               <td><?php echo $row[1]; ?></td>
+              
               <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=puestos&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class16servae&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=puestos&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class16servae&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=puestos&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class16servae&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>
@@ -48,14 +51,14 @@
           <?php else: ?>
             <div class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay puestos registrados.
+                <strong>¡Información!</strong> No hay Servicio de Electricidad y Agua.
               </center>
             </div>
           <?php endif ?>
         </tbody>
       </table>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../datatables/jQuery-2.2.4/jquery-2.2.4.min.js"></script>
+    <script src="../../datatables/Bootstrap-3.3.7/js/bootstrap.min.js"></script>
   </body>
   </html>

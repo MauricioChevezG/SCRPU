@@ -3,7 +3,7 @@ require_once 'conexion.php';
 /**
 * Existencia de casas frente a calle publica
 */
-class desarrolloservidumbre extends Conexion
+class class20desas extends Conexion
 {
 	private $PU20IDDESAS;
 	private $PU20DESCS;
@@ -25,8 +25,8 @@ class desarrolloservidumbre extends Conexion
 	public function buscar($PU20IDDESAS){
 		$sql = "SELECT * FROM PU20DESAS WHERE PU20IDDESAS = '".$PU20IDDESAS."';";
 		$result = $this->conexion->ConsultaRetorno($sql);
-		$desarrolloservidumbre = $this->convertTodesarrolloservidumbre($result);
-		return $desarrolloservidumbre;
+		$class20desas = $this->convertToclass20desas($result);
+		return $class20desas;
 	}
 
 	public function listar(){
@@ -50,13 +50,13 @@ class desarrolloservidumbre extends Conexion
 		$this->conexion->ConsultaSimple($sql);
 	}
 
-	public function convertTodesarrolloservidumbre($result){
-		$desarrolloservidumbre = new desarrolloservidumbre();
+	public function convertToclass20desas($result){
+		$class20desas = new class20desas();
 		while ($row = mysqli_fetch_array($result)) {
-			$desarrolloservidumbre->setAtributo('PU20IDDESAS',$row[0]);
-			$desarrolloservidumbre->setAtributo('PU20DESCS',$row[1]);
+			$class20desas->setAtributo('PU20IDDESAS',$row[0]);
+			$class20desas->setAtributo('PU20DESCS',$row[1]);
 		}
-		return $desarrolloservidumbre;
+		return $class20desas;
 	}
 }
  ?>

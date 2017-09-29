@@ -1,17 +1,16 @@
-<?php $result = $this->servelectagua->listar(); ?>
-
+<?php $result = $this->class20desas->listar(); ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista Servicio de Electricidad y Agua</title>
+	<title>Vista Desarrolo de Servidumbre</title>
   <link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Tabla de Servicio de Electricidad y Agua</h2>   
-    <a href="?c=servelectagua&m=agregar" class="btn btn-primary" role="button">Registrar Servicio de Electricidad y Agua</a>
+    <h2>Tabla de Desarrolo de Servidumbre</h2>   
+    <a href="?c=class20desas&m=agregar" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-pawn"></span> Registrar</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
@@ -33,15 +32,15 @@
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=servelectagua&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class20desas&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=servelectagua&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class20desas&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=servelectagua&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class20desas&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>
@@ -51,7 +50,7 @@
           <?php else: ?>
             <div class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay Servicio de Electricidad y Agua.
+                <strong>¡Información!</strong> No hay Desarrolo de Servidumbre.
               </center>
             </div>
           <?php endif ?>

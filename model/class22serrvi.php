@@ -1,7 +1,7 @@
 <?php 
 require_once 'conexion.php';
 
-class servicioredvial  extends Conexion
+class class22serrvi  extends Conexion
 {
 	private $PU22IDREDVI;
 	private $PU22DESSVI;
@@ -28,8 +28,8 @@ class servicioredvial  extends Conexion
 	{
 		$sql = "SELECT * FROM PU22SERRVI WHERE PU22IDREDVI ='". $PU22IDREDVI ."';";
 		$result = $this->conexion->ConsultaRetorno($sql);
-		$servicioredvial = $this->convertToservicioredvial($result);
-		return $servicioredvial;
+		$class22serrvi = $this->convertToclass22serrvi($result);
+		return $class22serrvi;
 	}
 
 	public function listar()
@@ -57,15 +57,15 @@ class servicioredvial  extends Conexion
 		$this->conexion->ConsultaSimple($sql);
 	}
 
-	public function convertToservicioredvial($result)
+	public function convertToclass22serrvi($result)
 	{
-		$servicioredvial = new servicioredvial();
+		$class22serrvi = new class22serrvi();
 		while ($row = mysqli_fetch_array($result)) {
-			$servicioredvial->setAtributo('PU22IDREDVI',$row[0]);
-			$servicioredvial->setAtributo('PU22DESSVI',$row[1]);
-			$servicioredvial->setAtributo('PU22OBSERV',$row[2]);
+			$class22serrvi->setAtributo('PU22IDREDVI',$row[0]);
+			$class22serrvi->setAtributo('PU22DESSVI',$row[1]);
+			$class22serrvi->setAtributo('PU22OBSERV',$row[2]);
 		}
-		return $servicioredvial;
+		return $class22serrvi;
 	}
 }
  ?>

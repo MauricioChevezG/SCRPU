@@ -13,11 +13,11 @@
 				<div class="panel-heading">Detalle del Servicio de Electricidad y Agua</div>
 				<div class="panel-body">
 					<ul class="list-group">
-						<li class="list-group-item"><strong>ID SERVICIO DE ELECTRICIDAD Y AGUA: </strong><?php echo $this->servelectagua->getAtributo('PU16IDSAE');?></li>
-						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->servelectagua->getAtributo('PU16DESCAE');?></li>
+						<li class="list-group-item"><strong>ID SERVICIO DE ELECTRICIDAD Y AGUA: </strong><?php echo $this->class16servae->getAtributo('PU16IDSAE');?></li>
+						<li class="list-group-item"><strong>DESCIPCION: </strong><?php echo $this->class16servae->getAtributo('PU16DESCAE');?></li>
 						
 					</ul>
-					<a href="?c=servelectagua&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class16servae&m=index" class="btn btn-default" role="button">Regresar</a>  
 
 				</div>
 			</div>

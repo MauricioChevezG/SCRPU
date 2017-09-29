@@ -1,7 +1,7 @@
 <?php 
 require_once 'conexion.php';
 
-class servelectagua  extends Conexion
+class class16servae  extends Conexion
 {
 	private $PU16IDSAE;
 	private $PU16DESCAE;
@@ -27,8 +27,8 @@ class servelectagua  extends Conexion
 	{
 		$sql = "SELECT * FROM pu16servae WHERE PU16IDSAE ='". $PU16IDSAE ."';";
 		$result = $this->conexion->ConsultaRetorno($sql);
-		$servelectagua = $this->convertToservelectagua($result);
-		return $servelectagua;
+		$class16servae = $this->convertToclass16servae($result);
+		return $class16servae;
 	}
 
 	public function listar()
@@ -56,15 +56,15 @@ class servelectagua  extends Conexion
 		$this->conexion->ConsultaSimple($sql);
 	}
 
-	public function convertToservelectagua($result)
+	public function convertToclass16servae($result)
 	{
-		$servelectagua = new servelectagua();
+		$class16servae = new class16servae();
 		while ($row = mysqli_fetch_array($result)) {
-			$servelectagua->setAtributo('PU16IDSAE',$row[0]);
-			$servelectagua->setAtributo('PU16DESCAE',$row[1]);
+			$class16servae->setAtributo('PU16IDSAE',$row[0]);
+			$class16servae->setAtributo('PU16DESCAE',$row[1]);
 	
 		}
-		return $servelectagua;
+		return $class16servae;
 	}
 }
  ?>

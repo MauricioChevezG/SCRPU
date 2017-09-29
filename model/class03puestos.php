@@ -1,7 +1,7 @@
 <?php 
 require_once 'conexion.php';
 
-class puestos  extends Conexion
+class class03puestos  extends Conexion
 {
 	private $PU03IDPUES;
 	private $PU03PUESTO;
@@ -58,12 +58,12 @@ class puestos  extends Conexion
 
 	public function convertToPuestos($result)
 	{
-		$puestos = new puestos();
+		$class03puestos = new class03puestos();
 		while ($row = mysqli_fetch_array($result)) {
-			$puestos->setAtributo('PU03IDPUES',$row[0]);
-			$puestos->setAtributo('PU03PUESTO',$row[1]);
+			$class03puestos->setAtributo('PU03IDPUES',$row[0]);
+			$class03puestos->setAtributo('PU03PUESTO',$row[1]);
 		}
-		return $puestos;
+		return $class03puestos;
 	}
 }
  ?>

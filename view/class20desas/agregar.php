@@ -10,7 +10,7 @@
     <h2>Agregar Nuevo Desarrolo de Servidumbre</h2>
   </center>
   <div class="container">
-    <form action="?c=desarrolloservidumbre&m=agregar" method="post">
+    <form action="?c=class20desas&m=agregar" method="post">
      	<div class="form-group">
         <label for="PU20IDDESAS">ID</label>
         <input type="text" class="form-control" id="PU20IDDESAS" name="PU20IDDESAS">
@@ -20,7 +20,7 @@
         <input type="text" class="form-control" id="PU20DESCS" name="PU20DESCS">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=desarrolloservidumbre&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class20desas&m=index" class="btn btn-default" role="button">Regresar</a>    
      </form>
    </div>
 </body>
