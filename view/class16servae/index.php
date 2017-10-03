@@ -1,23 +1,26 @@
-<?php $result = $this->class16servae->listar(); ?>
+<?php 
+$result = $this->class16servae->listar(); 
 
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Vista Servicio de Agua y Electricidad</title>
+  <meta charset="utf-8">
+  <title>Vista Afectación de Áreas de protección</title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2>Listado de Servicios:</h2>   
+    <h2>Listado de Servicio de Electricidad y Agua</h2>   
     <a href="?c=class16servae&m=agregar" class="btn btn-primary" role="button">Registrar Servicio de Electricidad y Agua</a>
-    <br><br>    
+  
+    <br><br><br>      
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Código del Servicio:</th>
-            <th>Descripción del Servicio:</th>
+            <th>Código Servicio de Electricidad y Agua</th>
+            <th>Descripción Servicio de Electricidad y Agua</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -26,8 +29,8 @@
             <tr>
               <td><?php echo $row[0]; ?></td>
               <td><?php echo $row[1]; ?></td>
-              
-              <td><div class="dropdown">
+         
+             <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
@@ -50,14 +53,14 @@
           <?php else: ?>
             <div style="background-color:#b2ff59" class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay Servicio de Agua y Electricidad.
+               <strong>¡Información!</strong> No hay información registrada.
               </center>
             </div>
           <?php endif ?>
         </tbody>
       </table>
     </div>
-    <script src="../../datatables/jQuery-2.2.4/jquery-2.2.4.min.js"></script>
-    <script src="../../datatables/Bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
   </html>

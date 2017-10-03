@@ -1,22 +1,26 @@
-<?php $result = $this->class18calleser->listar(); ?>
+<?php 
+$result = $this->class18calleser->listar(); 
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Existencia de Calle en Servidumbre Frente a Ruta:</title>
+  <meta charset="utf-8">
+  <title>Vista Existencia de Calle en Servidumbre Frente a Ruta</title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <h2> Listado de Existencia de Calle en Servidumbre Frente a Ruta:</h2>   
-    <a href="?c=class18calleser&m=agregar" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-pawn"></span> Registrar</a>
-    <br><br>    
+    <h2>Listado Existencia de Calle en Servidumbre Frente a Ruta</h2>   
+    <a href="?c=class18calleser&m=agregar" class="btn btn-primary" role="button">Registrar Existencia de Calle en Servidumbre Frente a Ruta</a>
+  
+    <br><br><br>      
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Código de Existencia de Calle:</th>
-            <th>Descripción de Existencia de Calle;</th>
+            <th>Código Existencia de Calle en Servidumbre Frente a Ruta</th>
+            <th>Descripción Existencia de Calle en Servidumbre Frente a Ruta</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -25,8 +29,8 @@
             <tr>
               <td><?php echo $row[0]; ?></td>
               <td><?php echo $row[1]; ?></td>
-              
-              <td><div class="dropdown">
+         
+             <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
@@ -47,16 +51,16 @@
               </tr>
             <?php endwhile; ?>
           <?php else: ?>
-            <div class="alert alert-info">
+            <div style="background-color:#b2ff59" class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay Existencia de Calle en Servidumbre Frente a Ruta.
-                         </center>
+               <strong>¡Información!</strong> No hay información registrada.
+              </center>
             </div>
           <?php endif ?>
         </tbody>
       </table>
     </div>
-    <script src="../../datatables/jQuery-2.2.4/jquery-2.2.4.min.js"></script>
-    <script src="../../datatables/Bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
   </html>

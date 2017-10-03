@@ -4,13 +4,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Vista Desarrolo de Servidumbre</title>
-  <link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 <body>
   <div class="container">
     <h2>Listado de Desarrolo de Servidumbre</h2>   
-    <a href="?c=class20desas&m=agregar" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-pawn"></span> Registrar</a>
+     <a href="?c=class18calleser&m=agregar" class="btn btn-primary" role="button">Registrar Desarrollo</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
@@ -57,7 +57,7 @@
         </tbody>
       </table>
     </div>
-    <script src="../../datatables/jQuery-2.2.4/jquery-2.2.4.min.js"></script>
-    <script src="../../datatables/Bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
   </html>
