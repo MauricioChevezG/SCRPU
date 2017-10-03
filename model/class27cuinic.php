@@ -26,7 +26,7 @@ class class27cuinic  extends Conexion
 
 	public function buscar($PU27IDUBIC)
 	{
-		$sql = "SELECT * FROM pu27cuinic WHERE PU27IDUBIC ='". $PU27IDUBIC ."';";
+		$sql = "CALL SP27_CUINIC_BUSCAR('".$PU27IDUBIC."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class27cuinic = $this->convertToclass27cuinic($result);
 		return $class27cuinic;
@@ -34,7 +34,7 @@ class class27cuinic  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu27cuinic ;";
+		$sql = "call SP27_CUINIC_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

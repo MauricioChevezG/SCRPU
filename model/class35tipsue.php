@@ -26,7 +26,7 @@ class class35tipsue  extends Conexion
 
 	public function buscar($PU35IDTIPS)
 	{
-		$sql = "SELECT * FROM pu35tipsue WHERE PU35IDTIPS ='". $PU35IDTIPS ."';";
+		$sql = "CALL SP35_TIPSUE_BUSCAR('".$PU35IDTIPS."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class35tipsue = $this->convertToclass35tipsue($result);
 		return $class35tipsue;
@@ -34,7 +34,7 @@ class class35tipsue  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu35tipsue ;";
+		$sql = "Call SP35_TIPSUE_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

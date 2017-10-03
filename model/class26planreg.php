@@ -26,7 +26,7 @@ class class26planreg  extends Conexion
 
 	public function buscar($PU26IDPLAN)
 	{
-		$sql = "SELECT * FROM pu26planreg WHERE PU26IDPLAN ='". $PU26IDPLAN ."';";
+		$sql = "CALL SP26_PLANREG_BUSCAR('".$PU26IDPLAN."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class26planreg = $this->convertToclass26planreg($result);
 		return $class26planreg;
@@ -34,7 +34,7 @@ class class26planreg  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu26planreg ;";
+		$sql = "call SP26_PLANREG_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

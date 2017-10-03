@@ -22,7 +22,7 @@
         <input type="text" class="form-control" id="PU06DESAD" name="PU06DESAD">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=class06actdes&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class06actdes&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
    </div>
 </body>

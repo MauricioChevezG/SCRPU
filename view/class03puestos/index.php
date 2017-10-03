@@ -35,7 +35,7 @@
                     </li>
                     <li>
                       <a href="?c=class03puestos&m=eliminar&id=<?php echo $row[0]; ?>">
-                       <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
+                       <span  class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
                       <a href="?c=class03puestos&m=ver&id=<?php echo $row[0]; ?>">
@@ -46,7 +46,7 @@
               </tr>
             <?php endwhile; ?>
           <?php else: ?>
-            <div class="alert alert-info">
+            <div style="background-color:#b2ff59" class="alert alert-info">
               <center>
                 <strong>¡Información!</strong> No hay información sobre puestos.
               </center>

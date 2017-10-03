@@ -35,7 +35,7 @@ class class09desceg  extends Conexion
 
 	public function listar()
 	{
-		$sql = "CALL SP05_DESCEG_MOSTRAR();"
+		$sql = "call SP05_DESCEG_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

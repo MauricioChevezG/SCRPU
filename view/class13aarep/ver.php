@@ -18,7 +18,7 @@
 						<li class="list-group-item"><strong>Descripción Detalle Afectación de Áreas de protección: </strong><?php echo $this->class13aarep->getAtributo('PU13DESCAAP');?></li>
 						
 					</ul>
-					<a href="?c=class13aarep&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class13aarep&m=index" class="btn btn-danger" role="button">Regresar</a>  
 
 				</div>
 			</div>

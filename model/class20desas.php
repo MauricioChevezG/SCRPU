@@ -23,14 +23,14 @@ class class20desas extends Conexion
 	}
 
 	public function buscar($PU20IDDESAS){
-		$sql = "SELECT * FROM PU20DESAS WHERE PU20IDDESAS = '".$PU20IDDESAS."';";
+		$sql = "CALL SP20_DESAS_BUSCAR('".$PU20IDDESAS."');";
 		$result = $this->conexion->ConsultaRetorno($sql);
 		$class20desas = $this->convertToclass20desas($result);
 		return $class20desas;
 	}
 
 	public function listar(){
-		$sql = "SELECT * FROM PU20DESAS;";
+		$sql = " CALL SP20_DESAS_MOSTRAR();";
 		$result = $this->conexion->ConsultaRetorno($sql);
 		return $result;
 	}

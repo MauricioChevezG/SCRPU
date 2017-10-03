@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +22,7 @@
       </div>
      
       <button type="submit" class="btn btn-success">Editar</button> 
-      <a href="?c=class07terrft&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class07terrft&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
   </div>
 </body>

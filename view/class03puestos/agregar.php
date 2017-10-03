@@ -21,7 +21,7 @@
       </div>
 
       <button type="submit" class="btn btn-success">Guardar puesto</button> 
-      <a href="?c=class03puestos&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class03puestos&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
    </div>
 </body>

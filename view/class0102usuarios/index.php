@@ -13,9 +13,9 @@ $result = $this->class0102usuarios->listar();
 <body>
   <div class="container">
     <h2>Listado de usuarios</h2>   
-    <a href="?c=class0102usuarios&m=agregar" class="btn btn-primary" role="button">Registrar usuario</a>    
-    <input href="?c=class0102usuarios&m=" type="text" class="form-control" role="text">
-    <br><br>    
+    <a  href="?c=class0102usuarios&m=agregar" class="btn btn-primary" role="button">Registrar usuario</a>    
+  
+    <br><br><br>      
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
@@ -62,7 +62,7 @@ $result = $this->class0102usuarios->listar();
               </tr>
             <?php endwhile; ?>
           <?php else: ?>
-            <div class="alert alert-info">
+            <div style="background-color:#b2ff59" class="alert alert-info">
               <center>
                 <strong>¡Información!</strong> No hay usuarios registrados.
               </center>

@@ -17,7 +17,7 @@
 						<li class="list-group-item"><strong>Nombre del Terreno Frente a Ruta: </strong><?php echo $this->class07terrft->getAtributo('PU07NOMTFR');?></li>
 						
 					</ul>
-					<a href="?c=class07terrft&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class07terrft&m=index" class="btn btn-danger" role="button">Regresar</a>  
 
 				</div>
 			</div>

@@ -22,7 +22,7 @@
         <input type="text" class="form-control" id="PU10DESCABIO" name="PU10DESCABIO">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=class10aspbio&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class10aspbio&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
    </div>
 </body>

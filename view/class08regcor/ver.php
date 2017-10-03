@@ -18,7 +18,7 @@
 						<li class="list-group-item"><strong>Este: </strong><?php echo $this->class08regcor->getAtributo('PU08ESTE');?></li>
 						<li class="list-group-item"><strong>Altitud: </strong><?php echo $this->class08regcor->getAtributo('PU08ALTITUD');?></li>
 					</ul>
-					<a href="?c=class08regcor&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class08regcor&m=index" class="btn btn-danger" role="button">Regresar</a>  
 
 				</div>
 			</div>

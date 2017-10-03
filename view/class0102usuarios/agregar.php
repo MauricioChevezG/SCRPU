@@ -49,7 +49,7 @@
       </div>
 
       <button type="submit" class="btn btn-success">Guardar Usuario</button> 
-      <a href="?c=class0102usuarios&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class0102usuarios&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
    </div>
 </body>

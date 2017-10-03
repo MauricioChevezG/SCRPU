@@ -22,7 +22,7 @@
 					<li class="list-group-item"><strong>Puesto: </strong><?php echo $this->class0102usuarios->getAtributo('PU03IDPUES');?></li>
 						
 					</ul>
-					<a href="?c=class0102usuarios&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class0102usuarios&m=index" class="btn btn-danger" role="button">Regresar</a>  
 
 				</div>
 			</div>

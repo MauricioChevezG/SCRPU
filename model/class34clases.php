@@ -26,7 +26,7 @@ class class34clases  extends Conexion
 
 	public function buscar($PU34IDCLAS)
 	{
-		$sql = "SELECT * FROM pu34clases WHERE PU34IDCLAS ='". $PU34IDCLAS ."';";
+		$sql = "CALL SP34_CLASES_BUSCAR('".$PU34IDCLAS."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class34clases = $this->convertToclass34clases($result);
 		return $class34clases;
@@ -34,7 +34,7 @@ class class34clases  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu34clases ;";
+		$sql = "call SP34_CLASES_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

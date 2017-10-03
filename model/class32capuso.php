@@ -27,7 +27,7 @@ class class32capuso  extends Conexion
 
 	public function buscar($PU32IDCUSO)
 	{
-		$sql = "SELECT * FROM pu32capuso WHERE PU32IDCUSO ='". $PU32IDCUSO ."';";
+		$sql = "CALL SP32_CAPUSO_BUSCAR('".$PU32IDCUSO."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class32capuso = $this->convertToclass32capuso($result);
 		return $class32capuso;
@@ -35,7 +35,7 @@ class class32capuso  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM pu32capuso ;";
+		$sql = "call SP32_CAPUSO_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

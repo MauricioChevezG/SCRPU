@@ -22,7 +22,7 @@
         <input type="text" class="form-control" id="PU12TIPODES" name="PU12TIPODES">
       </div>
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=class12tipdesec&m=index" class="btn btn-default" role="button">Regresar</a>    
+      <a href="?c=class12tipdesec&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
    </div>
 </body>

@@ -27,7 +27,7 @@ class class24infest  extends Conexion
 
 	public function buscar($PU24IDINFR)
 	{
-		$sql = "CALL SP24_INFEST_BUSCAR('". $PU24IDINFR ."');";
+		$sql = "call SP24_INFEST_BUSCAR('".$PU24IDINFR."');";
 		$result = $this->conexion->ConsultaRetorno($sql);
 		$class24infest = $this->convertToclass24infest($result);
 		return $class24infest;
@@ -35,7 +35,7 @@ class class24infest  extends Conexion
 
 	public function listar()
 	{
-		$sql = "call SP24_INFEST_MOSTRARTODO();";
+		$sql = "call SP24_INFEST_MOSTRAR();";
 		$result = $this->conexion->ConsultaRetorno($sql);
 		return $result;
 	}

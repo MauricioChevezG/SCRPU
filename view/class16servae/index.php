@@ -48,7 +48,7 @@
               </tr>
             <?php endwhile; ?>
           <?php else: ?>
-            <div class="alert alert-info">
+            <div style="background-color:#b2ff59" class="alert alert-info">
               <center>
                 <strong>¡Información!</strong> No hay Servicio de Agua y Electricidad.
               </center>

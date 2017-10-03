@@ -17,7 +17,7 @@
 						<li class="list-group-item"><strong>Descripción de Aspectos Biofísicos: </strong><?php echo $this->class10aspbio->getAtributo('PU10DESCABIO');?></li>
 						
 					</ul>
-					<a href="?c=class10aspbio&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class10aspbio&m=index" class="btn btn-danger" role="button">Regresar</a>  
 
 				</div>
 			</div>

@@ -17,7 +17,7 @@
 						<li class="list-group-item"><strong>Descripcion Tipo de Desarrollo: </strong><?php echo $this->class12tipdesec->getAtributo('PU12TIPODES');?></li>
 						
 					</ul>
-					<a href="?c=class12tipdesec&m=index" class="btn btn-default" role="button">Regresar</a>  
+					<a href="?c=class12tipdesec&m=index" class="btn btn-danger" role="button">Regresar</a>  
 
 				</div>
 			</div>

@@ -26,7 +26,7 @@ class class22serrvi  extends Conexion
 
 	public function buscar($PU22IDREDVI)
 	{
-		$sql = "SELECT * FROM PU22SERRVI WHERE PU22IDREDVI ='". $PU22IDREDVI ."';";
+		$sql = "call SP22_SERRVI_BUSCAR('".$PU20IDDESAS."');";
 		$result = $this->conexion->ConsultaRetorno($sql);
 		$class22serrvi = $this->convertToclass22serrvi($result);
 		return $class22serrvi;
@@ -34,7 +34,7 @@ class class22serrvi  extends Conexion
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM PU22SERRVI ;";
+		$sql = "SP22_SERRVI_MOSTRAR();";
 		$result = $this->conexion->ConsultaRetorno($sql);
 		return $result;
 	}
