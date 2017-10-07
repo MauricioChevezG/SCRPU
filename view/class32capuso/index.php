@@ -14,8 +14,8 @@ $result = $this->class32capuso->listar();
   <div class="container">
     <h2>Listado de Capacidad de Uso de Suelo</h2>   
     <a href="?c=class32capuso&m=agregar" class="btn btn-primary" role="button">Registrar Capacidad de Uso de Suelo</a>
-    <input href="?c=class32capuso&m=" type="text" class="form-control" role="text">   
-    <br><br>    
+    
+    <br><br><br>  
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>

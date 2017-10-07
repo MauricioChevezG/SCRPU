@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Editar infraestructura</title>
+	<title>Editar Infraestructura</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <center>
 
-    <h2>Editar infraestructura: <?php echo $this->class24infest->getAtributo('PU24DESCINF');?> </h2>
+    <h2>Editar Infraestructura: <?php echo $this->class24infest->getAtributo('PU24DESCINF');?> </h2>
   </center>
   <div class="container">
     <form action="?c=class24infest&m=editar" method="post">

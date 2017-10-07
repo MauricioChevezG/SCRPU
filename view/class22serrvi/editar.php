@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>Editar Servicio de Red Vial</title>
-	<link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="../../datatables/Bootstrap-3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 <body>
   <center>
@@ -18,11 +18,7 @@
       </div>
       <div class="form-group">
         <label for="PU22DESSVI">Descripción del Servicio de Red Vial:</label>
-        <input type="text" class="form-control" id="PU22DESSVI" name="PU22DESSVI" value="<?php echo $this->class22serrvi->getAtributo('PU22DESSVI');?> " >
-      </div>
-      <div class="form-group">
-        <label for="PU22OBSERV">Observaciones</label>
-        <input type="text" class="form-control" id="PU22OBSERV" name="PU22OBSERV" value="<?php echo $this->class22serrvi->getAtributo('PU22OBSERV');?>">
+        <input type="text" class="form-control" id="PU22DESSVI" name="PU22DESSVI" value="<?php echo $this->class22serrvi->getAtributo('PU22DESSVI');?>" >
       </div>
      
       <button type="submit" class="btn btn-success">Editar</button> 

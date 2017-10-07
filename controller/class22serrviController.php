@@ -1,7 +1,4 @@
 <?php 
-//`pu16servae`class22serrvi
-//`PU22IDREDVI`
-//`PU22DESSVI`
 require_once 'model/class22serrvi.php';
 class class22serrviController
 {
@@ -20,7 +17,6 @@ class class22serrviController
 		if ($_POST) {
 			$this->class22serrvi->setAtributo('PU22IDREDVI',$_POST['PU22IDREDVI']);//afalta esto
 			$this->class22serrvi->setAtributo('PU22DESSVI',$_POST['PU22DESSVI']);
-			$this->class22serrvi->setAtributo('PU22OBSERV',$_POST['PU22OBSERV']);
 			$this->class22serrvi->guardar();
 			header('location:?c=class22serrvi&m=index');
 		}
@@ -33,7 +29,6 @@ class class22serrviController
 		if ($_POST) {
 			$this->class22serrvi->setAtributo('PU22IDREDVI',$_POST['PU22IDREDVI']);
 			$this->class22serrvi->setAtributo('PU22DESSVI',$_POST['PU22DESSVI']);
-			$this->class22serrvi->setAtributo('PU22OBSERV',$_POST['PU22OBSERV']);
 			$this->class22serrvi->actualizar();
 			header('location:?c=class22serrvi&m=index');
 		}
@@ -56,4 +51,4 @@ class class22serrviController
 		require_once 'view/class22serrvi/ver.php';
 	}
 }
-?>
+ ?>

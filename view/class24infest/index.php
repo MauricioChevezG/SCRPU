@@ -7,13 +7,13 @@ $result = $this->class24infest->listar();
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Vista infraestructura</title>
+	<title>Vista Infraestructura</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
     <h2>Listado de Infraestructura</h2>   
-    <a href="?c=class24infest&m=agregar" class="btn btn-primary" role="button">Registrar class24infest:</a>
+    <a href="?c=class24infest&m=agregar" class="btn btn-primary" role="button">Registrar Infraestructura</a>
    
     <br>
     <br>
