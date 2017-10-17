@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+
+
 
   <style>
 
@@ -26,24 +29,28 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<header>
+	
+ <script type="text/javascript">
+ 	$('#myTab').tabCollapse(); 
 
+ </script>
 			<form class="form-horizontal">
 
 				<div class="row">
-
-  				<ul class="nav nav-tabs">
+				
+  				<ul id="myTab" class="nav nav-tabs">
    			 		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
     				<li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
     				<li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
    			 		<li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+   			 		<li><a data-toggle="tab" href="#menu4">Menu 4</a></li>
+   			 		<li><a data-toggle="tab" href="#menu5">Menu 5</a></li>
+   			 		<li><a data-toggle="tab" href="#menu6">Menu 6</a></li>
  				</ul>
-
+				
 				</div>
-	
 			</form>
 
-		</header>
 	</div>
 
 			  <div class="tab-content">
