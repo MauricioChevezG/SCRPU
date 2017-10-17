@@ -6,53 +6,65 @@
 	<!--Metadato responsivo de Bootstrap-->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<!--Archivos CSS-->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.min.css">
-
+	
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  <style>
+
+.nav-tabs{
+	background-color: #f5f5f5;
+}
+  
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+    
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
 <body>
 	<div class="container-fluid">
 		<header>
+
 			<form class="form-horizontal">
+
 				<div class="row">
-				    <ul class="nav nav-tabs">
-				        <li class="tab-link current active"><a data-tab="tab-1">Home</a></li>
-				        <li class="tab-link"><a data-tab="tab-2">Menu 1</a></li>
-				        <li class="tab-link"><a data-tab="tab-3">Menu 2</a></li>
-				        <li class="tab-link"><a data-tab="tab-4">Menu 3</a></li>
-				    </ul>
+
+  				<ul class="nav nav-tabs">
+   			 		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    				<li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    				<li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+   			 		<li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+ 				</ul>
+
 				</div>
+	
 			</form>
+
 		</header>
-		<div class="tab-content">
-			<div id="tab-1" class="current">
-				<div class="container-fluid text-center">    
-			        <div class="row">
-			        	<div class="col-sm-2 sidenav">
-				            <p><a href="?c=class03puestos">Link</a></p>
-				            <p><a href="#">Link</a></p>
-				            <p><a href="#">Link</a></p>
-			          	</div>
-			          	<div class="col-sm-8 text-center"> 
-			            	<h1>Sistema de Control y Registro de Planificación Urbana</h1>
-			          	</div>
-			          	<div class="col-sm-2 sidenav">
-			            	<div class="well">
-			              		<p>ADS</p>
-			            	</div>
-			            	<div class="well">
-			              		<p>ADS</p>
-			            	</div>
-			          	</div>
-			        </div>
-		    	</div>
-			</div>
-		</div>
-		<div id="contenido" name="contenido">
+	</div>
+
+			  <div class="tab-content">
+			    <div id="home" class="tab-pane fade in active">
+			      <h3>HOME</h3>
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			    </div>
+			    <div id="menu1" class="tab-pane fade">
+			      <h3>Menu 1</h3>
+			      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			    </div>
+			    <div id="menu2" class="tab-pane fade">
+			      <h3>Menu 2</h3>
+			      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+			    </div>
+			    <div id="menu3" class="tab-pane fade">
+			      <h3>Menu 3</h3>
+			      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			    </div>
+			  </div>
+
+		<div id="contenido" name="contenido" >
 				
 		</div>
