@@ -27,7 +27,7 @@ class class03puestos  extends Conexion
 	{
 		$sql = "CALL SP02_PUESTOS_BUSCAR ('".$PU03IDPUES."');";
 		$result = $this->conexion->consultaRetorno($sql);
-		$cliente = $this->convertToPuestos($result);
+		$cliente = $this->convertToclass03puestos($result);
 		return $cliente;
 	}
 
@@ -56,14 +56,14 @@ class class03puestos  extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertToPuestos($result)
+	public function convertToclass03puestos($result)
 	{
-		$class03puestos = new class03puestos();
+		$class03class03puestos = new class03class03puestos();
 		while ($row = mysqli_fetch_array($result)) {
-			$class03puestos->setAtributo('PU03IDPUES',$row[0]);
-			$class03puestos->setAtributo('PU03PUESTO',$row[1]);
+			$class03class03puestos->setAtributo('PU03IDPUES',$row[0]);
+			$class03class03puestos->setAtributo('PU03PUESTO',$row[1]);
 		}
-		return $class03puestos;
+		return $class03class03puestos;
 	}
 }
  ?>

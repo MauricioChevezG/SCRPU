@@ -21,7 +21,7 @@
                             </span>Menu</a>
                         </h4>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
+                    <div id="collapseOne" class="panel-collapse collapse">
                         <div class="panel-body">
                             <table class="table">
                                 <tr>
@@ -56,7 +56,7 @@
                             </span>Mantenimientos</a>
                         </h4>
                     </div>
-                    <div id="collapseTwo" class="panel-collapse collapse ">
+                    <div id="collapseTwo" class="panel-collapse collapse in">
                         <div class="panel-body">
                             <table class="table">
                                 <tr>
@@ -98,7 +98,7 @@
                                  <tr>
                                     <td>
                                          <span class="glyphicon glyphicon-leaf"></span>
-                                         <a href="?c=class0102usuarios">Aspectos Biofísicos</a>
+                                         <a href="?c=class10aspbio">Aspectos Biofísicos</a>
                                     </td>
                                 </tr>
                                  <tr>
@@ -164,7 +164,7 @@
                                  <tr>
                                     <td>
                                          <span class="glyphicon glyphicon-tree-deciduous"></span>
-                                         <a href="?c=class34clases">Tipo Suelo</a>
+                                         <a href="?c=class35tipsue">Tipo Suelo</a>
                                     </td>
                                 </tr>
                             </table>

@@ -1,14 +1,18 @@
 <?php $result = $this->class22serrvi->listar(); ?>
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Vista Servicio de Red Vial</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Servicio de Red Vial</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <h2>Listado del Servicio de Red Vial</h2>   
      <a href="?c=class22serrvi&m=agregar" class="btn btn-primary" role="button">Registrar Desarrollo</a>
     <br><br>    
@@ -57,7 +61,7 @@
         </tbody>
       </table>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   </body>
   </html>

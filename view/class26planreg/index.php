@@ -1,17 +1,21 @@
 <?php 
-$result = $this->class26planreg->listar(); 
-//class26planreg
-  //`PU06IDACTDES``PU06DESAD`
+$result = $this->class26planreg->listar();
 ?>
 <!DOCTYPE html>
 <html>
+
+
 <head>
-	<meta charset="utf-8">
-	<title>Vista Plan Retulador</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Plan Regulador</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
+
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <h2>Listado del Plan Regulador:</h2>   
     <a href="?c=class26planreg&m=agregar" class="btn btn-primary" role="button">Registrar Plan Regulador:</a>
      
@@ -61,7 +65,7 @@ $result = $this->class26planreg->listar();
         </tbody>
       </table>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   </body>
   </html>

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Detalle del Terreno</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Terreno Frente a Ruta</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
 	<div class="container">
 		<br>
@@ -15,7 +19,6 @@
 					<ul class="list-group">
 						<li class="list-group-item"><strong>Código del Terreno Frete a Ruta: </strong><?php echo $this->class07terrft->getAtributo('PU07IDTFR');?></li>
 						<li class="list-group-item"><strong>Nombre del Terreno Frente a Ruta: </strong><?php echo $this->class07terrft->getAtributo('PU07NOMTFR');?></li>
-						
 					</ul>
 					<a href="?c=class07terrft&m=index" class="btn btn-danger" role="button">Regresar</a>  
 
@@ -23,5 +26,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

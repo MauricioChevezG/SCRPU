@@ -17,7 +17,7 @@ class class10aspbioController
 	{
 		
 		if ($_POST) {
-			$this->class10aspbio->setAtributo('PU10IDASBIO',$_POST['PU10IDASBIO']);//afalta esto
+			$this->class10aspbio->setAtributo('PU10IDASBIO',$_POST['PU10IDASBIO']);
 			$this->class10aspbio->setAtributo('PU10DESCABIO',$_POST['PU10DESCABIO']);
 			$this->class10aspbio->guardar();
 			header('location:?c=class10aspbio&m=index');

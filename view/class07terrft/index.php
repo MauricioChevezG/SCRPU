@@ -1,15 +1,17 @@
 <?php 
 $result = $this->class07terrft->listar(); 
-//class07terrft
-  //`PU06IDACTDES``PU06DESAD`
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Listado de Terreno Frete a Ruta</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Terreno Frente a Ruta</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
   <div class="container">
     <h2>Listado de Terreno Frente a Ruta</h2>   
@@ -60,7 +62,7 @@ $result = $this->class07terrft->listar();
         </tbody>
       </table>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   </body>
   </html>

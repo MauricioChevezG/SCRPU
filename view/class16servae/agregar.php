@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Nuevo Servicio de Electricidad y Agua</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Servicio de Agua y Electricidad</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
   <center>
     <h2>Agregar Nuevo Servicio de Agua y Electricidad:</h2>
   </center>
-  <div class="container">
+  <div class="container-fluid">
     <form action="?c=class16servae&m=agregar" method="post">
      	<div class="form-group">
         <label for="PU16IDSAE">Código del servicio</label>
@@ -22,5 +27,8 @@
       <a href="?c=class16servae&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

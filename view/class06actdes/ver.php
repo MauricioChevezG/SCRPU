@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Detalle Actividad a Desarrollar</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Actividad a Desarrollar</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-	<div class="container">
-		<br>
+    <div class="container-fluid">
+        	<br>
 		<div class="row">
 			<div class="panel panel-default">
 				<div class="panel-heading">Detalle del Actividad a Desarrollar</div>
@@ -22,6 +26,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
