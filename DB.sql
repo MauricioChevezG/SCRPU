@@ -30,7 +30,7 @@ CREATE TABLE `pu01regusu` (
 
 /*Data for the table `pu01regusu` */
 
-insert  into `pu01regusu`(`PU01CEDUSU`,`PU01NOMUSU`,`PU01APE1USU`,`PU01APE2USU`) values (12,'abraham Josue','Obando','Villegas'),(123,'Alberth','Esquivel','Alvarado'),(1234,'Mauricio','Chevez','Gutierrez'),(12345,'Alberth','Espinoza','Ortiz');
+insert  into `pu01regusu`(`PU01CEDUSU`,`PU01NOMUSU`,`PU01APE1USU`,`PU01APE2USU`) values (1,'Mauricio','ChÃ©vez','Gutierrez ');
 
 /*Table structure for table `pu02infusu` */
 
@@ -51,6 +51,8 @@ CREATE TABLE `pu02infusu` (
 
 /*Data for the table `pu02infusu` */
 
+insert  into `pu02infusu`(`PU01CEDUSU`,`PU02TELUSU`,`PU02CORUSU`,`PU03IDPUES`,`PU02USUARIO`,`PU02CLAVE`) values (1,'85875657','Mauro@gmail',1,'','1234');
+
 /*Table structure for table `pu03puestos` */
 
 DROP TABLE IF EXISTS `pu03puestos`;
@@ -62,6 +64,8 @@ CREATE TABLE `pu03puestos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu03puestos` */
+
+insert  into `pu03puestos`(`PU03IDPUES`,`PU03PUESTO`) values (1,'Coordinador');
 
 /*Table structure for table `pu04regtra` */
 
@@ -142,6 +146,8 @@ CREATE TABLE `pu08regcor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu08regcor` */
+
+insert  into `pu08regcor`(`PU08IDGPS`,`PU08NORTE`,`PU08ESTE`,`PU08ALTITUD`) values (1,1,1,2);
 
 /*Table structure for table `pu09desceg` */
 
@@ -340,7 +346,6 @@ DROP TABLE IF EXISTS `pu22serrvi`;
 CREATE TABLE `pu22serrvi` (
   `PU22IDREDVI` int(11) NOT NULL,
   `PU22DESSVI` varchar(30) NOT NULL,
-  `PU22OBSERV` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`PU22IDREDVI`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
