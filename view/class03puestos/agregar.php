@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body> -->
     <div class="container-fluid">
           <center>
     <h2>Agregar nuevo puesto</h2>
@@ -28,8 +28,8 @@
       <a href="?c=class03puestos&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
+ <!--    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
-</html>
+</html> -->

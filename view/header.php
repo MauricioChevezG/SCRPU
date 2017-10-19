@@ -7,7 +7,7 @@
     <title>SCRPU</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-
+    
 
     <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -25,17 +25,6 @@
     }
   </style>
 
-</script>
-<script>
-$(document).ready(function(){
-    $("puesto").click(function(){
-        $("#div1").load("?c=class03puestos");
-    });
-});
-</script>
-
-
-
 </head>
 
 <body>
@@ -52,8 +41,8 @@ $(document).ready(function(){
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Dashboard</a></li>
-        <div class="panel-group" id="accordion">
+        <li class="active"><a href="index.php">Dashboard<span class="sr-only">(current)</span></a></li>
+         <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
@@ -109,7 +98,7 @@ $(document).ready(function(){
                                     <td>
                             
                                           <span class="glyphicon glyphicon-list-alt"></span>
-                                         <a  href="?c=class03puestos">Puestos</a>
+                                         <a href="#" onclick="vistaPuesto();">Puestos</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -292,7 +281,8 @@ $(document).ready(function(){
     <div class="col-sm-3 sidenav hidden-xs">
       <h2>SCRPU</h2>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Dashboard</a></li>
+       
+        <li class="active"><a href="index.php">Dashboard<span class="sr-only">(current)</span></a></li>
        <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -349,7 +339,7 @@ $(document).ready(function(){
                                     <td>
                             
                                           <span class="glyphicon glyphicon-list-alt"></span>
-                                         <a id="puesto"  href="">Puestos</a>
+                                         <a href="#" onclick="vistaPuesto();">Puestos</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -528,7 +518,7 @@ $(document).ready(function(){
 
    <div class="col-sm-9">
     <br>
-   <div class="well" id="div1">
+   <div class="container-fluid well" id="contenido">
         
       </div>
     </div>

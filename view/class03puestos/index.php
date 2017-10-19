@@ -1,8 +1,8 @@
 <?php $result = $this->class03puestos->listar(); ?>
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 
-<!-- <head>
+ <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vista Puestos</title>
@@ -13,7 +13,7 @@
 <body> -->
     <div class="container-fluid">
         <h2>Listado de puestos</h2>   
-    <a href="?c=class03puestos&m=agregar" class="btn btn-primary" role="button">Registrar puesto</a>    
+    <a href="#" onclick="agregarPuesto();" class="btn btn-primary" role="button">Registrar puesto</a>    
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">

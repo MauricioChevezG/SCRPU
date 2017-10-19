@@ -11,6 +11,21 @@
 
 	   <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+    	
+    	function vistaPuesto(){
+		$("#contenido").load("?c=class03puestos");
+    	}
+         
+        function agregarPuesto(){
+		$("#contenido").load("?c=class03puestos&m=agregar");
+    	}
+    	
+
+
+
+</script>
 </body>
 
 </html>
