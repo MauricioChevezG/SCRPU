@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<!-- <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vista Puestos</title>
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body> -->
     <div class="container-fluid">
         <h2>Listado de puestos</h2>   
     <a href="?c=class03puestos&m=agregar" class="btn btn-primary" role="button">Registrar puesto</a>    
@@ -59,8 +59,8 @@
         </tbody>
       </table>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
+<!--     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
-</html>
+</html> -->
