@@ -520,10 +520,5 @@
     <br>
    <div class="container-fluid well" id="contenido">
         
-      </div>
-    </div>
-
-
-
-  </div>
-</div>
+        
+  

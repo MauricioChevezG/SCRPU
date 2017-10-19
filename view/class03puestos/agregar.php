@@ -25,7 +25,18 @@
       </div>
 
       <button type="submit" class="btn btn-success">Guardar puesto</button> 
-      <a href="?c=class03puestos&m=index" class="btn btn-danger" role="button">Regresar</a>    
+      <a id="regresar" class="btn btn-danger" role="button">Regresar</a>  
+
+      <script type="text/javascript">
+        $("#regresar").click(function(){
+        var bool=confirm("XXXXX----DESEA REGRESAR----XXXXX?");
+        if(bool){
+        $("#contenido").load("?c=class03puestos");
+        }else{
+        $.alert("CANCELADO");
+        }
+      });
+      </script> 
      </form>
     </div>
  <!--    <script src="assets/js/jquery.min.js"></script>

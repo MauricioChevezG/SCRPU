@@ -1,6 +1,9 @@
   
   
-
+    </div>
+    </div>
+  </div>
+</div>
 
 		<footer class="form-horizontal text-center">
 			<p>DERECHOS RESERVADOS MUNICIPALIDAD DE NICOYA, PLANIFICACIÓN URBANA ®</p>
@@ -10,22 +13,9 @@
 		</footer>
 
 	   <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
-    <script>
-    	
-    	function vistaPuesto(){
-		$("#contenido").load("?c=class03puestos");
-    	}
-         
-        function agregarPuesto(){
-		$("#contenido").load("?c=class03puestos&m=agregar");
-    	}
-    	
-
-
-
-</script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="public/js/rutasVistas.js"></script>	
+    
 </body>
 
 </html>
