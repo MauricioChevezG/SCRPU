@@ -291,7 +291,7 @@
                             </span>Menu</a>
                         </h4>
                     </div>
-                    <div id="collapseUno" class="panel-collapse collapse in ">
+                    <div id="collapseUno" class="panel-collapse collapse">
                         <div class="panel-body">
                             <table class="table">
                                 <tr>
@@ -518,7 +518,7 @@
 
    <div class="col-sm-9">
     <br>
-   <div class="container-fluid well" id="contenido">
+   <div class=" well" id="contenido">
         
         
   

@@ -10,9 +10,9 @@ class class03puestosController
 	}
 	public function index()
 	{
-		
+		//require_once 'view/header.php';
 		require_once 'view/class03puestos/index.php';
-
+		//require_once 'view/header.php';
 	}
 	public function agregar()
 	{
