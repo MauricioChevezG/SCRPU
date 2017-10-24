@@ -58,12 +58,12 @@ class class03puestos  extends Conexion
 
 	public function convertToclass03puestos($result)
 	{
-		$class03class03puestos = new class03class03puestos();
+		$class03puestos = new class03puestos();
 		while ($row = mysqli_fetch_array($result)) {
-			$class03class03puestos->setAtributo('PU03IDPUES',$row[0]);
-			$class03class03puestos->setAtributo('PU03PUESTO',$row[1]);
+			$class03puestos->setAtributo('PU03IDPUES',$row[0]);
+			$class03puestos->setAtributo('PU03PUESTO',$row[1]);
 		}
-		return $class03class03puestos;
+		return $class03puestos;
 	}
 }
  ?>

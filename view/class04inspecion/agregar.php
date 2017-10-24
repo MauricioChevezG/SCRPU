@@ -14,7 +14,7 @@
         <center>
     <h2>Agregar nuevo usuario</h2>
   </center>
-    <form action="?c=class04inspeccion&m=agregar" method="post">
+    <form action="?c=class0102usuarios&m=agregar" method="post">
       <div class="form-group">
         <label for="PU01CEDUSU">Cédula:</label>
         <input type="text" class="form-control" id="PU01CEDUSU" name="PU01CEDUSU">
@@ -53,7 +53,7 @@
       </div>
 
       <button type="submit" class="btn btn-success">Guardar Usuario</button> 
-      <a href="?c=class04inspeccion&m=index" class="btn btn-danger" role="button">Regresar</a>    
+      <a href="?c=class0102usuarios&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
     </div>
     <script src="assets/js/jquery.min.js"></script>
