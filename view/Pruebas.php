@@ -1,74 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 550px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-        
-    /* On small screens, set height to 'auto' for the grid */
-    @media screen and (max-width: 767px) {
-      .row.content {height: auto;} 
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Usuario</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/js/jquery-ui/jquery-ui.css">
+      <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 </head>
+
 <body>
-
-<nav class="navbar navbar-inverse visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Dashboard</a></li>
-        <li><a href="#">Age</a></li>
-        <li><a href="#">Gender</a></li>
-        <li><a href="#">Geo</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
-      <h2>Logo</h2>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Dashboard</a></li>
-        <li><a href="#section2">Age</a></li>
-        <li><a href="#section3">Gender</a></li>
-        <li><a href="#section3">Geo</a></li>
-      </ul><br>
-    </div>
-    <br>
-    
-    <div class="col-sm-9">
-      <div class="well">
-        <h4>Dashboard</h4>
-        <p>Some text..</p>
+    <div class="container-fluid">
+        <center>
+    <h2>Inspeccion</h2>
+  </center>
+    <form action="?c=class0102usuarios&m=agregar" method="post">
+<div class=" container-fluid    well"> 
+      <center>
+    <h4>wee</h4>
+  </center>
+  <div class="  form-group  ">
+      <div class="col-xs-2 text-center">
+        <label for="PU08NORTE">Numero de Tramite:</label>
+        <input type="text" class="form-control" id="PU08NORTE" name="PU08NORTE">
       </div>
-  
-     
-    </div>
-  </div>
+       <br>
+       <div class="col-xs-2 text-center">
+       <p>Fecha: <input type="text" id="datepicker"></p>
+       <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+      </div> </div>
 </div>
 
+      <div class="container-fluid  well   "> 
+       <center>
+    <h4>Agregar Localización</h4>
+  </center>
+  <div class="  form-group  ">
+     <div class=" col-xs-2 text-center">
+      
+        <label for="PU08NORTE">Norte:</label>
+        <input type="text" class="form-control" id="PU08NORTE" name="PU08NORTE">
+        
+      </div>
+      <div class="col-xs-2 text-center">
+          
+        <label for="PU08ESTE">Este:</label>
+        <input type="text" class="form-control" id="PU08ESTE" name="PU08ESTE">
+      
+      </div>
+      <div class="col-xs-2 text-center">
+         
+        <label for="PU08ALTITUD">Altitud:</label>
+        <input type="text" class="form-control" id="PU08ALTITUD" name="PU08ALTITUD">
+      
+      </div> </div>
+      </div>
+
+      <div class="container-fluid    well"> 
+        <center>
+    <h4>Terreno frente a Ruta</h4>
+  </center>
+      <div class="checkbox">
+      <label class="checkbox-inline">
+    <input type="checkbox" value="">Cantonal.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Nacional.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Calle fisicamente.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Solo en Plano.</label>
+       <br>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">No existe</label>
+</div>
+ </div>
+<div class="container-fluid    well"> 
+        <center>
+    <h4>Descripción del Espacio Geográfico</h4>
+  </center>
+      <div class="checkbox ">
+      <label class="checkbox-inline">
+    <input type="checkbox" value="">Topografía Plana.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Topografía Semiplano.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Topografía con depresión.</label><br>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Existen Movimientos de Tierra.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Futuro Movimientos de Tierra.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Topografía Irregular.</label><br>
+      <label class="checkbox-inline">
+      <input type="checkbox" value="">Otros.</label>
+</div>
+ </div>
+
+
+
+
+      <button type="submit" class="btn btn-success">Guardar Usuario</button> 
+      <a href="?c=class0102usuarios&m=index" class="btn btn-danger" role="button">Regresar</a>    
+     </form>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>

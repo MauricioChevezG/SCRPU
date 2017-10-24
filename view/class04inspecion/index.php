@@ -1,5 +1,5 @@
 <?php 
-$result = $this->class0102usuarios->listar(); 
+$result = $this->class04inspeccion->listar(); 
 ?>
 
 <!DOCTYPE html>
@@ -16,9 +16,9 @@ $result = $this->class0102usuarios->listar();
 <body>
     <div class="container-fluid">
         <h2>Listado de usuarios</h2>   
-    <a  href="?c=class0102usuarios&m=agregar" class="btn btn-primary" role="button">Registrar usuario</a>    
+    <a  href="?c=class04inspeccion&m=agregar" class="btn btn-primary" role="button">Registrar usuario</a>    
   
-    <br><br>    
+    <!-- <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
@@ -49,15 +49,15 @@ $result = $this->class0102usuarios->listar();
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=class0102usuarios&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=class04inspeccion&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=class0102usuarios&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class04inspeccion&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=class0102usuarios&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class04inspeccion&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>
@@ -72,7 +72,7 @@ $result = $this->class0102usuarios->listar();
             </div>
           <?php endif ?>
         </tbody>
-      </table>
+      </table> -->
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
