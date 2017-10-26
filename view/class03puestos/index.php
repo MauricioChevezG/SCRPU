@@ -1,27 +1,11 @@
 <?php $result = $this->class03puestos->listar(); ?>
-<!--<!DOCTYPE html>
-<html>
 
- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vista Puestos</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body> -->
     <div class="container-fluid">
         <h2>Listado de puestos</h2>   
     <a href="#" onclick="agregarPuesto();" class="btn btn-primary" role="button">Registrar puesto</a>
-    <input class="form-control" id="busqueda" type="text" placeholder="Search..">
-    <br>
-    <div id="contenido">
-      
-    </div>
     <br><br>    
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered">
+      <table class="display table table-bordered" id="grilla-puestos" cellpadding="0" cellspacing="0" border="0" width="100%">
         <thead>
           <tr>
             <th>Código del Puesto</th>
@@ -64,8 +48,3 @@
         </tbody>
       </table>
     </div>
-<!--     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
-</html> -->

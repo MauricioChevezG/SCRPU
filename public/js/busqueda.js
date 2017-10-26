@@ -1,30 +1,16 @@
-$(document).ready(function(){
-        var consulta;
-        //hacemos focus al campo de búsqueda
-        $("#busqueda").focus();
-                                                                                                     
-        //comprobamos si se pulsa una tecla
-        $("#busqueda").keyup(function(e){
-                                      
-              //obtenemos el texto introducido en el campo de búsqueda
-              consulta = $("#busqueda").val();
-              //hace la búsqueda                                                                                  
-              $.ajax({
-                    type: "POST",
-                    url: "?c=class03puestos&m=buscadinamica",
-                    data: "b="+consulta,
-                    dataType: "html",
-                    beforeSend: function(){
-                    //imagen de carga
-                    $("#contenido").html("<p align='center'><img src='ajax-loader.gif' /></p>");
-                    },
-                    error: function(){
-                    alert("error petición ajax");
-                    },
-                    success: function(data){                                                    
-                    $("#contenido").empty();
-                    $("#contenido").append(data);                                                             
-                    }
-              });                                                                         
-        });                                                     
-}); 
+$(document).ready(function() {
+        var dataTable = $('#grid-puestos').DataTable( {
+            "processing": true,
+            "serverSide": true,
+            "ajax":{
+                url :"employee-grid-data.php", // json datasource
+                type: "post",  // method  , by default get
+                error: function(){  // error handling
+                    $(".grid-puestos-error").html("");
+                    $("#grid-puestos").append('<tbody class="grid-puestos-error"><tr><td colspan="3">No data found in the server</td></tr></tbody>');
+                    $("#employee-grid_processing").css("display","none");
+ 
+                }
+            }
+        } );
+    } );

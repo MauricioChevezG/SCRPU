@@ -10,10 +10,8 @@
     </footer>
 	<script src="assets/bootstrap/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="public/js/efectosvista.js"></script>
+  <script src="assets/datatables/js/jquery.dataTables.min.js"></script>
   <script src="public/js/rutasVistas.js"></script>
-  <!--<script type="text/javascript" src="public/js/mostrarajax.js"></script>-->
-  <script src="public/js/busqueda.js"></script>
+  <script src="public/js/indicetablas.js"></script>
 </body>
-
 </html>

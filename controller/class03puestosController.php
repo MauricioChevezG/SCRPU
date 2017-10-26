@@ -10,9 +10,9 @@ class class03puestosController
 	}
 	public function index()
 	{
-		//require_once 'view/header.php';
+		require_once 'view/header.php';
 		require_once 'view/class03puestos/index.php';
-		//require_once 'view/header.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -54,7 +54,7 @@ class class03puestosController
 	}
 
 	public function buscadinamica(){
-		$this->class03puestos->setAtributo()
+		$this->class03puestos->setAtributo('PU03IDPUES',$_REQUEST['id']);
 	}
 }
 ?>

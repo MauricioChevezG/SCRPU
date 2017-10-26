@@ -17,10 +17,9 @@ $result = $this->class0102usuarios->listar();
     <div class="container-fluid">
         <h2>Listado de usuarios</h2>   
     <a  href="?c=class0102usuarios&m=agregar" class="btn btn-primary" role="button">Registrar usuario</a>    
-  
     <br><br>    
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered">
+      <table class="table table-bordered table-hover">
         <thead>
           <tr>
             <th>Cédula</th>
