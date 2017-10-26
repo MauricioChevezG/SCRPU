@@ -1,7 +1,6 @@
 <?php 
 $result = $this->class04inspeccion->listar(); 
 ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -16,20 +15,20 @@ $result = $this->class04inspeccion->listar();
 <body>
     <div class="container-fluid">
         <h2>Listado de usuarios</h2>   
-    <a  href="?c=class04inspeccion&m=agregar" class="btn btn-primary" role="button">Registrar usuario</a>    
+    <a  href="?c=class04inspeccion&m=agregar" class="btn btn-primary" role="button">Registrar</a>    
   
-    <!-- <br><br>    
+    <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Cédula</th>
-            <th>Nombre</th>
-            <th>Primer Apellido</th>
-            <th>Segundo Apellido</th>
-            <th>Teléfono</th>
-            <th>Correo</th>
-            <th>Puesto</th>           
+            <th>Numero Trámite</th>
+            <th>Fecha</th>
+            <th>T.F.R</th>
+            <th>Norte</th>
+            <th>Este</th>
+            <th>Altitud</th>
+            <th>Tipo Desarrollo</th>           
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -72,7 +71,7 @@ $result = $this->class04inspeccion->listar();
             </div>
           <?php endif ?>
         </tbody>
-      </table> -->
+      </table> 
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

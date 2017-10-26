@@ -1,5 +1,4 @@
 <?php 
-
 require_once 'model/class04inspeccion.php';
 class class04inspeccionController
 {
@@ -15,16 +14,44 @@ class class04inspeccionController
 	public function agregar()
 	{
 		if ($_POST) {
-			$this->class04inspeccion->setAtributo('PU01CEDUSU',$_POST['PU01CEDUSU']);
-			$this->class04inspeccion->setAtributo('PU01NOMUSU',$_POST['PU01NOMUSU']);
-			$this->class04inspeccion->setAtributo('PU01APE1USU',$_POST['PU01APE1USU']);
-			$this->class04inspeccion->setAtributo('PU01APE2USU',$_POST['PU01APE2USU']);
-			$this->class04inspeccion->setAtributo('PU02TELUSU',$_POST['PU02TELUSU']);
-			$this->class04inspeccion->setAtributo('PU02CORUSU',$_POST['PU02CORUSU']);
-			$this->class04inspeccion->setAtributo('PU03IDPUES',$_POST['PU03IDPUES']);
-			$this->class04inspeccion->setAtributo('PU02USUARIO',$_POST['PU02USUARIO']);
-			$this->class04inspeccion->setAtributo('PU02CLAVE',$_POST['PU02CLAVE']);
-			$this->class04inspeccion->guardarclass04inspeccion();
+			$this->class04inspeccion->setAtributo('PU04IDTRA',$_POST['PU04IDTRA']);
+			$this->class04inspeccion->setAtributo('PU04FETRA',$_POST['PU04FETRA']);
+			$this->class04inspeccion->setAtributo('PU07IDTFR',$_POST['PU07IDTFR']);
+			$this->class04inspeccion->setAtributo('PU04NORTE',$_POST['PU04NORTE']);
+			$this->class04inspeccion->setAtributo('PU04ESTE',$_POST['PU04ESTE']);
+			$this->class04inspeccion->setAtributo('PU04ALTITUD',$_POST['PU04ALTITUD']);
+			$this->class04inspeccion->setAtributo('PU12IDTDESEC',$_POST['PU12IDTDESEC']);
+
+			$this->class04inspeccion->setAtributo('PU09IDDEG1',$_POST['PU09IDDEG1']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG2',$_POST['PU09IDDEG2']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG3',$_POST['PU09IDDEG3']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG4',$_POST['PU09IDDEG4']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG5',$_POST['PU09IDDEG5']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG6',$_POST['PU09IDDEG6']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG7',$_POST['PU09IDDEG7']);
+
+			$this->class04inspeccion->setAtributo('PU10IDASBIO1',$_POST['PU10IDASBIO1']);
+			$this->class04inspeccion->setAtributo('PU10IDASBIO2',$_POST['PU10IDASBIO2']);
+			$this->class04inspeccion->setAtributo('PU10IDASBIO3',$_POST['PU10IDASBIO3']);
+			$this->class04inspeccion->setAtributo('PU10IDASBIO4',$_POST['PU10IDASBIO4']);
+			$this->class04inspeccion->setAtributo('PU10IDASBIO5',$_POST['PU10IDASBIO5']);
+			$this->class04inspeccion->setAtributo('PU10IDASBIO6',$_POST['PU10IDASBIO6']);
+	
+            $this->class04inspeccion->setAtributo('PU13IDAAP1',$_POST['PU13IDAAP1']);
+            $this->class04inspeccion->setAtributo('PU13IDAAP2',$_POST['PU13IDAAP2']);
+			$this->class04inspeccion->setAtributo('PU13IDAAP3',$_POST['PU13IDAAP3']);
+			$this->class04inspeccion->setAtributo('PU13IDAAP4',$_POST['PU13IDAAP4']);
+			$this->class04inspeccion->setAtributo('PU13IDAAP5',$_POST['PU13IDAAP5']);
+			$this->class04inspeccion->setAtributo('PU13IDAAP6',$_POST['PU13IDAAP6']);
+			$this->class04inspeccion->setAtributo('PU13IDAAP7',$_POST['PU13IDAAP7']);	
+		
+		 	$this->class04inspeccion->setAtributo('PU06IDACTDES1',$_POST['PU06IDACTDES1']);
+            $this->class04inspeccion->setAtributo('PU06IDACTDES2',$_POST['PU06IDACTDES2']);
+			$this->class04inspeccion->setAtributo('PU06IDACTDES3',$_POST['PU06IDACTDES3']);
+			$this->class04inspeccion->setAtributo('PU06IDACTDES4',$_POST['PU06IDACTDES4']);
+			$this->class04inspeccion->setAtributo('PU06IDACTDES5',$_POST['PU06IDACTDES5']);
+			$this->class04inspeccion->setAtributo('PU06IDACTDES6',$_POST['PU06IDACTDES6']);
+			$this->class04inspeccion->guardar();
 			header('location:?c=class04inspeccion&m=index');
 		}
 		else{
@@ -34,13 +61,43 @@ class class04inspeccionController
 	public function editar()
 	{
 		if ($_POST) {
-			$this->class04inspeccion->setAtributo('PU01CEDUSU',$_POST['PU01CEDUSU']);
-			$this->class04inspeccion->setAtributo('PU01NOMUSU',$_POST['PU01NOMUSU']);
-			$this->class04inspeccion->setAtributo('PU01APE1USU',$_POST['PU01APE1USU']);
-			$this->class04inspeccion->setAtributo('PU01APE2USU',$_POST['PU01APE2USU']);
-			$this->class04inspeccion->setAtributo('PU02TELUSU',$_POST['PU02TELUSU']);
-			$this->class04inspeccion->setAtributo('PU02CORUSU',$_POST['PU02CORUSU']);
-			$this->class04inspeccion->setAtributo('PU03IDPUES',$_POST['PU03IDPUES']);
+			$this->class04inspeccion->setAtributo('PU04IDTRA',$_POST['PU04IDTRA']);
+			$this->class04inspeccion->setAtributo('PU04FETRA',$_POST['PU04FETRA']);
+			$this->class04inspeccion->setAtributo('PU07IDTFR',$_POST['PU07IDTFR']);
+			$this->class04inspeccion->setAtributo('PU04NORTE',$_POST['PU04NORTE']);
+			$this->class04inspeccion->setAtributo('PU04ESTE',$_POST['PU04ESTE']);
+			$this->class04inspeccion->setAtributo('PU04ALTITUD',$_POST['PU04ALTITUD']);
+			$this->class04inspeccion->setAtributo('PU12IDTDESEC',$_POST['PU12IDTDESEC']);
+
+			$this->class04inspeccion->setAtributo('PU09IDDEG1',$_POST['PU09IDDEG1']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG2',$_POST['PU09IDDEG2']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG3',$_POST['PU09IDDEG3']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG4',$_POST['PU09IDDEG4']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG5',$_POST['PU09IDDEG5']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG6',$_POST['PU09IDDEG6']);
+			$this->class04inspeccion->setAtributo('PU09IDDEG7',$_POST['PU09IDDEG7']);
+
+			$this->class04inspeccion->setAtributo('PU10IDASBIO1',$_POST['PU10IDASBIO1']);
+			$this->class04inspeccion->setAtributo('PU10IDASBIO2',$_POST['PU10IDASBIO2']);
+			$this->class04inspeccion->setAtributo('PU10IDASBIO3',$_POST['PU10IDASBIO3']);
+			$this->class04inspeccion->setAtributo('PU10IDASBIO4',$_POST['PU10IDASBIO4']);
+			$this->class04inspeccion->setAtributo('PU10IDASBIO5',$_POST['PU10IDASBIO5']);
+			$this->class04inspeccion->setAtributo('PU10IDASBIO6',$_POST['PU10IDASBIO6']);
+	
+            $this->class04inspeccion->setAtributo('PU13IDAAP1',$_POST['PU13IDAAP1']);
+            $this->class04inspeccion->setAtributo('PU13IDAAP2',$_POST['PU13IDAAP2']);
+			$this->class04inspeccion->setAtributo('PU13IDAAP3',$_POST['PU13IDAAP3']);
+			$this->class04inspeccion->setAtributo('PU13IDAAP4',$_POST['PU13IDAAP4']);
+			$this->class04inspeccion->setAtributo('PU13IDAAP5',$_POST['PU13IDAAP5']);
+			$this->class04inspeccion->setAtributo('PU13IDAAP6',$_POST['PU13IDAAP6']);
+			$this->class04inspeccion->setAtributo('PU13IDAAP7',$_POST['PU13IDAAP7']);	
+		
+		 	$this->class04inspeccion->setAtributo('PU06IDACTDES1',$_POST['PU06IDACTDES1']);
+            $this->class04inspeccion->setAtributo('PU06IDACTDES2',$_POST['PU06IDACTDES2']);
+			$this->class04inspeccion->setAtributo('PU06IDACTDES3',$_POST['PU06IDACTDES3']);
+			$this->class04inspeccion->setAtributo('PU06IDACTDES4',$_POST['PU06IDACTDES4']);
+			$this->class04inspeccion->setAtributo('PU06IDACTDES5',$_POST['PU06IDACTDES5']);
+			$this->class04inspeccion->setAtributo('PU06IDACTDES6',$_POST['PU06IDACTDES6']);
 			$this->class04inspeccion->actualizar();
 			header('location:?c=class04inspeccion&m=index');
 		}
@@ -52,7 +109,7 @@ class class04inspeccionController
 
 	public function eliminar()
 	{
-		$this->class04inspeccion->setAtributo('PU01CEDUSU',$_REQUEST['id']);
+		$this->class04inspeccion->setAtributo('PU04IDTRA',$_REQUEST['id']);
 		$this->class04inspeccion->eliminar();
 		header('location:?c=class04inspeccion&m=index');
 	}
