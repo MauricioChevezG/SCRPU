@@ -52,5 +52,9 @@ class class03puestosController
 		$this->class03puestos = $this->class03puestos->buscar($_REQUEST['id']);
 		require_once 'view/class03puestos/ver.php';
 	}
+
+	public function buscadinamica(){
+		$this->class03puestos->setAtributo()
+	}
 }
 ?>

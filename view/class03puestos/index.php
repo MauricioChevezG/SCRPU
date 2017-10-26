@@ -13,7 +13,12 @@
 <body> -->
     <div class="container-fluid">
         <h2>Listado de puestos</h2>   
-    <a href="#" onclick="agregarPuesto();" class="btn btn-primary" role="button">Registrar puesto</a>    
+    <a href="#" onclick="agregarPuesto();" class="btn btn-primary" role="button">Registrar puesto</a>
+    <input class="form-control" id="busqueda" type="text" placeholder="Search..">
+    <br>
+    <div id="contenido">
+      
+    </div>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered">
