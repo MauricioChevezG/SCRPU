@@ -7,11 +7,11 @@ class class04inspeccion extends Conexion
 {
 	private $PU04IDTRA;
 	private $PU04FETRA;
+	private $PU07IDTFR;
 	private $PU04NORTE;
 	private $PU04ESTE;
 	private $PU04ALTITUD;
-	private $PU07IDTFR;
-	private $PU08IDGPS;
+	private $PU12IDTDESEC;
 //ESPACIO GEOGRAFICO
 	private $PU09IDDEG1;
 	private $PU09IDDEG2;
@@ -27,14 +27,7 @@ class class04inspeccion extends Conexion
 	private $PU10IDASBIO4;
 	private $PU10IDASBIO5;
 	private $PU10IDASBIO6;
-//TIPO DESARROLLO EN EL SECTOR	
-	private $PU12IDTDESEC1;
-	private $PU12IDTDESEC2;
-	private $PU12IDTDESEC3;
-	private $PU12IDTDESEC4;
-
-
-//AFECTACION DE AREAS DE PROTECCION
+	//AFECTACION DE AREAS DE PROTECCION
 	private $PU13IDAAP1;
 	private $PU13IDAAP2;
 	private $PU13IDAAP3;
@@ -42,6 +35,15 @@ class class04inspeccion extends Conexion
 	private $PU13IDAAP5;
 	private $PU13IDAAP6;
 	private $PU13IDAAP7;
+
+//ACTIVIDAD A DESARROLLAR
+	private $PU06IDACTDES1;
+	private $PU06IDACTDES2;
+	private $PU06IDACTDES3;
+	private $PU06IDACTDES4;
+	private $PU06IDACTDES5;
+	private $PU06IDACTDES6;
+	
 	// private $PU15IDSERVI;
 
 
@@ -80,10 +82,44 @@ class class04inspeccion extends Conexion
 	public function guardar()
 	{
 
-		
+		$sql = "CALL SP03_REGISTROTRA_GUARDAR(
+		'$this->PU04IDTRA',
+		'$this->PU04FETRA',
+		'$this->PU07IDTFR',
+		'$this->PU04NORTE',
+		'$this->PU04ESTE',
+		'$this->PU04ALTITUD',
+		'$this->PU12IDTDESEC',
 
-		$sql = "call SP01_REGINFUSU_GUARDAR('$this->PU01CEDUSU','$this->PU01NOMUSU','$this->PU01APE1USU','$this->PU01APE2USU',
-	'$this->PU02TELUSU','$this->PU02CORUSU','$this->PU03IDPUES','$this->PU02class04inspeccion','$this->PU02CLAVE')";	
+		'$this->PU09IDDEG1',
+		'$this->PU09IDDEG2',
+		'$this->PU09IDDEG3',
+		'$this->PU09IDDEG4',
+		'$this->PU09IDDEG5',
+		'$this->PU09IDDEG6',
+		'$this->PU09IDDEG7,
+
+		'$this->PU10IDASBIO1',
+		'$this->PU10IDASBIO2',
+		'$this->PU10IDASBIO3',
+		'$this->PU10IDASBIO4',
+		'$this->PU10IDASBIO5',
+		'$this->PU10IDASBIO6',
+
+		'$this->PU13IDAAP1',
+		'$this->PU13IDAAP2',
+		'$this->PU13IDAAP3',
+		'$this->PU13IDAAP4',
+		'$this->PU13IDAAP5',
+		'$this->PU13IDAAP6',
+		'$this->PU13IDAAP7',
+		
+		'$this->PU06IDACTDES1',
+		'$this->PU06IDACTDES2',
+		'$this->PU06IDACTDES3',
+		'$this->PU06IDACTDES4',
+		'$this->PU06IDACTDES5',
+		'$this->PU06IDACTDES6')";
 
 		$this->conexion->consultaSimple($sql);
 	}

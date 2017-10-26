@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -5,12 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  
+
     <title>Nuevo Usuario</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -111,7 +109,26 @@
       <input type="checkbox" value="">Otros.</label>
 </div>
  </div>
-
+<div class="container-fluid    well"> 
+        <center>
+    <h4>Descripción Aspectos Biofisicos</h4>
+  </center>
+      <div class="checkbox ">
+      <label class="checkbox-inline">
+    <input type="checkbox" value="">Vegetación de Jardín.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Tipo Pasto.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Bosque Secundario.</label><br>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Bosque Primario.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Arboles Dispersos.</label>
+    <br>
+      <label class="checkbox-inline">
+      <input type="checkbox" value="">Otros.</label>
+</div>
+ </div>
 
 
 
@@ -119,6 +136,13 @@
       <a href="?c=class0102usuarios&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
     </div>
+
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-ui/jquery-ui.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
