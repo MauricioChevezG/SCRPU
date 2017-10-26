@@ -30,7 +30,7 @@ CREATE TABLE `pu01regusu` (
 
 /*Data for the table `pu01regusu` */
 
-insert  into `pu01regusu`(`PU01CEDUSU`,`PU01NOMUSU`,`PU01APE1USU`,`PU01APE2USU`) values (1,'Mauricio','ChÃ©vez','Gutierrez ');
+insert  into `pu01regusu`(`PU01CEDUSU`,`PU01NOMUSU`,`PU01APE1USU`,`PU01APE2USU`) values (12,'abraham Josue','Obando','Villegas'),(123,'Alberth','Esquivel','Alvarado'),(1234,'Mauricio','Chevez','Gutierrez'),(12345,'Alberth','Espinoza','Ortiz');
 
 /*Table structure for table `pu02infusu` */
 
@@ -51,7 +51,7 @@ CREATE TABLE `pu02infusu` (
 
 /*Data for the table `pu02infusu` */
 
-insert  into `pu02infusu`(`PU01CEDUSU`,`PU02TELUSU`,`PU02CORUSU`,`PU03IDPUES`,`PU02USUARIO`,`PU02CLAVE`) values (1,'85875657','Mauro@gmail',1,'','1234');
+insert  into `pu02infusu`(`PU01CEDUSU`,`PU02TELUSU`,`PU02CORUSU`,`PU03IDPUES`,`PU02USUARIO`,`PU02CLAVE`) values (12,'1030','josue@',1,'asd','afas'),(123,'909090','alberth@',4,'usuario','clave'),(1234,'1010','chevez@',2,'123','123'),(12345,'3030','arubato12',3,'aru','123');
 
 /*Table structure for table `pu03puestos` */
 
@@ -65,7 +65,7 @@ CREATE TABLE `pu03puestos` (
 
 /*Data for the table `pu03puestos` */
 
-insert  into `pu03puestos`(`PU03IDPUES`,`PU03PUESTO`) values (1,'Coordinador');
+insert  into `pu03puestos`(`PU03IDPUES`,`PU03PUESTO`) values (1,'Coordinador'),(2,'Asistente'),(3,'Alcalde'),(4,'Administrador'),(5,'Gvadfvaf');
 
 /*Table structure for table `pu04regtra` */
 
@@ -75,32 +75,31 @@ CREATE TABLE `pu04regtra` (
   `PU04IDTRA` int(11) NOT NULL,
   `PU04FETRA` date NOT NULL,
   `PU07IDTFR` int(11) NOT NULL,
-  `PU08IDGPS` int(11) NOT NULL,
+  `PU04NORTE` int(11) NOT NULL,
+  `PU04ESTE` int(11) NOT NULL,
+  `PU04ALTITUD` int(11) NOT NULL,
   `PU12IDTDESEC` int(11) NOT NULL,
-  `PU26IDPLAN` int(11) NOT NULL,
-  `PU34IDCLAS` int(11) NOT NULL,
   PRIMARY KEY (`PU04IDTRA`),
   KEY `FK_PU07IDTFRREGTRA` (`PU07IDTFR`),
-  KEY `FK_PU08IDGPSREGTRA` (`PU08IDGPS`),
-  KEY `FK_PU12IDTDESECREGTRA` (`PU12IDTDESEC`),
-  KEY `FK_PU26IDPLANREGTRA` (`PU26IDPLAN`),
-  KEY `FK_PU34IDCLASREGTRA` (`PU34IDCLAS`),
+  KEY `FK_PU08IDGPSREGTRA` (`PU04NORTE`),
+  KEY `FK_PU12IDTDESECREGTRA` (`PU04ESTE`),
+  KEY `FK_PU26IDPLANREGTRA` (`PU04ALTITUD`),
+  KEY `FK_PU12IDTDESECREGTRA1` (`PU12IDTDESEC`),
   CONSTRAINT `FK_PU07IDTFRREGTRA` FOREIGN KEY (`PU07IDTFR`) REFERENCES `pu07terrft` (`PU07IDTFR`),
-  CONSTRAINT `FK_PU08IDGPSREGTRA` FOREIGN KEY (`PU08IDGPS`) REFERENCES `pu08regcor` (`PU08IDGPS`),
-  CONSTRAINT `FK_PU12IDTDESECREGTRA` FOREIGN KEY (`PU12IDTDESEC`) REFERENCES `pu12tipdesec` (`PU12IDTDESEC`),
-  CONSTRAINT `FK_PU26IDPLANREGTRA` FOREIGN KEY (`PU26IDPLAN`) REFERENCES `pu26planreg` (`PU26IDPLAN`),
-  CONSTRAINT `FK_PU34IDCLASREGTRA` FOREIGN KEY (`PU34IDCLAS`) REFERENCES `pu34clases` (`PU34IDCLAS`)
+  CONSTRAINT `FK_PU12IDTDESECREGTRA1` FOREIGN KEY (`PU12IDTDESEC`) REFERENCES `pu12tipdesec` (`PU12IDTDESEC`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu04regtra` */
+
+insert  into `pu04regtra`(`PU04IDTRA`,`PU04FETRA`,`PU07IDTFR`,`PU04NORTE`,`PU04ESTE`,`PU04ALTITUD`,`PU12IDTDESEC`) values (1,'2017-10-10',2,110,110,210,1);
 
 /*Table structure for table `pu05unitra` */
 
 DROP TABLE IF EXISTS `pu05unitra`;
 
 CREATE TABLE `pu05unitra` (
-  `PU06IDACTDES` int(11) NOT NULL,
   `PU04IDTRA` int(11) NOT NULL,
+  `PU06IDACTDES` int(11) NOT NULL,
   KEY `FK_PU04IDTRAUNITRA` (`PU04IDTRA`),
   KEY `FK_PU06IDACTDESUNITRA` (`PU06IDACTDES`),
   CONSTRAINT `FK_PU04IDTRAUNITRA` FOREIGN KEY (`PU04IDTRA`) REFERENCES `pu04regtra` (`PU04IDTRA`),
@@ -109,17 +108,21 @@ CREATE TABLE `pu05unitra` (
 
 /*Data for the table `pu05unitra` */
 
+insert  into `pu05unitra`(`PU04IDTRA`,`PU06IDACTDES`) values (1,1),(1,2),(1,3),(1,4),(1,5),(1,6);
+
 /*Table structure for table `pu06actdes` */
 
 DROP TABLE IF EXISTS `pu06actdes`;
 
 CREATE TABLE `pu06actdes` (
   `PU06IDACTDES` int(11) NOT NULL,
-  `PU06DESAD` varchar(30) NOT NULL,
+  `PU06DESAD` varchar(100) NOT NULL,
   PRIMARY KEY (`PU06IDACTDES`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu06actdes` */
+
+insert  into `pu06actdes`(`PU06IDACTDES`,`PU06DESAD`) values (1,'Infraestructura de Tipo Residencial'),(2,'Infraestructura de Tipo Comercial'),(3,'Infraestructura de Tipo Institucional'),(4,'Infraestructura de Tipo Residencial y Comercial'),(5,'No Existen Desarrollos en la Zona'),(6,'Otros');
 
 /*Table structure for table `pu07terrft` */
 
@@ -132,6 +135,8 @@ CREATE TABLE `pu07terrft` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu07terrft` */
+
+insert  into `pu07terrft`(`PU07IDTFR`,`PU07NOMTFR`) values (1,'lastre'),(2,'piedra'),(3,'Adfda');
 
 /*Table structure for table `pu08regcor` */
 
@@ -147,7 +152,7 @@ CREATE TABLE `pu08regcor` (
 
 /*Data for the table `pu08regcor` */
 
-insert  into `pu08regcor`(`PU08IDGPS`,`PU08NORTE`,`PU08ESTE`,`PU08ALTITUD`) values (1,1,1,2);
+insert  into `pu08regcor`(`PU08IDGPS`,`PU08NORTE`,`PU08ESTE`,`PU08ALTITUD`) values (1,100,100,100);
 
 /*Table structure for table `pu09desceg` */
 
@@ -160,6 +165,8 @@ CREATE TABLE `pu09desceg` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu09desceg` */
+
+insert  into `pu09desceg`(`PU09IDDEG`,`PU09DESCREG`) values (1,'Topografía Plana'),(2,'Topografía Semiplano'),(3,'Topografía con Depresión'),(4,'Existen Movimiento de Tierra'),(5,'Futuro Movimiento de Tierra'),(6,'Topografía Irregular'),(7,'Otro');
 
 /*Table structure for table `pu09tradeg` */
 
@@ -176,6 +183,8 @@ CREATE TABLE `pu09tradeg` (
 
 /*Data for the table `pu09tradeg` */
 
+insert  into `pu09tradeg`(`PU09IDDEG`,`PU04IDTRA`) values (1,1),(2,1),(3,1),(4,1),(5,1),(6,1),(7,1);
+
 /*Table structure for table `pu10aspbio` */
 
 DROP TABLE IF EXISTS `pu10aspbio`;
@@ -188,13 +197,15 @@ CREATE TABLE `pu10aspbio` (
 
 /*Data for the table `pu10aspbio` */
 
+insert  into `pu10aspbio`(`PU10IDASBIO`,`PU10DESCABIO`) values (0,'no existe'),(1,'Vegetacion Jardin'),(2,'Tipo Pasto'),(3,'Bosque Primario'),(4,'Bosque Secundario'),(5,'Arboles Dispersion'),(6,'Otros');
+
 /*Table structure for table `pu11uniabio` */
 
 DROP TABLE IF EXISTS `pu11uniabio`;
 
 CREATE TABLE `pu11uniabio` (
-  `PU10IDASBIO` int(11) NOT NULL,
   `PU04IDTRA` int(11) NOT NULL,
+  `PU10IDASBIO` int(11) NOT NULL,
   KEY `FK_PU10IDASBIOREGTRA` (`PU04IDTRA`),
   KEY `FK_PU10IDASBIOASPBIO` (`PU10IDASBIO`),
   CONSTRAINT `FK_PU10IDASBIOASPBIO` FOREIGN KEY (`PU10IDASBIO`) REFERENCES `pu10aspbio` (`PU10IDASBIO`),
@@ -202,6 +213,8 @@ CREATE TABLE `pu11uniabio` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu11uniabio` */
+
+insert  into `pu11uniabio`(`PU04IDTRA`,`PU10IDASBIO`) values (1,1),(1,2),(1,3),(1,4),(1,5),(1,6);
 
 /*Table structure for table `pu12tipdesec` */
 
@@ -215,6 +228,8 @@ CREATE TABLE `pu12tipdesec` (
 
 /*Data for the table `pu12tipdesec` */
 
+insert  into `pu12tipdesec`(`PU12IDTDESEC`,`PU12TIPODES`) values (0,'no existe'),(1,'Agricultura');
+
 /*Table structure for table `pu13aarep` */
 
 DROP TABLE IF EXISTS `pu13aarep`;
@@ -227,13 +242,15 @@ CREATE TABLE `pu13aarep` (
 
 /*Data for the table `pu13aarep` */
 
+insert  into `pu13aarep`(`PU13IDAAP`,`PU13DESCAAP`) values (1,'Quebradas'),(2,'Pozos'),(3,'Río'),(4,'Naciente'),(5,'Acuífero Mala Noche'),(6,'Acuífero Protero Caimital'),(7,'no existe');
+
 /*Table structure for table `pu14trarep` */
 
 DROP TABLE IF EXISTS `pu14trarep`;
 
 CREATE TABLE `pu14trarep` (
-  `PU13IDAAP` int(11) NOT NULL,
   `PU04IDTRA` int(11) NOT NULL,
+  `PU13IDAAP` int(11) NOT NULL,
   KEY `FK_PU13IDAAPREGTRA` (`PU04IDTRA`),
   KEY `FK_PU13IDAAPAAREP` (`PU13IDAAP`),
   CONSTRAINT `FK_PU13IDAAPAAREP` FOREIGN KEY (`PU13IDAAP`) REFERENCES `pu13aarep` (`PU13IDAAP`),
@@ -241,6 +258,8 @@ CREATE TABLE `pu14trarep` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu14trarep` */
+
+insert  into `pu14trarep`(`PU04IDTRA`,`PU13IDAAP`) values (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7);
 
 /*Table structure for table `pu15serv` */
 
@@ -272,6 +291,8 @@ CREATE TABLE `pu16servae` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu16servae` */
+
+insert  into `pu16servae`(`PU16IDSAE`,`PU16DESCAE`) values (1,'Agua');
 
 /*Table structure for table `pu17serae` */
 
@@ -346,6 +367,7 @@ DROP TABLE IF EXISTS `pu22serrvi`;
 CREATE TABLE `pu22serrvi` (
   `PU22IDREDVI` int(11) NOT NULL,
   `PU22DESSVI` varchar(30) NOT NULL,
+  `PU22OBSERV` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`PU22IDREDVI`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -411,6 +433,8 @@ CREATE TABLE `pu26planreg` (
 
 /*Data for the table `pu26planreg` */
 
+insert  into `pu26planreg`(`PU26IDPLAN`,`PU26PLNDESC`) values (1,'NICOYA'),(2,'SAMARA');
+
 /*Table structure for table `pu27cuinic` */
 
 DROP TABLE IF EXISTS `pu27cuinic`;
@@ -423,6 +447,20 @@ CREATE TABLE `pu27cuinic` (
 
 /*Data for the table `pu27cuinic` */
 
+insert  into `pu27cuinic`(`PU27IDUBIC`,`PU27DSCUBIC`) values (1,'La virginia');
+
+/*Table structure for table `pu27ubicacion` */
+
+DROP TABLE IF EXISTS `pu27ubicacion`;
+
+CREATE TABLE `pu27ubicacion` (
+  `PU27IDUBIC` int(11) NOT NULL,
+  `PU27DESCRIP` varchar(30) NOT NULL,
+  PRIMARY KEY (`PU27IDUBIC`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `pu27ubicacion` */
+
 /*Table structure for table `pu28cuisam` */
 
 DROP TABLE IF EXISTS `pu28cuisam`;
@@ -434,6 +472,23 @@ CREATE TABLE `pu28cuisam` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu28cuisam` */
+
+insert  into `pu28cuisam`(`PU28IDUBIC`,`PU28DSCUBIC`) values (1,'Osteonal');
+
+/*Table structure for table `pu28ubidescripcion` */
+
+DROP TABLE IF EXISTS `pu28ubidescripcion`;
+
+CREATE TABLE `pu28ubidescripcion` (
+  `PU28IDUBIDESC` int(11) NOT NULL,
+  `PU28UBICADESCRIP` varchar(30) NOT NULL,
+  `PU27IDUBIC` int(11) NOT NULL,
+  PRIMARY KEY (`PU28IDUBIDESC`),
+  KEY `FK_PU27IDUBIC` (`PU27IDUBIC`),
+  CONSTRAINT `FK_PU27IDUBIC` FOREIGN KEY (`PU27IDUBIC`) REFERENCES `pu27ubicacion` (`PU27IDUBIC`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `pu28ubidescripcion` */
 
 /*Table structure for table `pu29tranic` */
 
@@ -449,6 +504,21 @@ CREATE TABLE `pu29tranic` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu29tranic` */
+
+/*Table structure for table `pu29unitradesc` */
+
+DROP TABLE IF EXISTS `pu29unitradesc`;
+
+CREATE TABLE `pu29unitradesc` (
+  `PU28IDUBIDESC` int(11) NOT NULL,
+  `PU04IDTRA` int(11) NOT NULL,
+  KEY `FK_PU28IDUBIDESC` (`PU04IDTRA`),
+  KEY `FK_PU28IDUBIDESCR` (`PU28IDUBIDESC`),
+  CONSTRAINT `FK_PU28IDUBIDESC` FOREIGN KEY (`PU04IDTRA`) REFERENCES `pu04regtra` (`PU04IDTRA`),
+  CONSTRAINT `FK_PU28IDUBIDESCR` FOREIGN KEY (`PU28IDUBIDESC`) REFERENCES `pu28ubidescripcion` (`PU28IDUBIDESC`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `pu29unitradesc` */
 
 /*Table structure for table `pu30trasam` */
 
@@ -492,6 +562,8 @@ CREATE TABLE `pu32capuso` (
 
 /*Data for the table `pu32capuso` */
 
+insert  into `pu32capuso`(`PU32IDCUSO`,`PU32DESUSO`) values (1,'Erosionado');
+
 /*Table structure for table `pu33tracap` */
 
 DROP TABLE IF EXISTS `pu33tracap`;
@@ -519,6 +591,8 @@ CREATE TABLE `pu34clases` (
 
 /*Data for the table `pu34clases` */
 
+insert  into `pu34clases`(`PU34IDCLAS`,`PU34DESCLA`) values (1,26525);
+
 /*Table structure for table `pu35tipsue` */
 
 DROP TABLE IF EXISTS `pu35tipsue`;
@@ -530,6 +604,8 @@ CREATE TABLE `pu35tipsue` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pu35tipsue` */
+
+insert  into `pu35tipsue`(`PU35IDTIPS`,`PU35DESTIP`) values (1,'Plano');
 
 /*Table structure for table `pu36hisinsp` */
 
@@ -735,18 +811,41 @@ SELECT * FROM PU03PUESTOS;
 END */$$
 DELIMITER ;
 
-/* Procedure structure for procedure `SP04_ACTDES_ACTUALIZAR` */
+/* Procedure structure for procedure `SP03_REGISTROTRA_ELIMINAR` */
 
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_ACTDES_ACTUALIZAR` */;
+/*!50003 DROP PROCEDURE IF EXISTS  `SP03_REGISTROTRA_ELIMINAR` */;
 
 DELIMITER $$
 
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_ACTDES_ACTUALIZAR`(IN IDACTDES INT(11), IN DESAD VARCHAR(30))
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP03_REGISTROTRA_ELIMINAR`(IN IDTRA INT(11))
 BEGIN
-UPDATE PU06ACTDES
- SET PU06DESAD = DESAD
-  WHERE PU06IDACTDES = IDACTDES;
+DELETE FROM pu09tradeg
+  WHERE PU04IDTRA = IDTRA;
+  
+DELETE FROM pu11uniabio
+ WHERE PU04IDTRA = IDTRA;
+ 
+ DELETE FROM pu14trarep
+  WHERE PU04IDTRA = IDTRA;
+  
+DELETE FROM pu05unitra
+ WHERE PU04IDTRA = IDTRA;
+ 
+ DELETE FROM pu04regtra
+ WHERE PU04IDTRA = IDTRA;
 END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP03_REGISTROTRA_MOSTRAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP03_REGISTROTRA_MOSTRAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP03_REGISTROTRA_MOSTRAR`()
+BEGIN
+ select * from `pu04regtra`;
+    END */$$
 DELIMITER ;
 
 /* Procedure structure for procedure `SP04_ACTDES_ELIMINAR` */
@@ -798,6 +897,117 @@ BEGIN
 UPDATE PU09DESCEG
  SET PU09DESCREG = DESCREG
    WHERE PU09IDDEG = IDDEG;
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP03_REGISTROTRA_GUARDAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP03_REGISTROTRA_GUARDAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP03_REGISTROTRA_GUARDAR`( IN IDTRA INT(11), IN FETRA DATE, IN IDTFR INT(11), 
+IN PU04NORTE INT(11), IN PU04ESTE INT(11), IN PU04ALTITUD INT(11), IN IDTDESEC INT(11),
+IN PU09IDDEG_01 INT (11),IN PU09IDDEG_02 INT (11),IN PU09IDDEG_03 INT (11),IN PU09IDDEG_04 INT (11),IN PU09IDDEG_05 INT (11),
+IN PU09IDDEG_06 INT (11),IN PU09IDDEG_07 INT (11),
+IN PU10IDASBIO_01 INT (11), IN PU10IDASBIO_02 INT (11),IN PU10IDASBIO_03 INT (11), IN PU10IDASBIO_04 INT (11),
+ IN PU10IDASBIO_05 INT (11), IN PU10IDASBIO_06 INT (11),
+ 
+ IN PU13IDAAP_1 INT (11),IN PU13IDAAP_2 INT (11),IN PU13IDAAP_3 INT (11),IN PU13IDAAP_4 INT (11),IN PU13IDAAP_5 INT (11),
+ IN PU13IDAAP_6 INT (11),IN PU13IDAAP_7 INT (11),
+ 
+ IN PU06IDACTDES_01 INT (11), IN PU06IDACTDES_02 INT (11),IN PU06IDACTDES_03 INT (11), IN PU06IDACTDES_04 INT (11),
+ IN PU06IDACTDES_05 INT (11), IN PU06IDACTDES_06 INT (11))
+BEGIN
+-- INSERT DE LA INFORMACIÓN REQUERIDA POR LA TABLA PRINCIPAL DE TRÁMITE
+INSERT INTO pu04regtra (PU04IDTRA, PU04FETRA,PU07IDTFR,PU04NORTE,PU04ESTE,PU04ALTITUD,PU12IDTDESEC)
+ VALUES (IDTRA, FETRA,IDTFR,PU04NORTE,PU04ESTE,PU04ALTITUD,IDTDESEC);
+-- INSERT DE LA DESCRIPCIÓN DEL ESPACIO GEOGRÁFICO
+INSERT INTO pu09tradeg (PU04IDTRA,PU09IDDEG)
+ VALUES (IDTRA,PU09IDDEG_01);
+--
+ INSERT INTO pu09tradeg (PU04IDTRA,PU09IDDEG)
+ VALUES (IDTRA,PU09IDDEG_02);
+ --
+ INSERT INTO pu09tradeg (PU04IDTRA,PU09IDDEG)
+ VALUES (IDTRA,PU09IDDEG_03);
+ --
+ INSERT INTO pu09tradeg (PU04IDTRA,PU09IDDEG)
+ VALUES (IDTRA,PU09IDDEG_04);
+ --
+ INSERT INTO pu09tradeg (PU04IDTRA,PU09IDDEG)
+ VALUES (IDTRA,PU09IDDEG_05);
+ --
+ INSERT INTO pu09tradeg (PU04IDTRA,PU09IDDEG)
+ VALUES (IDTRA,PU09IDDEG_06);
+ --
+ INSERT INTO pu09tradeg (PU04IDTRA,PU09IDDEG)
+ VALUES (IDTRA,PU09IDDEG_07);
+-- FIN DE INSERSIÓN DE DATOS EN TABLA UNIÓN DE TRÁMITE Y DESCRIPCIÓN DEL ESPACIO GEOGRÁFICO
+-- ----------------------------------------------------------------------------------------
+-- INSERT DE LOS ASPECTOS BIOFÍSICOS
+INSERT INTO pu11uniabio (PU04IDTRA,PU10IDASBIO)
+VALUES (IDTRA,PU10IDASBIO_01);
+--
+INSERT INTO pu11uniabio (PU04IDTRA,PU10IDASBIO)
+VALUES (IDTRA,PU10IDASBIO_02);
+--
+INSERT INTO pu11uniabio (PU04IDTRA,PU10IDASBIO)
+VALUES (IDTRA,PU10IDASBIO_03);
+--
+INSERT INTO pu11uniabio (PU04IDTRA,PU10IDASBIO)
+VALUES (IDTRA,PU10IDASBIO_04);
+--
+INSERT INTO pu11uniabio (PU04IDTRA,PU10IDASBIO)
+VALUES (IDTRA,PU10IDASBIO_05);
+--
+INSERT INTO pu11uniabio (PU04IDTRA,PU10IDASBIO)
+VALUES (IDTRA,PU10IDASBIO_06);
+-- FIN DE INSERSIÓN DE DATOS EN TABLA UNIÓN DE TRÁMITE Y ASPECTOS BIOFÍSICOS
+-- ----------------------------------------------------------------------------------------
+-- INSERT DE LA AFECTACIÓN DE ÁREAS DE PROTECCIÓN
+INSERT INTO pu14trarep (PU04IDTRA,PU13IDAAP)
+VALUES (IDTRA,PU13IDAAP_1);
+--
+INSERT INTO pu14trarep (PU04IDTRA,PU13IDAAP)
+VALUES (IDTRA,PU13IDAAP_2);
+--
+INSERT INTO pu14trarep (PU04IDTRA,PU13IDAAP)
+VALUES (IDTRA,PU13IDAAP_3);
+--
+INSERT INTO pu14trarep (PU04IDTRA,PU13IDAAP)
+VALUES (IDTRA,PU13IDAAP_4);
+--
+INSERT INTO pu14trarep (PU04IDTRA,PU13IDAAP)
+VALUES (IDTRA,PU13IDAAP_5);
+--
+INSERT INTO pu14trarep (PU04IDTRA,PU13IDAAP)
+VALUES (IDTRA,PU13IDAAP_6);
+--
+INSERT INTO pu14trarep (PU04IDTRA,PU13IDAAP)
+VALUES (IDTRA,PU13IDAAP_7);
+-- FIN DE INSERSIÓN DE DATOS EN TABLA UNIÓN DE TRÁMITE Y ASPECTOS BIOFÍSICOS
+-- ----------------------------------------------------------------------------------------
+-- INSERT DE LAS ACTIVIDADES A DESARROLLAR
+INSERT INTO pu05unitra (PU04IDTRA,PU06IDACTDES)
+VALUES (IDTRA,PU06IDACTDES_01);
+--
+INSERT INTO pu05unitra (PU04IDTRA,PU06IDACTDES)
+VALUES (IDTRA,PU06IDACTDES_02);
+--
+INSERT INTO pu05unitra (PU04IDTRA,PU06IDACTDES)
+VALUES (IDTRA,PU06IDACTDES_03);
+--
+INSERT INTO pu05unitra (PU04IDTRA,PU06IDACTDES)
+VALUES (IDTRA,PU06IDACTDES_04);
+--
+INSERT INTO pu05unitra (PU04IDTRA,PU06IDACTDES)
+VALUES (IDTRA,PU06IDACTDES_05);
+--
+INSERT INTO pu05unitra (PU04IDTRA,PU06IDACTDES)
+VALUES (IDTRA,PU06IDACTDES_06);
+-- FIN DE INSERSIÓN DE DATOS EN TABLA UNIÓN DE TRÁMITE Y ACTIVIDAD A DESARROLLAR
+-- ----------------------------------------------------------------------------------------
 END */$$
 DELIMITER ;
 
