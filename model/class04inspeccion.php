@@ -64,8 +64,8 @@ class class04inspeccion extends Conexion
 
 	public function buscar($PU04IDTRA)
 	{
-		//$sql = "CALL SP01_REGINFUSU_BUSCAR('".$PU04IDTRA."')";
-$sql = "SELECT * FROM pu04regtra WHERE PU04IDTRA ='". $PU04IDTRA ."';";
+		
+		$sql = "CALL SP03_REGISTROTRA_MOSTRAR_INFOR('".$PU04IDTRA."')";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class04inspeccion = $this->convertToclass04inspeccion($result);
 		return $class04inspeccion;
@@ -73,7 +73,7 @@ $sql = "SELECT * FROM pu04regtra WHERE PU04IDTRA ='". $PU04IDTRA ."';";
 
 	public function listar()
 	{
-		$sql = "call SP03_REGISTROTRA_MOSTRAR_INFOR();";
+		$sql = "CALL SP03_REGISTROTRA_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
