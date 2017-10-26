@@ -844,7 +844,12 @@ DELIMITER $$
 
 /*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP03_REGISTROTRA_MOSTRAR`()
 BEGIN
- select * from `pu04regtra`;
+	SELECT DISTINCT pu04regtra.PU04IDTRA AS 'Numero Trámite', pu04regtra.PU04FETRA AS 'Fecha', pu04regtra.PU07IDTFR AS 'T.F.R',
+   pu04regtra.PU04NORTE AS 'Norte', pu04regtra.PU04ESTE AS 'Este', pu04regtra.PU04ALTITUD AS 'Altitud',
+   pu12tipdesec.PU12TIPODES AS 'Tipo Desarrollo'
+   
+   FROM pu04regtra INNER JOIN pu12tipdesec
+   ON pu04regtra.PU12IDTDESEC = pu12tipdesec.PU12IDTDESEC;
     END */$$
 DELIMITER ;
 
