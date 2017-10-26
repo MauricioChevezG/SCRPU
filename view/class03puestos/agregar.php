@@ -1,19 +1,5 @@
-<!-- <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuevo Puesto</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body> -->
     <div class="container-fluid">
-          <center>
-    <h2>Agregar nuevo puesto</h2>
-  </center>
+    <center><h2>Agregar nuevo puesto</h2></center>
     <form action="?c=class03puestos&m=agregar" method="post" >
       <div class="form-group">
         <label for="PU03IDPUES">Código del Puesto:</label>
@@ -25,38 +11,18 @@
       </div>
 
       <button type="submit" class="btn btn-success">Guardar puesto</button> 
-      <a id="regresar" class="btn btn-danger" role="button">Regresar</a>  
+      <a id="regresar" class="btn btn-danger" role="button" href="?c=class03puestos&m=index">Regresar</a>  
 
-      <script type="text/javascript">
+      <!--<script type="text/javascript">
 
         $("#regresar").click(function(){
         var bool=confirm("XXXXX----DESEA REGRESAR----XXXXX?");
         if(bool){
-        $("#contenido").load("?c=class03puestos");
+        $("#contenido").load("?c=class03puestos&m=index");
         }else{
         $.alert("CANCELADO");
         }
       });
-
-      </script> 
-        <!-- <script type="text/javascript">
-        $("#guardar").click(function(){
-        var bool=confirm("XXXXX----DESEA Guardar----XXXXX?");
-        if(bool){
-
-              function enviar(form){
-           document.forms[form].submit();
-         }
-         $("#contenido").load("?c=class03puestos");
-        }else{
-        $.alert("CANCELADO");
-        }
-      });
-      </script> --> 
+      </script>-->
      </form>
     </div>
- <!--    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
-</html> -->

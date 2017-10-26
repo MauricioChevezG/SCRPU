@@ -10,7 +10,9 @@ class class0102usuariosController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class0102usuarios/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{

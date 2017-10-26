@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#puestos").click(function(){
-		$("collapseDos").slideUp();
+	$("#agregarpuesto").click(function(){
+		$("#myModal").modal("show");
 	});
 });

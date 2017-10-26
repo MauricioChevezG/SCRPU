@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nueva Inspeccion</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/styles.css">
+    <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.min.css">
 </head>
 
 <body>
@@ -175,8 +175,8 @@
       </div>
     </div>
   </div>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="assets/bootstrap/js/jquery.min.js"></script>
+  <script src="assets/jquery-ui/jquery-ui.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script>
     $( function() {
