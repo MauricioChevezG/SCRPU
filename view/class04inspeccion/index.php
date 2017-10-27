@@ -1,7 +1,7 @@
 <?php $result = $this->class04inspeccion->listar(); ?>
     <div class="container-fluid">
         <h2>Listado de puestos</h2>   
-    <a href="#" onclick="agregar();" class="btn btn-primary" role="button">Registrar puesto</a>
+    <a href="?c=class04inspeccion&m=agregar" class="btn btn-primary" role="button">Registrar puesto</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="display table table-bordered" id="grilla-inspeccion" cellpadding="0" cellspacing="0" border="0" width="100%">
