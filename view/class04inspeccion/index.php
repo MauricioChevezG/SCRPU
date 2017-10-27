@@ -1,21 +1,10 @@
-<<<<<<< HEAD:view/class04inspeccion/index.php
 <?php $result = $this->class04inspeccion->listar(); ?>
-
-=======
-<?php 
-$result = $this->class04inspeccion->listar(); 
-?>
->>>>>>> pr/15:view/class04inspecion/index.php
     <div class="container-fluid">
         <h2>Listado de puestos</h2>   
     <a href="#" onclick="agregar();" class="btn btn-primary" role="button">Registrar puesto</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
-<<<<<<< HEAD:view/class04inspeccion/index.php
       <table class="display table table-bordered" id="grilla-inspeccion" cellpadding="0" cellspacing="0" border="0" width="100%">
-=======
-      <table class="table table-bordered table-hover" id="grilla-inspeccion">
->>>>>>> pr/15:view/class04inspecion/index.php
         <thead>
           <tr>
             <th>Id Tramite</th>
@@ -66,9 +55,7 @@ $result = $this->class04inspeccion->listar();
             </div>
           <?php endif ?>
         </tbody>
-<<<<<<< HEAD:view/class04inspeccion/index.php
+
       </table>
-=======
-      </table> -->
->>>>>>> pr/15:view/class04inspecion/index.php
+
     </div>
