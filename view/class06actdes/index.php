@@ -1,25 +1,14 @@
 <?php 
 $result = $this->class06actdes->listar(); 
 ?>
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vista Actividad a Desarrollar</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
     <div class="container-fluid">
          <h2>Listado de Actividades a Desarrollar</h2>   
     <a href="?c=class06actdes&m=agregar" class="btn btn-primary" role="button">Registrar Actividad a Desarrollar</a>
        
     <br><br>     
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered">
+      <table class="table table-bordered table-hover" id="grilla-actdes">
         <thead>
           <tr>
             <th>Código Actividad a Desarrollar</th>
@@ -63,8 +52,3 @@ $result = $this->class06actdes->listar();
         </tbody>
       </table>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
-</html>

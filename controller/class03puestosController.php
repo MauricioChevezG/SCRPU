@@ -23,7 +23,9 @@ class class03puestosController
 			header('location:?c=class03puestos&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class03puestos/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -36,9 +38,10 @@ class class03puestosController
 		}
 		else{
 			$this->class03puestos = $this->class03puestos->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class03puestos/editar.php';
+			require_once 'view/footer.php';		}
 		}
-	}
 
 	public function eliminar()
 	{
@@ -50,11 +53,9 @@ class class03puestosController
 	public function ver()
 	{
 		$this->class03puestos = $this->class03puestos->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class03puestos/ver.php';
-	}
-
-	public function buscadinamica(){
-		$this->class03puestos->setAtributo('PU03IDPUES',$_REQUEST['id']);
+		require_once 'view/footer.php';
 	}
 }
 ?>

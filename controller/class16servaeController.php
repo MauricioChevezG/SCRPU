@@ -12,7 +12,9 @@ class class16servaeController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class16servae/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -24,7 +26,9 @@ class class16servaeController
 			header('location:?c=class16servae&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class16servae/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -37,7 +41,9 @@ class class16servaeController
 		}
 		else{
 			$this->class16servae = $this->class16servae->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class16servae/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -51,7 +57,9 @@ class class16servaeController
 	public function ver()
 	{
 		$this->class16servae = $this->class16servae->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class16servae/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

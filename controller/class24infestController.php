@@ -11,7 +11,9 @@ class class24infestController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class24infest/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -23,7 +25,9 @@ class class24infestController
 			header('location:?c=class24infest&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class24infest/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -36,7 +40,9 @@ class class24infestController
 		}
 		else{
 			$this->class24infest = $this->class24infest->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class24infest/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -50,7 +56,9 @@ class class24infestController
 	public function ver()
 	{
 		$this->class24infest = $this->class24infest->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class24infest/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

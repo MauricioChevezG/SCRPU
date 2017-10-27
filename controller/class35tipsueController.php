@@ -10,7 +10,9 @@ class class35tipsueController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class35tipsue/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -22,7 +24,9 @@ class class35tipsueController
 			header('location:?c=class35tipsue&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class35tipsue/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -35,7 +39,9 @@ class class35tipsueController
 		}
 		else{
 			$this->class35tipsue = $this->class35tipsue->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class35tipsue/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -49,7 +55,9 @@ class class35tipsueController
 	public function ver()
 	{
 		$this->class35tipsue = $this->class35tipsue->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class35tipsue/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

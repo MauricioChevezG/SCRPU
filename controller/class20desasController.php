@@ -9,7 +9,9 @@ class class20desasController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class20desas/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -21,7 +23,9 @@ class class20desasController
 			header('location:?c=class20desas&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class20desas/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -34,7 +38,9 @@ class class20desasController
 		}
 		else{
 			$this->class20desas = $this->class20desas->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class20desas/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -48,7 +54,9 @@ class class20desasController
 	public function ver()
 	{
 		$this->class20desas = $this->class20desas->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class20desas/ver.php';
+		require_once 'view/footer.php';
 	}
 }
  ?>

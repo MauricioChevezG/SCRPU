@@ -11,7 +11,9 @@ class class13aarepController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class13aarep/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -23,7 +25,9 @@ class class13aarepController
 			header('location:?c=class13aarep&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class13aarep/agregar.php';
+			require_once 'view/header.php';
 		}
 	}
 	public function editar()
@@ -36,7 +40,9 @@ class class13aarepController
 		}
 		else{
 			$this->class13aarep = $this->class13aarep->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class13aarep/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -50,7 +56,9 @@ class class13aarepController
 	public function ver()
 	{
 		$this->class13aarep = $this->class13aarep->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class13aarep/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

@@ -9,7 +9,9 @@ class class22serrviController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class22serrvi/index.php';
+		require_once 'view/footer.php';	
 	}
 	public function agregar()
 	{
@@ -21,7 +23,9 @@ class class22serrviController
 			header('location:?c=class22serrvi&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class22serrvi/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -34,7 +38,9 @@ class class22serrviController
 		}
 		else{
 			$this->class22serrvi = $this->class22serrvi->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class22serrvi/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -48,7 +54,9 @@ class class22serrviController
 	public function ver()
 	{
 		$this->class22serrvi = $this->class22serrvi->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class22serrvi/ver.php';
+		require_once 'view/footer.php';
 	}
 }
  ?>

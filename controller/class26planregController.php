@@ -10,7 +10,9 @@ class class26planregController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class26planreg/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -22,7 +24,9 @@ class class26planregController
 			header('location:?c=class26planreg&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class26planreg/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -35,7 +39,9 @@ class class26planregController
 		}
 		else{
 			$this->class26planreg = $this->class26planreg->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class26planreg/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -49,7 +55,9 @@ class class26planregController
 	public function ver()
 	{
 		$this->class26planreg = $this->class26planreg->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class26planreg/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

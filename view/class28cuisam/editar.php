@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Editar Ubicación </title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
-<body>
+
   <center>
 
     <h2>Editar Ubicación: <?php echo $this->class28cuisam->getAtributo('PU28DSCUBIC');?> </h2>
@@ -24,5 +18,4 @@
       <a href="?c=class28cuisam&m=index" class="btn btn-default" role="button">Regresar</a>    
     </form>
   </div>
-</body>
-</html>
+

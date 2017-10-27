@@ -9,7 +9,9 @@ class class18calleserController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class18calleser/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -21,7 +23,9 @@ class class18calleserController
 			header('location:?c=class18calleser&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class18calleser/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -34,7 +38,9 @@ class class18calleserController
 		}
 		else{
 			$this->class18calleser = $this->class18calleser->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class18calleser/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -48,7 +54,9 @@ class class18calleserController
 	public function ver()
 	{
 		$this->class18calleser = $this->class18calleser->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class18calleser/ver.php';
+		require_once 'view/footer.php';
 	}
 }
  ?>

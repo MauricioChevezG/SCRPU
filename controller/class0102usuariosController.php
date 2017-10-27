@@ -30,7 +30,9 @@ class class0102usuariosController
 			header('location:?c=class0102usuarios&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class0102usuarios/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -48,7 +50,9 @@ class class0102usuariosController
 		}
 		else{
 			$this->class0102usuarios = $this->class0102usuarios->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class0102usuarios/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -62,7 +66,9 @@ class class0102usuariosController
 	public function ver()
 	{
 		$this->class0102usuarios = $this->class0102usuarios->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class0102usuarios/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

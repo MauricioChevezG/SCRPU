@@ -11,7 +11,9 @@ class class09descegController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class09desceg/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -23,7 +25,9 @@ class class09descegController
 			header('location:?c=class09desceg&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class09desceg/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -36,7 +40,9 @@ class class09descegController
 		}
 		else{
 			$this->class09desceg = $this->class09desceg->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class09desceg/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -50,7 +56,9 @@ class class09descegController
 	public function ver()
 	{
 		$this->class09desceg = $this->class09desceg->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class09desceg/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

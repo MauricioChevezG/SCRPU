@@ -2,25 +2,14 @@
 $result = $this->class13aarep->listar(); 
 
 ?>
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Listado Afectación de Áreas de protección</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
   <div class="container-fluid">
     <h2>Listado de Afectación de Áreas de protección</h2>   
     <a href="?c=class13aarep&m=agregar" class="btn btn-primary" role="button">Registrar Afectación de Áreas de protección</a>
   
     <br><br><br>      
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered">
+      <table class="table table-bordered table-hover" id="grilla-aarep">
         <thead>
           <tr>
             <th>Código Afectación de Áreas de protección</th>
@@ -64,7 +53,3 @@ $result = $this->class13aarep->listar();
         </tbody>
       </table>
     </div>
-      <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  </body>
-  </html>

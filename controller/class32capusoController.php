@@ -10,7 +10,9 @@ class class32capusoController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class32capuso/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -22,7 +24,9 @@ class class32capusoController
 			header('location:?c=class32capuso&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class32capuso/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -35,7 +39,9 @@ class class32capusoController
 		}
 		else{
 			$this->class32capuso = $this->class32capuso->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class32capuso/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -49,7 +55,9 @@ class class32capusoController
 	public function ver()
 	{
 		$this->class32capuso = $this->class32capuso->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class32capuso/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

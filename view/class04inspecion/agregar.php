@@ -1,25 +1,4 @@
 
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  
-
-    <title>Nuevo Usuario</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-      <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  </script>
-</head>
-
-<body>
     <div class="container-fluid">
         <center>
     <h2>Inspeccion</h2>
@@ -36,12 +15,7 @@
       </div>
        <br>
        <div class="col-xs-2 text-center">
-       <p>Fecha: <input type="text" id="datepicker"></p>
-       <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  </script>
+       <p>Fecha: <input type="text" id="fecha"></p>
       </div> </div>
 </div>
 
@@ -136,15 +110,3 @@
       <a href="?c=class0102usuarios&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
     </div>
-
-
-
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery-ui/jquery-ui.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
-</html>

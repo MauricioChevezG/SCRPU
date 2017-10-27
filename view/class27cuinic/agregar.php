@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Nuevo Ubicación en Nicoya</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-</head>
-<body>
   <center>
     <h2>Agregar Ubicación en Nicoya</h2>
   </center>
@@ -25,5 +18,3 @@
       <a href="?c=class27cuinic&m=index" class="btn btn-default" role="button">Regresar</a>    
      </form>
    </div>
-</body>
-</html>
