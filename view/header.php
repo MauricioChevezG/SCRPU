@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/styles.css">
     <link rel="stylesheet" href="public/css/estilo.css">
+    <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.css">
 </head>
 <body>
   <nav class="navbar navbar-inverse visible-xs">
@@ -275,7 +276,8 @@
                               <table class="table">
                                   <tr>
                                       <td>
-                                          <span class="glyphicon glyphicon-pencil text-primary"></span><a href="?c=class0102usuarios">Articles</a>
+                                          <span class="glyphicon glyphicon-pencil text-primary"></span>
+                                          <a href="?c=class04inspeccion">Inspeccion</a>
                                       </td>
                                   </tr>
                                   <tr>
@@ -496,7 +498,7 @@
       </div><!--Finaliza el sidenav-->
     <div class="col-sm-9">
       <br>
-      <div class="well" id="contenido">
+      <div class="container-fluid well" id="contenido">
         
         
   
