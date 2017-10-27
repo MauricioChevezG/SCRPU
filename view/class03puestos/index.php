@@ -2,7 +2,7 @@
 
     <div class="container-fluid">
         <h2>Listado de puestos</h2>   
-    <a href="#" onclick="agregarPuesto();" class="btn btn-primary" role="button">Registrar puesto</a>
+    <a href="?c=class03puestos&m=agregar"  class="btn btn-primary" role="button">Registrar puesto</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="table table-bordered table-hover" id="grilla-puestos">

@@ -1,12 +1,6 @@
-$(document).ready(function() {
-<<<<<<< HEAD
-        $('#grilla-puestos').DataTable();
-      });
 
 $(document).ready(function() {
-        $('#grilla-inspeccion').DataTable();
-      });
-=======
+    $('#grilla-inspeccion').DataTable();
     $('#grilla-puestos').DataTable();
     $('#grilla-usuarios').DataTable();
     $('#grilla-inspeccion').DataTable();
@@ -27,4 +21,4 @@ $(document).ready(function() {
     $('#grilla-clases').DataTable();
     $('#grilla-tipsue').DataTable();
 });
->>>>>>> pr/15
+

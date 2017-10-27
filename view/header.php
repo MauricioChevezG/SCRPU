@@ -78,7 +78,7 @@
                                       <td>
                               
                                             <span class="glyphicon glyphicon-list-alt"></span>
-                                           <a href="#" onclick="vistaPuesto();" id="puestos">Puestos</a>
+                                           <a href="?c=class03puestos">Puestos</a>
                                       </td>
                                   </tr>
                                   <tr>
@@ -318,7 +318,7 @@
                                       <td>
                               
                                             <span class="glyphicon glyphicon-list-alt"></span>
-                                           <a href="#" onclick="vistaPuesto();">Puestos</a>
+                                           <a href="?c=class03puestos">Puestos</a>
                                       </td>
                                   </tr>
                                   <tr>
