@@ -48,11 +48,21 @@
     <h4>Terreno frente a Ruta</h4>
   </center>
      
-    <label class="radio-inline"><input type="radio" name="PU07IDTFR">Cantonal.</label>
-    <label class="radio-inline"><input type="radio" name="PU07IDTFR">Nacional.</label>
-    <label class="radio-inline"><input type="radio" name="PU07IDTFR">Calle fisicamente.</label>
-    <label class="radio-inline"><input type="radio" name="PU07IDTFR">Solo en Plano.</label>
-    <label class="radio-inline"><input type="radio" name="PU07IDTFR">No existe</label>
+    <label class="radio-inline"><input type="radio" value="1" name="PU07IDTFR">Cantonal.</label>
+    <label class="radio-inline"><input type="radio" value="2" name="PU07IDTFR">Nacional.</label>
+    <label class="radio-inline"><input type="radio" value="2"  name="PU07IDTFR">Calle fisicamente.</label>
+    <label class="radio-inline"><input type="radio"  value="1"accept="" name="PU07IDTFR">Solo en Plano.</label>
+    <label class="radio-inline"><input type="radio"  value="3" name="PU07IDTFR">No existe</label>
+
+ </div>
+  <div class="container-fluid    well"> 
+        <center>
+    <h4>Tipo desector</h4>
+  </center>
+     
+    <label class="radio-inline"><input type="radio" value="0" name="PU12IDTDESEC">No existe.</label>
+    <label class="radio-inline"><input type="radio" value="1" name="PU12IDTDESEC">Agricultura.</label>
+  
 
  </div>
 <div class="container-fluid    well"> 
@@ -102,20 +112,41 @@
   </center>
       <div class="checkbox ">
       <label class="checkbox-inline">
-    <input type="checkbox" value="">Infraestructura de Tipo Residencial.</label>
+    <input type="checkbox" value="1" name="PU06IDACTDES1">Infraestructura de Tipo Residencial.</label>
     <label class="checkbox-inline">
-      <input type="checkbox" value="">Infraestructura de Tipo Comercial.</label>
+      <input type="checkbox" value="2" name="PU06IDACTDES2">Infraestructura de Tipo Comercial.</label>
     <label class="checkbox-inline">
-      <input type="checkbox" value="">Infraestructura de Tipo Institucional.</label>
+      <input type="checkbox" value="3" name="PU06IDACTDES3">Infraestructura de Tipo Institucional.</label>
     <label class="checkbox-inline">
-      <input type="checkbox" value="">Infraestructura de Tipo Residencial y Comercial.</label>
+      <input type="checkbox" value="4" name="PU06IDACTDES4">Infraestructura de Tipo Residencial y Comercial.</label>
     <label class="checkbox-inline">
-      <input type="checkbox" value="">No Existen Desarrollos en la Zona.</label>
+      <input type="checkbox" value="5" name="PU06IDACTDES5">No Existen Desarrollos en la Zona.</label>
      <label class="checkbox-inline">
-      <input type="checkbox" value="">Otros.</label>
+      <input type="checkbox" value="6" name="PU06IDACTDES6">Otros.</label>
+</div>
+ </div>
+  <div class="container-fluid    well"> 
+        <center>
+    <h4>Afectacion de areas de Proteccion</h4>
+  </center>
+      <div class="checkbox ">
+      <label class="checkbox-inline">
+    <input type="checkbox" value="1" name="PU13IDAAP1">Quebradas.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="2" name="PU13IDAAP2">Pozos.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="3" name="PU13IDAAP3">Río.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="4" name="PU13IDAAP4">Naciente.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="5" name="PU13IDAAP5">Acuífero Mala Noche.</label>
+     <label class="checkbox-inline">
+      <input type="checkbox" value="6" name="PU13IDAAP6">Acuífero Protero Caimital.</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="6" name="PU13IDAAP7">no existe.</label>
 </div>
  </div>
       <button type="submit" class="btn btn-success">Guardar Usuario</button> 
-      <a href="?c=class0102usuarios&m=index" class="btn btn-danger" role="button">Regresar</a>    
+      <a href="?c=class04inspeccion&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
  
