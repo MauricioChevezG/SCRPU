@@ -1,18 +1,7 @@
 <?php 
 $result = $this->class09desceg->listar(); 
 ?>
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vista Espacio Geográfico</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
   <div class="container-fluid">
     <h2>Listado del Espacio Geográfico:</h2>   
     <a href="?c=class09desceg&m=agregar" class="btn btn-primary" role="button">Registrar Espacio Geográfico:</a>
@@ -21,7 +10,7 @@ $result = $this->class09desceg->listar();
     <br>
       <br>   
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered">
+      <table class="table table-bordered table-hover" id="grilla-desceg">
         <thead>
           <tr>
             <th>Código Espacio Geográfico:</th>
@@ -65,7 +54,3 @@ $result = $this->class09desceg->listar();
         </tbody>
       </table>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  </body>
-  </html>

@@ -10,7 +10,9 @@ class class06actdesController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class06actdes/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -22,7 +24,9 @@ class class06actdesController
 			header('location:?c=class06actdes&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class06actdes/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -35,7 +39,9 @@ class class06actdesController
 		}
 		else{
 			$this->class06actdes = $this->class06actdes->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class06actdes/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -49,7 +55,9 @@ class class06actdesController
 	public function ver()
 	{
 		$this->class06actdes = $this->class06actdes->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class06actdes/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

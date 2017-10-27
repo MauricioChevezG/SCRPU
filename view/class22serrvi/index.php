@@ -1,23 +1,11 @@
 <?php $result = $this->class22serrvi->listar(); ?>
-<!DOCTYPE html>
-<html>
 
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado Servicio de Red Vial</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
   <div class="container-fluid">
     <h2>Listado del Servicio de Red Vial</h2>   
      <a href="?c=class22serrvi&m=agregar" class="btn btn-primary" role="button">Registrar Desarrollo</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered">
+      <table class="table table-bordered table-hover" id="grilla-serrvi">
         <thead>
           <tr>
             <th>Código del Servicio de Red Vial:</th>
@@ -61,7 +49,3 @@
         </tbody>
       </table>
     </div>
-      <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  </body>
-  </html>

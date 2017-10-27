@@ -1,14 +1,4 @@
-<!DOCTYPE html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Aspectos Biofísicos</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
   <center>
 
     <h2>Editar Espacio Geográfico: <?php echo $this->class10aspbio->getAtributo('PU10DESCABIO');?> </h2>
@@ -28,7 +18,4 @@
       <a href="?c=class10aspbio&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
   </div>
-  <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-</html>
+

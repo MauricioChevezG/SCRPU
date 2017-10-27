@@ -1,27 +1,14 @@
 <?php 
 $result = $this->class34clases->listar();
 ?>
-<!DOCTYPE html>
-<html>
 
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado Ubicación Clases</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-
-<body>
   <div class="container-fluid">
     <h2>Listado de Clases</h2>   
     <a href="?c=class34clases&m=agregar" class="btn btn-primary" role="button">Registrar Clases</a>
     
     <br><br><br>   
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered">
+      <table class="table table-bordered table-hover" id="grilla-clases">
         <thead>
           <tr>
             <th>Código de Clase:</th>
@@ -65,7 +52,3 @@ $result = $this->class34clases->listar();
         </tbody>
       </table>
     </div>
-     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  </body>
-  </html>

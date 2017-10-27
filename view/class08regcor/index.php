@@ -1,23 +1,12 @@
 <?php $result = $this->class08regcor->listar(); ?>
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vista Coordenadas Geográficas</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
   <div class="container-fluid">
     <h2>Tabla de Coordenadas Geográficas</h2>   
     <a href="?c=class08regcor&m=agregar" class="btn btn-primary" role="button">Registrar Coordenadas</a>
 
     <br><br> <br>    
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered">
+      <table class="table table-bordered table-hover" id="grilla-regcor">
         <thead>
           <tr>
             <th>Código</th>
@@ -64,7 +53,3 @@
         </tbody>
       </table>
     </div>
-     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  </body>
-  </html>

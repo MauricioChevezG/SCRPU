@@ -11,7 +11,9 @@ class class12tipdesecController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class12tipdesec/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -23,7 +25,9 @@ class class12tipdesecController
 			header('location:?c=class12tipdesec&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class12tipdesec/agregar.php';
+			require_once 'view/footer.php.php';
 		}
 	}
 	public function editar()
@@ -36,7 +40,9 @@ class class12tipdesecController
 		}
 		else{
 			$this->class12tipdesec = $this->class12tipdesec->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class12tipdesec/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -50,7 +56,9 @@ class class12tipdesecController
 	public function ver()
 	{
 		$this->class12tipdesec = $this->class12tipdesec->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class12tipdesec/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

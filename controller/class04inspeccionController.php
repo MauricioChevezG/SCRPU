@@ -57,7 +57,9 @@ class class04inspeccionController
 			header('location:?c=class04inspeccion&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class04inspeccion/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -105,7 +107,9 @@ class class04inspeccionController
 		}
 		else{
 			$this->class04inspeccion = $this->class04inspeccion->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class04inspeccion/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -119,7 +123,9 @@ class class04inspeccionController
 	public function ver()
 	{
 		$this->class04inspeccion = $this->class04inspeccion->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class04inspeccion/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

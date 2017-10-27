@@ -10,7 +10,9 @@ class class34clasesController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class34clases/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -22,7 +24,9 @@ class class34clasesController
 			header('location:?c=class34clases&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class34clases/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -35,7 +39,9 @@ class class34clasesController
 		}
 		else{
 			$this->class34clases = $this->class34clases->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class34clases/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -49,7 +55,9 @@ class class34clasesController
 	public function ver()
 	{
 		$this->class34clases = $this->class34clases->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class34clases/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

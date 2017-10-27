@@ -5,7 +5,7 @@
     <a href="#" onclick="agregarPuesto();" class="btn btn-primary" role="button">Registrar puesto</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
-      <table class="display table table-bordered" id="grilla-puestos" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <table class="table table-bordered table-hover" id="grilla-puestos">
         <thead>
           <tr>
             <th>Código del Puesto</th>

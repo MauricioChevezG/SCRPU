@@ -10,7 +10,9 @@ class class08regcorController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class08regcor/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -23,7 +25,9 @@ class class08regcorController
 			header('location:?c=class08regcor&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class08regcor/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -38,7 +42,9 @@ class class08regcorController
 		}
 		else{
 			$this->class08regcor = $this->class08regcor->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class08regcor/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -52,7 +58,9 @@ class class08regcorController
 	public function ver()
 	{
 		$this->class08regcor = $this->class08regcor->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class08regcor/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

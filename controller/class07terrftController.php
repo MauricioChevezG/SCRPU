@@ -10,7 +10,9 @@ class class07terrftController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class07terrft/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -22,7 +24,9 @@ class class07terrftController
 			header('location:?c=class07terrft&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class07terrft/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -35,7 +39,9 @@ class class07terrftController
 		}
 		else{
 			$this->class07terrft = $this->class07terrft->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class07terrft/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -49,7 +55,9 @@ class class07terrftController
 	public function ver()
 	{
 		$this->class07terrft = $this->class07terrft->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class07terrft/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

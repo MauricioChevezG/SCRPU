@@ -10,7 +10,9 @@ class class28cuisamController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class28cuisam/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -22,7 +24,9 @@ class class28cuisamController
 			header('location:?c=class28cuisam&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class28cuisam/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -35,7 +39,9 @@ class class28cuisamController
 		}
 		else{
 			$this->class28cuisam = $this->class28cuisam->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class28cuisam/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -49,7 +55,9 @@ class class28cuisamController
 	public function ver()
 	{
 		$this->class28cuisam = $this->class28cuisam->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class28cuisam/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

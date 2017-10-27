@@ -11,7 +11,9 @@ class class10aspbioController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class10aspbio/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -23,7 +25,9 @@ class class10aspbioController
 			header('location:?c=class10aspbio&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class10aspbio/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -36,7 +40,9 @@ class class10aspbioController
 		}
 		else{
 			$this->class10aspbio = $this->class10aspbio->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class10aspbio/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -50,7 +56,9 @@ class class10aspbioController
 	public function ver()
 	{
 		$this->class10aspbio = $this->class10aspbio->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class10aspbio/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>

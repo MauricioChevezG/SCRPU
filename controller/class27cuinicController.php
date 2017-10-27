@@ -10,7 +10,9 @@ class class27cuinicController
 	}
 	public function index()
 	{
+		require_once 'view/header.php';
 		require_once 'view/class27cuinic/index.php';
+		require_once 'view/footer.php';
 	}
 	public function agregar()
 	{
@@ -22,7 +24,9 @@ class class27cuinicController
 			header('location:?c=class27cuinic&m=index');
 		}
 		else{
+			require_once 'view/header.php';
 			require_once 'view/class27cuinic/agregar.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()
@@ -35,7 +39,9 @@ class class27cuinicController
 		}
 		else{
 			$this->class27cuinic = $this->class27cuinic->buscar($_REQUEST['id']);
+			require_once 'view/header.php';
 			require_once 'view/class27cuinic/editar.php';
+			require_once 'view/footer.php';
 		}
 	}
 
@@ -49,7 +55,9 @@ class class27cuinicController
 	public function ver()
 	{
 		$this->class27cuinic = $this->class27cuinic->buscar($_REQUEST['id']);
+		require_once 'view/header.php';
 		require_once 'view/class27cuinic/ver.php';
+		require_once 'view/footer.php';
 	}
 }
 ?>
