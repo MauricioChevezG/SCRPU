@@ -77,6 +77,45 @@ class class04inspeccion extends Conexion
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
+	public function listarTFR()
+	{
+		$sql = "CALL SP07_TERRFT_MOSTRAR();";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;
+	}
+
+	public function listarTDS()
+	{
+		$sql = "CALL SP10_TIPDESEC_MOSTRAR();";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;
+	}
+
+	public function listarDEG()
+	{
+		$sql = "CALL SP05_DESCEG_MOSTRAR();";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;
+	}
+	public function listarAB()
+	{
+		$sql = "CALL SP06_ASPBIO_MOSTRAR();";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;
+	}
+
+	public function listarAD()
+	{
+		$sql = "CALL SP04_ACTDES_MOSTRAR();";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;
+	}
+	public function listarAAP()
+	{
+		$sql = "CALL SP13_AAREP_MOSTRAR();";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;
+	}
 
 	public function guardar()
 	{
