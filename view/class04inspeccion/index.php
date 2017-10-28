@@ -1,6 +1,6 @@
 <?php $result = $this->class04inspeccion->listar(); ?>
     <div class="container-fluid">
-        <h2>Listado de puestos</h2>   
+        <h2>Listado de Tramites</h2>   
     <a href="?c=class04inspeccion&m=agregar" class="btn btn-primary" role="button">Registrar</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
