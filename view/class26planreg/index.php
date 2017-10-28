@@ -2,13 +2,12 @@
 $result = $this->class26planreg->listar();
 ?>
 
-  <div class="container-fluid">
     <h2>Listado del Plan Regulador:</h2>   
     <a href="?c=class26planreg&m=agregar" class="btn btn-primary" role="button">Registrar Plan Regulador:</a>
-     
-    <br><br> <br>    
+    <br>
+    <br>    
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered table-hover" id="grilla-planreg">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-planreg">
         <thead>
           <tr>
             <th>Código del Plan Regulador:</th>
@@ -51,4 +50,3 @@ $result = $this->class26planreg->listar();
           <?php endif ?>
         </tbody>
       </table>
-    </div>

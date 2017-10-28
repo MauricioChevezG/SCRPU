@@ -1,11 +1,10 @@
 <?php $result = $this->class20desas->listar(); ?>
 
-  <div class="container-fluid">
     <h2>Listado de Desarrolo de Servidumbre</h2>   
      <a href="?c=class20desas&m=agregar" class="btn btn-primary" role="button">Registrar Desarrollo</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
-      <table cclass="table table-bordered table-hover" id="grilla-desas">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-desas">
         <thead>
           <tr>
             <th>Código del Desarrollo:</th>
@@ -48,4 +47,3 @@
           <?php endif ?>
         </tbody>
       </table>
-    </div>

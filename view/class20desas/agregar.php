@@ -1,8 +1,6 @@
-
   <center>
     <h2>Agregar Nuevo Desarrolo de Servidumbre</h2>
   </center>
-  <div class="container-fluid">
     <form action="?c=class20desas&m=agregar" method="post">
      	<div class="form-group">
         <label for="PU20IDDESAS">Código del Desarrollo:</label>
@@ -15,4 +13,3 @@
       <button type="submit" class="btn btn-success">Guardar</button> 
       <a href="?c=class20desas&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
-   </div>

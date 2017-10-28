@@ -3,13 +3,12 @@ $result = $this->class12tipdesec->listar();
 
 ?>
 
-  <div class="container-fluid">
     <h2>Listado de Tipo de Desarrollo</h2>   
-    <a href="?c=class12tipdesec&m=agregar" class="btn btn-primary" role="button">Registrar Tipo de Desarrollo</a>
-       
-    <br><br><br>      
+    <a href="?c=class12tipdesec&m=agregar" class="btn btn-primary" role="button">Registrar Tipo de Desarrollo</a>  
+    <br>
+    <br>      
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered table-hover" id="grilla-tipdesec">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-tipdesec">
         <thead>
           <tr>
             <th>Código del Tipo de Desarrollo:</th>
@@ -52,4 +51,3 @@ $result = $this->class12tipdesec->listar();
           <?php endif ?>
         </tbody>
       </table>
-    </div>

@@ -1,9 +1,7 @@
-
   <center>
     <h2>Editar Ubicación: <?php echo $this->class34clases->getAtributo('PU34DESCLA');?> </h2>
   </center>
 
-  <div class="container-fluid">
     <form action="?c=class34clases&m=editar" method="post">
       <div class="form-group">
         <label for="PU34IDCLAS">Código de Clase:</label>
@@ -17,5 +15,4 @@
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=class34clases&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
-  </div>
 

@@ -1,14 +1,11 @@
-<?php 
-$result = $this->class06actdes->listar(); 
-?>
+<?php $result = $this->class06actdes->listar(); ?>
 
-    <div class="container-fluid">
          <h2>Listado de Actividades a Desarrollar</h2>   
     <a href="?c=class06actdes&m=agregar" class="btn btn-primary" role="button">Registrar Actividad a Desarrollar</a>
        
     <br><br>     
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered table-hover" id="grilla-actdes">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%"id="grilla-actdes">
         <thead>
           <tr>
             <th>Código Actividad a Desarrollar</th>
@@ -51,4 +48,3 @@ $result = $this->class06actdes->listar();
           <?php endif ?>
         </tbody>
       </table>
-    </div>

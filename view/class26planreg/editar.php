@@ -1,9 +1,6 @@
-
   <center>
-
     <h2>Editar Plan Regulador: <?php echo $this->class26planreg->getAtributo('PU26PLNDESC');?> </h2>
   </center>
-  <div class="container-fluid">
     <form action="?c=class26planreg&m=editar" method="post">
       <div class="form-group">
         <label for="PU26IDPLAN">código del Plan Regulador</label>
@@ -16,6 +13,5 @@
      
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=class26planreg&m=index" class="btn btn-danger" role="button">Regresar</a>    
-    </form>
-  </div>
+   </div>
 

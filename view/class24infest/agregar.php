@@ -2,7 +2,6 @@
   <center>
     <h2>Agregar Nueva infraestructura en el terreno</h2>
   </center>
-  <div class="container-fluid">
     <form action="?c=class24infest&m=agregar" method="post">
     
       <div class="form-group">
@@ -17,4 +16,3 @@
       <button type="submit" class="btn btn-success">Guardar</button> 
       <a href="?c=class24infest&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
-   </div>

@@ -1,15 +1,11 @@
-<?php 
-$result = $this->class16servae->listar(); 
+<?php $result = $this->class16servae->listar(); ?>
 
-?>
-
-  <div class="container">
     <h2>Listado de Servicio de Electricidad y Agua</h2>   
     <a href="?c=class16servae&m=agregar" class="btn btn-primary" role="button">Registrar Servicio de Electricidad y Agua</a>
-  
-    <br><br><br>      
+    <br>
+    <br>      
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered table-hover" id="grilla-servae">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-servae">
         <thead>
           <tr>
             <th>Código Servicio de Electricidad y Agua</th>
@@ -52,4 +48,3 @@ $result = $this->class16servae->listar();
           <?php endif ?>
         </tbody>
       </table>
-    </div>

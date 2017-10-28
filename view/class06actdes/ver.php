@@ -1,7 +1,4 @@
-
-    <div class="container-fluid">
-        	<br>
-		<div class="row">
+	<div class="row">
 			<div class="panel panel-default">
 				<div class="panel-heading">Detalle del Actividad a Desarrollar</div>
 				<div class="panel-body">
@@ -15,5 +12,5 @@
 				</div>
 			</div>
 		</div>
-    </div>
+   
 

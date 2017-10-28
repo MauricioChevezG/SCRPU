@@ -2,7 +2,6 @@
     <center>
     <h2>Editar Actividad a Desarrollar: <?php echo $this->class06actdes->getAtributo('PU06DESAD');?> </h2>
 </center>
-    <div class="container-fluid">
         <form action="?c=class06actdes&m=editar" method="post">
       <div class="form-group">
         <label for="PU06IDACTDES">Código Actividad a Desarrollar:</label>
@@ -16,5 +15,5 @@
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=class06actdes&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
-    </div>
+
 

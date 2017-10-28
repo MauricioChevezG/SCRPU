@@ -1,4 +1,3 @@
-<div class="container-fluid">
   <center><h2>Editar Tipo suelo: <?php echo $this->class35tipsue->getAtributo('PU35DESTIP');?> </h2></center>
   <form action="?c=class35tipsue&m=editar" method="post">
       <div class="form-group">
@@ -12,5 +11,4 @@
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=class35tipsue&m=index" class="btn btn-danger" role="button">Regresar</a>    
   </form>
-</div>
 

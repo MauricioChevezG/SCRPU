@@ -3,7 +3,6 @@
 
     <h2>Editar Espacio Geográfico: <?php echo $this->class09desceg->getAtributo('PU09DESCREG');?> </h2>
   </center>
-  <div class="container-fluid">
     <form action="?c=class09desceg&m=editar" method="post">
       <div class="form-group">
         <label for="PU09IDDEG">Código Espacio Geográfico</label>
@@ -17,5 +16,4 @@
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=class09desceg&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
-  </div>
 

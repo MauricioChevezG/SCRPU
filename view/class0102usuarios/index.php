@@ -1,11 +1,11 @@
 <?php $result = $this->class0102usuarios->listar(); ?>
-<div class="container-fluid">
+
   <center><h2>Listado de usuarios</h2></center>   
   <a  href="?c=class0102usuarios&m=agregar" class="btn btn-primary" role="button">Registrar usuario</a>    
   <br>
   <br>    
   <?php if ($result->num_rows): ?>
-    <table class="table table-bordered table-hover" id="grilla-usuarios">
+    <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-usuarios">
       <thead>
         <tr>
           <th>Cédula</th>
@@ -46,4 +46,4 @@
         <?php endif ?>
     </tbody>
   </table>
-</div>
+

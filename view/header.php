@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-           <div class="panel-group" id="accordion">
+            <div class="panel-group" id="accordion">
                   <div class="panel panel-default">
                       <div class="panel-heading">
                           <h4 class="panel-title">
@@ -31,12 +31,13 @@
                               </span>Menu</a>
                           </h4>
                       </div>
-                      <div id="collapseOne" class="panel-collapse collapse in ">
+                      <div id="collapseOne" class="panel-collapse collapse">
                           <div class="panel-body">
                               <table class="table">
                                   <tr>
                                       <td>
-                                          <span class="glyphicon glyphicon-pencil text-primary"></span><a href="?c=class0102usuarios">Articles</a>
+                                          <span class="glyphicon glyphicon-pencil text-primary"></span>
+                                          <a href="?c=class04inspeccion">Inspeccion</a>
                                       </td>
                                   </tr>
                                   <tr>
@@ -251,7 +252,7 @@
                           </div>
                       </div>
                   </div>
-           </div>
+              </div><!--Finaliza el primer Panel-Group-->
         </ul>
       </div>
     </div>
@@ -498,7 +499,7 @@
       </div><!--Finaliza el sidenav-->
     <div class="col-sm-9">
       <br>
-      <div class="container-fluid well" id="contenido">
+      <div class="container-fluid " id="contenido">
         
         
   

@@ -2,13 +2,12 @@
 $result = $this->class34clases->listar();
 ?>
 
-  <div class="container-fluid">
     <h2>Listado de Clases</h2>   
     <a href="?c=class34clases&m=agregar" class="btn btn-primary" role="button">Registrar Clases</a>
-    
-    <br><br><br>   
+    <br>
+    <br>   
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered table-hover" id="grilla-clases">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-clases">
         <thead>
           <tr>
             <th>Código de Clase:</th>
@@ -51,4 +50,3 @@ $result = $this->class34clases->listar();
           <?php endif ?>
         </tbody>
       </table>
-    </div>

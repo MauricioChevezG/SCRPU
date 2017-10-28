@@ -1,4 +1,4 @@
-    <div class="container-fluid">
+   
     <center><h2>Agregar nuevo puesto</h2></center>
     <form action="?c=class03puestos&m=agregar" method="post" >
       <div class="form-group">
@@ -25,4 +25,3 @@
       });
       </script>-->
      </form>
-    </div>

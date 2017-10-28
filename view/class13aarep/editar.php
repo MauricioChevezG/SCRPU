@@ -3,7 +3,6 @@
       
     <h2>Editar Afectación de Áreas de protección: <?php echo $this->class13aarep->getAtributo('PU13DESCAAP');?> </h2>
   </center>
-  <div class="container-fluid">
     <form action="?c=class13aarep&m=editar" method="post">
       <div class="form-group">
         <label for="PU13IDAAP">Código Afectación de Áreas de protección</label>
@@ -17,5 +16,4 @@
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=class13aarep&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
-  </div>
 

@@ -1,15 +1,11 @@
-<?php 
-$result = $this->class18calleser->listar(); 
+<?php $result = $this->class18calleser->listar(); ?>
 
-?>
-
-  <div class="container-fluid">
     <h2>Listado Existencia de Calle en Servidumbre Frente a Ruta</h2>   
     <a href="?c=class18calleser&m=agregar" class="btn btn-primary" role="button">Registrar Existencia de Calle en Servidumbre Frente a Ruta</a>
-  
-    <br><br><br>      
+    <br>
+    <br>    
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered table-hover" id="grilla-calleser">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-calleser">
         <thead>
           <tr>
             <th>Código Existencia de Calle en Servidumbre Frente a Ruta</th>
@@ -52,4 +48,3 @@ $result = $this->class18calleser->listar();
           <?php endif ?>
         </tbody>
       </table>
-    </div>

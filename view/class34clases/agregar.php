@@ -1,10 +1,7 @@
-
   <center>
     <h2>Agregar Ubicación Clases</h2>
   </center>
-  <div class="container-fluid">
     <form action="?c=class34clases&m=agregar" method="post">
-    
       <div class="form-group">
         <label for="PU34IDCLAS">Código de Clase:</label>
         <input type="text" class="form-control" id="PU34IDCLAS" name="PU34IDCLAS">
@@ -17,4 +14,3 @@
       <button type="submit" class="btn btn-success">Guardar</button> 
       <a href="?c=class34clases&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
-   </div>

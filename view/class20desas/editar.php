@@ -1,9 +1,6 @@
-
   <center>
-
     <h2>Editar Desarrolo de Servidumbre: <?php echo $this->class20desas->getAtributo('PU20DESCS');?> </h2>
   </center>
-  <div class="container-fluid">
     <form action="?c=class20desas&m=editar" method="post">
       <div class="form-group">
         <label for="PU20IDDESAS">Código del Desarrollo:</label>
@@ -17,4 +14,3 @@
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=class20desas&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
-  </div>

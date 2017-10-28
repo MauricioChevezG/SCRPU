@@ -1,9 +1,6 @@
-
   <center>
-
     <h2>Editar Ubicación: <?php echo $this->class32capuso->getAtributo('PU32DESUSO');?> </h2>
   </center>
-  <div class="container-fluid">
     <form action="?c=class32capuso&m=editar" method="post">
       <div class="form-group">
         <label for="PU32IDCUSO">Código de Capacidad de Uso de Suelo</label>
@@ -17,5 +14,4 @@
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=class32capuso&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
-  </div>
 

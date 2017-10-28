@@ -3,7 +3,6 @@
  
     <h2>Editar Tipo de Desarrollo: <?php echo $this->class12tipdesec->getAtributo('PU12TIPODES');?> </h2>
   </center>
-  <div class="container">
     <form action="?c=class12tipdesec&m=editar" method="post">
       <div class="form-group">
         <label for="PU12IDTDESEC">Código Tipo de Desarrollo:</label>
@@ -17,5 +16,4 @@
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=class12tipdesec&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
-  </div>
 

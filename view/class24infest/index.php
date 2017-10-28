@@ -2,15 +2,12 @@
 $result = $this->class24infest->listar(); 
 ?>
 
-  <div class="container-fluid">
     <h2>Listado de Infraestructura</h2>   
     <a href="?c=class24infest&m=agregar" class="btn btn-primary" role="button">Registrar Infraestructura</a>
-   
     <br>
     <br>
-      <br>   
     <?php if ($result->num_rows): ?>
-      <table cclass="table table-bordered table-hover" id="grilla-infest">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-infest">
         <thead>
           <tr>
             <th>Código de infraestructura:</th>
@@ -53,4 +50,3 @@ $result = $this->class24infest->listar();
           <?php endif ?>
         </tbody>
       </table>
-    </div>

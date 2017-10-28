@@ -1,12 +1,9 @@
-<?php 
-$result = $this->class07terrft->listar(); 
-?>
-  <div class="container">
+<?php $result = $this->class07terrft->listar(); ?>
     <h2>Listado de Terreno Frente a Ruta</h2>   
     <a href="?c=class07terrft&m=agregar" class="btn btn-primary" role="button">Registrar Terreno Frente a Ruta</a>
-    <br><br><br>        
+    <br><br>        
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered table-hover" id="grilla-terrft">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-terrft">
         <thead>
           <tr>
             <th>Código del Terreno Frete a Ruta</th>
@@ -49,4 +46,3 @@ $result = $this->class07terrft->listar();
           <?php endif ?>
         </tbody>
       </table>
-    </div>

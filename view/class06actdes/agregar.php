@@ -1,5 +1,3 @@
-
-    <div class="container-fluid">
   <center>
     <h2>Agregar Nueva Actividad a Desarrollar</h2>
   </center>
@@ -17,4 +15,4 @@
       <button type="submit" class="btn btn-success">Guardar</button> 
       <a href="?c=class06actdes&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
-    </div>
+    

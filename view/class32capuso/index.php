@@ -2,13 +2,12 @@
 $result = $this->class32capuso->listar(); 
 ?>
 
-  <div class="container-fluid">
     <h2>Listado de Capacidad de Uso de Suelo</h2>   
     <a href="?c=class32capuso&m=agregar" class="btn btn-primary" role="button">Registrar Capacidad de Uso de Suelo</a>
-    
-    <br><br><br>  
+    <br>
+    <br>
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered table-hover" id="grilla-capuso">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-capuso">
         <thead>
           <tr>
             <th>Código de Capacidad de Uso de Suelo</th>
@@ -51,4 +50,3 @@ $result = $this->class32capuso->listar();
           <?php endif ?>
         </tbody>
       </table>
-    </div>

@@ -4,10 +4,10 @@
     <a href="?c=class04inspeccion&m=agregar" class="btn btn-primary" role="button">Registrar</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
-      <table class="display table table-bordered" id="grilla-inspeccion" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-inspeccion" >
         <thead>
           <tr>
-            <th>Id Tramite</th>
+            <th>Tramite</th>
             <th>Fecha</th>
             <th>Terreno F R</th>
             <th>Norte</th>

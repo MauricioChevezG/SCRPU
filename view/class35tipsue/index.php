@@ -1,11 +1,10 @@
 <?php $result = $this->class35tipsue->listar();?>
-<div class="container-fluid">
   <h2>Listado Tipo Suelo</h2>   
   <a href="?c=class35tipsue&m=agregar" class="btn btn-primary" role="button">Registrar Tipo Suelo</a>
   <br>
   <br>   
   <?php if ($result->num_rows): ?>
-  <table class="table table-bordered table-hover" id="grilla-tipsue">
+  <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-tipsue">
     <thead>
       <tr>
         <th>Código de Tipo Suelo:</th>
@@ -36,4 +35,3 @@
       <?php endif ?>
     </tbody>
   </table>
-</div>

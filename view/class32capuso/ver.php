@@ -1,6 +1,3 @@
-
-	<div class="container-fluid">
-		<br>
 		<div class="row">
 			<div class="panel panel-default">
 				<div class="panel-heading">Detalle  de Capacidad de Uso de Suelo</div>
@@ -15,5 +12,4 @@
 				</div>
 			</div>
 		</div>
-	</div>
 

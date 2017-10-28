@@ -1,11 +1,11 @@
 <?php $result = $this->class22serrvi->listar(); ?>
 
-  <div class="container-fluid">
     <h2>Listado del Servicio de Red Vial</h2>   
      <a href="?c=class22serrvi&m=agregar" class="btn btn-primary" role="button">Registrar Desarrollo</a>
-    <br><br>    
+    <br>
+    <br>    
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered table-hover" id="grilla-serrvi">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-serrvi">
         <thead>
           <tr>
             <th>Código del Servicio de Red Vial:</th>
@@ -48,4 +48,3 @@
           <?php endif ?>
         </tbody>
       </table>
-    </div>

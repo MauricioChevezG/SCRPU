@@ -1,7 +1,7 @@
 
     <center><h2>Editar usuario: <?php echo $this->class0102usuarios->getAtributo('PU01NOMUSU');?> </h2></center>
-    <div class="container-fluid">
-        <form action="?c=class0102usuarios&m=editar" method="post">
+    
+      <form action="?c=class0102usuarios&m=editar" method="post">
       <div class="form-group">
         <label for="PU01CEDUSU">Cédula:</label>
         <input type="text" class="form-control" id="PU01CEDUSU" name="PU01CEDUSU" value="<?php echo $this->class0102usuarios->getAtributo('PU01CEDUSU');?>" readonly>
@@ -34,4 +34,3 @@
       <button type="submit" class="btn btn-success">Editar Usuario</button> 
       <a href="?c=class0102usuarios&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
-    </div>

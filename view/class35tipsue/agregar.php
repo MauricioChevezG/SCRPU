@@ -1,4 +1,3 @@
-<div class="container-fluid">
   <center><h2>Agregar Tipo Suelo</h2></center>
   <form action="?c=class35tipsue&m=agregar" method="post">
     <div class="form-group">
@@ -12,4 +11,3 @@
     <button type="submit" class="btn btn-success">Guardar</button> 
     <a href="?c=class35tipsue&m=index" class="btn btn-danger" role="button">Regresar</a>    
   </form>
-</div>

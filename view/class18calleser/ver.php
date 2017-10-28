@@ -1,6 +1,3 @@
-
-	<div class="container-fluid">
-		<br>
 		<div class="row">
 			<div class="panel panel-default">
 				<div class="panel-heading">Detalle Existencia de Calle en Servidumbre Frente a Ruta</div>
@@ -15,4 +12,3 @@
 				</div>
 			</div>
 		</div>
-	</div>

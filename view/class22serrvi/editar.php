@@ -1,9 +1,6 @@
-
   <center>
-
     <h2>Editar Servicio de Red Vial: <?php echo $this->class22serrvi->getAtributo('PU22DESSVI');?> </h2>
   </center>
-  <div class="container-fluid">
     <form action="?c=class22serrvi&m=editar" method="post">
       <div class="form-group">
         <label for="PU22IDREDVI">Código del Servicio de Red Vial:</label>
@@ -17,4 +14,3 @@
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=class22serrvi&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
-  </div>

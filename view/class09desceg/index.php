@@ -2,15 +2,13 @@
 $result = $this->class09desceg->listar(); 
 ?>
 
-  <div class="container-fluid">
     <h2>Listado del Espacio Geográfico:</h2>   
     <a href="?c=class09desceg&m=agregar" class="btn btn-primary" role="button">Registrar Espacio Geográfico:</a>
    
     <br>
     <br>
-      <br>   
     <?php if ($result->num_rows): ?>
-      <table class="table table-bordered table-hover" id="grilla-desceg">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-desceg">
         <thead>
           <tr>
             <th>Código Espacio Geográfico:</th>
@@ -53,4 +51,3 @@ $result = $this->class09desceg->listar();
           <?php endif ?>
         </tbody>
       </table>
-    </div>

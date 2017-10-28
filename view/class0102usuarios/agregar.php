@@ -1,7 +1,5 @@
-    <div class="container-fluid">
-        <center>
-    <h2>Agregar nuevo usuario</h2>
-  </center>
+    
+  <center><h2>Agregar nuevo usuario</h2></center>
     <form action="?c=class0102usuarios&m=agregar" method="post">
       <div class="form-group">
         <label for="PU01CEDUSU">Cédula:</label>
@@ -43,4 +41,3 @@
       <button type="submit" class="btn btn-success">Guardar Usuario</button> 
       <a href="?c=class0102usuarios&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>
-    </div>

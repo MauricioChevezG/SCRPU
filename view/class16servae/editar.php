@@ -3,7 +3,6 @@
 
     <h2>Editar Servicio de: <?php echo $this->class16servae->getAtributo('PU16DESCAE');?> </h2>
   </center>
-  <div class="container">
     <form action="?c=class16servae&m=editar" method="post">
       <div class="form-group">
         <label for="PU16IDSAE">Código del Servicio:</label>
@@ -17,4 +16,3 @@
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=class16servae&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
-  </div>

@@ -1,6 +1,4 @@
-
-    <div class="container-fluid">
-        	<div class="row">
+	<div class="row">
 			<div  class="panel panel-default">
 				<div class="panel-heading">Detalle del Puesto</div>
 				<div class="panel-body">
@@ -14,4 +12,4 @@
 				</div>
 			</div>
 		</div>
-    </div>
+   
