@@ -1,7 +1,4 @@
-  <?php $result1 = $this->class04inspeccion->listarTFR();?>
-<?php  $result2 = $this->class04inspeccion->listarTDS();?>
-      
-<center>
+  <center>
     <h2>Inspeccion</h2>
   </center>
     <form action="?c=class04inspeccion&m=agregar" method="post">
@@ -42,43 +39,30 @@
          
         <label for="PU04ALTITUD">Altitud:</label>
         <input type="text" class="form-control" id="PU04ALTITUD" name="PU04ALTITUD">
-      
-      </div> </div>
+      </div> 
+    </div>
       </div>
 
-      <div class="container-fluid    well"> 
+  <div class="container-fluid    well"> 
         <center>
     <h4>Terreno frente a Ruta</h4>
   </center>
-  <?php
-    while($row=  mysqli_fetch_array($result1))
-    { 
-        echo '<label class="checkbox-inline"><input type="checkbox" name="'.$row["PU07IDTFR"].'" value="'.$row["PU07NOMTFR"].'">'.$row["PU07NOMTFR"].'</label>';
-         
-    }
-  ?>
-    <!-- <label class="radio-inline"><input type="radio" value="1" name="PU07IDTFR">Cantonal.</label>
+     
+    <label class="radio-inline"><input type="radio" value="1" name="PU07IDTFR">Cantonal.</label>
     <label class="radio-inline"><input type="radio" value="2" name="PU07IDTFR">Nacional.</label>
     <label class="radio-inline"><input type="radio" value="2"  name="PU07IDTFR">Calle fisicamente.</label>
     <label class="radio-inline"><input type="radio"  value="1"accept="" name="PU07IDTFR">Solo en Plano.</label>
-    <label class="radio-inline"><input type="radio"  value="3" name="PU07IDTFR">No existe</label> -->
+    <label class="radio-inline"><input type="radio"  value="3" name="PU07IDTFR">No existe</label>
 
  </div>
   <div class="container-fluid    well"> 
         <center>
-  <h4>Tipo desector</h4>
+    <h4>Tipo desector</h4>
   </center>
-  <?php 
-  while($row=  mysqli_fetch_array($result2))
-  { 
-      echo '<input type="checkbox" name="'.$row["PU12IDTDESEC"].'" value="'.$row["PU12TIPODES"].'">'.$row["PU12TIPODES"];
      
-
-  }
-  ?>
-    <!-- <label class="radio-inline"><input type="radio" value="0" name="PU12IDTDESEC">No existe.</label>
+    <label class="radio-inline"><input type="radio" value="0" name="PU12IDTDESEC">No existe.</label>
     <label class="radio-inline"><input type="radio" value="1" name="PU12IDTDESEC">Agricultura.</label>
-   -->
+  
 
  </div>
 <div class="container-fluid    well"> 
@@ -86,9 +70,7 @@
     <h4>Descripción del Espacio Geográfico</h4>
   </center>
       <div class="checkbox ">
-
-
-   <!--    <label class="checkbox-inline">
+      <label class="checkbox-inline">
     <input type="checkbox" value="1" name="PU09IDDEG1">Topografía Plana.</label>
     <label class="checkbox-inline">
       <input type="checkbox" value="2" name="PU09IDDEG2">Topografía Semiplano.</label>
@@ -101,17 +83,15 @@
     <label class="checkbox-inline">
       <input type="checkbox" value="6" name="PU09IDDEG6">Topografía Irregular.</label><br>
     <label class="checkbox-inline">
-      <input type="checkbox" value="7" name="PU09IDDEG7">Otros.</label> -->
+      <input type="checkbox" value="7" name="PU09IDDEG7">Otros.</label>
 </div>
  </div>
 <div class="container-fluid    well"> 
         <center>
-    <h4>Descripción Aspectos Biofisicos tfr</h4>
+    <h4>Descripción Aspectos Biofisicos</h4>
   </center>
-      
-
-
-<!--       <label class="checkbox-inline">
+      <div class="checkbox ">
+      <label class="checkbox-inline">
     <input type="checkbox" value="1" name="PU10IDASBIO1">Vegetación de Jardín.</label>
     <label class="checkbox-inline">
       <input type="checkbox" value="2" name="PU10IDASBIO2">Tipo Pasto.</label>
@@ -122,9 +102,9 @@
     <label class="checkbox-inline">
       <input type="checkbox" value="5" name="PU10IDASBIO5">Arboles Dispersos.</label>
     <label class="checkbox-inline">
-      <input type="checkbox" value="6" name="PU10IDASBIO6">no existe.</label> -->
+      <input type="checkbox" value="6" name="PU10IDASBIO6">no existe.</label>
 
-
+</div>
  </div>
  <div class="container-fluid    well"> 
         <center>
@@ -165,7 +145,7 @@
     <label class="checkbox-inline">
       <input type="checkbox" value="6" name="PU13IDAAP7">no existe.</label>
 </div>
- </div>
+ </div> -->
       <button type="submit" class="btn btn-success">Guardar Usuario</button> 
       <a href="?c=class04inspeccion&m=index" class="btn btn-danger" role="button">Regresar</a>    
      </form>

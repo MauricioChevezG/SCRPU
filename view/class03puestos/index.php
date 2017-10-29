@@ -1,5 +1,4 @@
 <?php $result = $this->class03puestos->listar(); ?>
-
         <h2>Listado de puestos</h2>   
     <a href="?c=class03puestos&m=agregar"  class="btn btn-primary" role="button">Registrar puesto</a>
    <br>
@@ -47,3 +46,5 @@
           <?php endif ?>
         </tbody>
       </table>
+
+   

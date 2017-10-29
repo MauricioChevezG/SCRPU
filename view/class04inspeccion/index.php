@@ -1,5 +1,20 @@
+   
+        <br/>
+        <!--Horizontal Tab-->
+        <div id="parentHorizontalTab">
+            <ul class="resp-tabs-list hor_1">
+                <li>Horizontal 1</li>
+                <li>Horizontal 2</li>
+                <li>Horizontal 3</li>
+            </ul>
+
+            <div class="resp-tabs-container hor_1">
+                <div class="container-fluid">
+                    <!-- contenido de tab 1 -->
+
+
 <?php $result = $this->class04inspeccion->listar(); ?>
-    <div class="container-fluid">
+    
         <h2>Listado de Tramites</h2>   
     <a href="?c=class04inspeccion&m=agregar" class="btn btn-primary" role="button">Registrar</a>
     <br><br>    
@@ -58,4 +73,25 @@
 
       </table>
 
-    </div>
+      </div>
+                <div class="container">
+                <!-- contenido de tab 2 -->
+                    <br>
+                    <br>
+                    <p>Tab 2 Container</p>
+                </div>
+                <div class="container">
+                    <!-- contenido de tab 3 -->
+                    <br>
+                    <br>
+                    <p>Tab 3 Container</p>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+        <div id="nested-tabInfo">
+            Selected tab: <span class="tabName"></span>
+        </div>
+        <br/>
+        <br/>
