@@ -14,7 +14,7 @@
 	<script src="assets/bootstrap/js/jquery.min.js"></script>
   <script src="assets/jquery-ui/jquery-ui.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="assets/datatables/datatables.min.js"></script>
   <script src="public/js/rutasVistas.js"></script>
   <script src="public/js/indicetablas.js"></script>
   <script src="public/js/fechas-jquery.js"></script>
