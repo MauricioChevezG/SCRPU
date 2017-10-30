@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SCRPU</title>
 <link rel="stylesheet" href="public/css/easy-responsive-tabs.css "/>
-<link rel="stylesheet" href="assets/datatables/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="assets/datatables/datatables.min.css">
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/bootstrap/css/styles.css">
 <link rel="stylesheet" href="public/css/estilo.css">
