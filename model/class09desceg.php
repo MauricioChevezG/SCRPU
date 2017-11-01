@@ -27,7 +27,7 @@ class class09desceg  extends Conexion
 
 	public function buscar($PU09IDDEG)
 	{
-		$sql = "CALL SP05_DESCEG_BUSCAR  ('".$PU09IDDEG."');";
+		$sql = "CALL SP09_DESCEG_BUSCAR  ('".$PU09IDDEG."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class09desceg = $this->convertToclass09desceg($result);
 		return $class09desceg;
@@ -35,26 +35,26 @@ class class09desceg  extends Conexion
 
 	public function listar()
 	{
-		$sql = "call SP05_DESCEG_MOSTRAR();";
+		$sql = "call SP09_DESCEG_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
 
 	public function guardar()
 	{
-		$sql = "call SP05_DESCEG_GUARDAR('$this->PU09IDDEG','$this->PU09DESCREG')";
+		$sql = "call SP09_DESCEG_GUARDAR('$this->PU09IDDEG','$this->PU09DESCREG')";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function actualizar()
 	{
-		$sql = "call SP05_DESCEG_ACTUALIZAR('$this->PU09IDDEG','$this->PU09DESCREG')";
+		$sql = "call SP09_DESCEG_ACTUALIZAR('$this->PU09IDDEG','$this->PU09DESCREG')";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function eliminar()
 	{
-		$sql = "call SP05_DESCEG_ELIMINAR('$this->PU09IDDEG')";
+		$sql = "call SP09_DESCEG_ELIMINAR('$this->PU09IDDEG')";
 		$this->conexion->consultaSimple($sql);
 	}
 

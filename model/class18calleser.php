@@ -40,19 +40,19 @@ class class18calleser  extends Conexion
 
 	public function guardar()
 	{
-		$sql = "call SP18_CALLESER_GUARDAR('$this->PU18IDCSCLS','$this->PU18DESCS')";
+		$sql = "call SP18_CALLESER_GUARDAR('$this->PU18IDCSCLS','$this->PU18DESCS');";
 		$this->conexion->ConsultaSimple($sql);
 	}
 
 	public function actualizar()
 	{
-		$sql = "call SP18_CALLESER_ACTUALIZAR('$this->PU18IDCSCLS','$this->PU18DESCS')";
+		$sql = "call SP18_CALLESER_ACTUALIZAR('$this->PU18IDCSCLS','$this->PU18DESCS');";
 		$this->conexion->ConsultaSimple($sql);
 	}
 
 	public function eliminar()
 	{
-		$sql = "call SP18_CALLESER_ELIMINAR('$this->PU18IDCSCLS')";
+		$sql = "call SP18_CALLESER_ELIMINAR('$this->PU18IDCSCLS');";
 		$this->conexion->ConsultaSimple($sql);
 	}
 

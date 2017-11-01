@@ -25,7 +25,7 @@ class class03puestos  extends Conexion
 
 	public function buscar($PU03IDPUES)
 	{
-		$sql = "CALL SP02_PUESTOS_BUSCAR ('".$PU03IDPUES."');";
+		$sql = "CALL SP03_PUESTOS_BUSCAR ('".$PU03IDPUES."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$cliente = $this->convertToclass03puestos($result);
 		return $cliente;
@@ -33,26 +33,26 @@ class class03puestos  extends Conexion
 
 	public function listar()
 	{
-		$sql = "CALL SP02_PUESTOS_MOSTRAR ();";
+		$sql = "CALL SP03_PUESTOS_MOSTRAR ();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
 
 	public function guardar()
 	{
-		$sql = "CALL SP02_PUESTOS_GUARDAR ('$this->PU03IDPUES','$this->PU03PUESTO')";
+		$sql = "CALL SP03_PUESTOS_GUARDAR ('$this->PU03IDPUES','$this->PU03PUESTO');";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function actualizar()
 	{
-		$sql = "CALL SP02_PUESTOS_ACTUALIZAR ('$this->PU03IDPUES','$this->PU03PUESTO');";
+		$sql = "CALL SP03_PUESTOS_ACTUALIZAR ('$this->PU03IDPUES','$this->PU03PUESTO');";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function eliminar()
 	{
-		$sql = "CALL SP02_PUESTOS_ELIMINAR ('$this->PU03IDPUES');";
+		$sql = "CALL SP03_PUESTOS_ELIMINAR ('$this->PU03IDPUES');";
 		$this->conexion->consultaSimple($sql);
 	}
 

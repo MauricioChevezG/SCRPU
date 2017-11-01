@@ -65,15 +65,15 @@ class class04inspeccion extends Conexion
 	public function buscar($PU04IDTRA)
 	{
 		
-		$sql = "CALL SP03_REGISTROTRA_MOSTRAR_INFOR('".$PU04IDTRA."')";
+		$sql = "CALL SP04_REGISTROTRA_MOSTRAR_INFOR('".$PU04IDTRA."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class04inspeccion = $this->convertToclass04inspeccion($result);
 		return $class04inspeccion;
 	}
-
+// lista el tramitey sus datos
 	public function listar()
 	{
-		$sql = "CALL SP03_REGISTROTRA_MOSTRAR();";
+		$sql = "CALL SP04_REGISTROTRA_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
@@ -120,7 +120,7 @@ class class04inspeccion extends Conexion
 	public function guardar()
 	{
 
-		$sql = "call SP03_REGISTROTRA_GUARDAR(
+		$sql = "call SP04_REGISTROTRA_GUARDAR(
 		'$this->PU04IDTRA',
 		'$this->PU04FETRA',
 		'$this->PU07IDTFR',
@@ -164,7 +164,7 @@ class class04inspeccion extends Conexion
 
 	public function actualizar()
 	{
-		$sql = "call SP03_REGISTROTRA_ACTUALIZAR(
+		$sql = "call SP04_REGISTROTRA_ACTUALIZAR(
 		'$this->PU04IDTRA',
 		'$this->PU04FETRA',
 		'$this->PU07IDTFR',
@@ -208,7 +208,7 @@ class class04inspeccion extends Conexion
 
 	public function eliminar()
 	{
-		$sql = "cal SP03_REGISTROTRA_ELIMINAR('$this->PU04IDTRA');";	
+		$sql = "cal SP04_REGISTROTRA_ELIMINAR('$this->PU04IDTRA');";	
 		$this->conexion->consultaSimple($sql);
 	}
 

@@ -40,19 +40,19 @@ class class16servae  extends Conexion
 
 	public function guardar()
 	{
-		$sql = "call SP16_SERVAE_GUARDAR('$this->PU16IDSAE','$this->PU16DESCAE')";
+		$sql = "call SP16_SERVAE_GUARDAR('$this->PU16IDSAE','$this->PU16DESCAE');";
 		$this->conexion->ConsultaSimple($sql);
 	}
 
 	public function actualizar()
 	{
-		$sql = "call SP16_SERVAE_ACTUALIZAR('$this->PU16IDSAE','$this->PU16DESCAE')";
+		$sql = "call SP16_SERVAE_ACTUALIZAR('$this->PU16IDSAE','$this->PU16DESCAE');";
 		$this->conexion->ConsultaSimple($sql);
 	}
 
 	public function eliminar()
 	{
-		$sql = "call SP16_SERVAE_ELIMINAR('$this->PU16IDSAE')";
+		$sql = "call SP16_SERVAE_ELIMINAR('$this->PU16IDSAE');";
 		$this->conexion->ConsultaSimple($sql);
 	}
 

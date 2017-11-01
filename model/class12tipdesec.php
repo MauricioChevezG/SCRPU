@@ -27,7 +27,7 @@ class class12tipdesec  extends Conexion
 
 	public function buscar($PU12IDTDESEC)
 	{
-		$sql = "CALL SP10_TIPDESEC_BUSCAR  ('".$PU12IDTDESEC."');";
+		$sql = "CALL SP12_TIPDESEC_BUSCAR  ('".$PU12IDTDESEC."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class12tipdesec = $this->convertToclass12tipdesec($result);
 		return $class12tipdesec;
@@ -35,26 +35,26 @@ class class12tipdesec  extends Conexion
 
 	public function listar()
 	{
-		$sql = "CALL SP10_TIPDESEC_MOSTRAR();";
+		$sql = "CALL SP12_TIPDESEC_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
 
 	public function guardar()
 	{
-		$sql = "call SP09_TIPDESEC_GUARDAR('$this->PU12IDTDESEC','$this->PU12TIPODES')";
+		$sql = "call SP12_TIPDESEC_GUARDAR('$this->PU12IDTDESEC','$this->PU12TIPODES');";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function actualizar()
 	{
-		$sql = "call SP09_TIPDESEC_ACTUALIZAR('$this->PU12IDTDESEC','$this->PU12TIPODES')";
+		$sql = "call SP12_TIPDESEC_ACTUALIZAR('$this->PU12IDTDESEC','$this->PU12TIPODES');";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function eliminar()
 	{
-		$sql = "call SP09_TIPDESEC_ELIMINAR('$this->PU12IDTDESEC')";
+		$sql = "call SP12_TIPDESEC_ELIMINAR('$this->PU12IDTDESEC');";
 		$this->conexion->consultaSimple($sql);
 	}
 
