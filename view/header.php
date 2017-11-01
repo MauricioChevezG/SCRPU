@@ -24,11 +24,11 @@
   </div>
   <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
-      <div class="panel-group" id="accordion">
+      <div class="panel-group" id="accordioONE">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+            <a data-toggle="collapse" data-parent="#accordioONE" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
             </span>Menu</a>
             </h4>
           </div>
@@ -64,7 +64,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+            <a data-toggle="collapse" data-parent="#accordioONE" href="#collapseTwo"><span class="glyphicon glyphicon-th">
             </span>Mantenimientos</a>
             </h4>
           </div>
@@ -186,7 +186,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+            <a data-toggle="collapse" data-parent="#accordioONE" href="#collapseThree"><span class="glyphicon glyphicon-user">
             </span>Account</a>
             </h4>
           </div>
