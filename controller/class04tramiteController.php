@@ -7,6 +7,15 @@ class class04tramiteController
 	{
 		$this->class04tramite = new class04tramite();
 	}
+
+	public function listarRetrasado(){
+		require_once 'view/class04tramite/retrasados.php';
+	}
+
+	public function listarNuevo(){
+		require_once 'view/class04tramite/nuevos.php';
+	}
+
 	public function index()
 	{
 		require_once 'view/header.php';

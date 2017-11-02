@@ -10,7 +10,7 @@
             </ul>
 
             <div class="resp-tabs-container hor_1">
-                <div class="container1" id="tabcontenido">
+                <div class="container1" id="tabcontenido1">
                     <!-- contenido de tab 1 -->
 
                 </div>
