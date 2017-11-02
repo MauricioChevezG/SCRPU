@@ -1,9 +1,10 @@
 // coloca el index de puestos en el contenido especifico de my pagina principal
 function vistaRetrasados(){
-		$("#tabcontenido").load("?c=class04tramite&m=retrasados");
-    	}
+		$("#tabcontenido1").load("?c=class04tramite&m=listarRetrasado");	
+	}
 function vistaNuevos(){
-		$("#tabcontenido2").load("?c=class04tramite&m=nuevos");
+		$('#tabcontenido1').fadeOut();	
+		$("#tabcontenido2").load("?c=class04tramite&m=listarNuevo");
     	}
 
      
