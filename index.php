@@ -1,6 +1,6 @@
 <?php
 
-$controller = 'class03puestos';
+$controller = 'class04tramite';
 
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))

@@ -1,9 +1,9 @@
 // coloca el index de puestos en el contenido especifico de my pagina principal
-function vistaPuesto(){
-		$("#contenido").load("?c=class03puestos");
+function vistaRetrasados(){
+		$("#tabcontenido").load("?c=class04tramite&m=retrasados");
     	}
-function agregarPuesto(){
-		$("#contenido").load("?c=class03puestos&m=agregar");
+function vistaNuevos(){
+		$("#tabcontenido2").load("?c=class04tramite&m=nuevos");
     	}
 
      
