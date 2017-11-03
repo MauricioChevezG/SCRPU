@@ -6,6 +6,7 @@
 <title>SCRPU</title>
 <!-- css -->
 <link rel="stylesheet" href="public/css/easy-responsive-tabs.css ">
+<link rel="stylesheet" href="assets/datatables/DataTables-1.10.16/css/jquery.dataTables.css">
 <link rel="stylesheet" href="assets/datatables/DataTables-1.10.16/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/bootstrap/css/styles.css">
