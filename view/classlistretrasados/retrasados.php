@@ -1,6 +1,6 @@
 <?php $result = $this->classlistretrasados->listarRetrasado(); ?>  
     <?php if ($result->num_rows): ?>
-      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%"  id="grilla-retrasados">
+      <table class="display table table-bordered" cellspacing="0" border="0" width="100%"  id="grilla-retrasados">
         <thead>
           <tr>
             <th>Tramite</th>
