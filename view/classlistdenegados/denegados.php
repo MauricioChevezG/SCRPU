@@ -1,6 +1,6 @@
 <?php $result = $this->classlistdenegados->listarDenegados(); ?>  
     <?php if ($result->num_rows): ?>
-      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%"  id="grilla-denegados">
+      <table class="display table table-bordered" cellspacing="0" border="0" width="100%"  id="grilla-denegados">
         <thead>
           <tr>
             <th>Tramite</th>
