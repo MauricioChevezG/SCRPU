@@ -20,5 +20,7 @@ $(document).ready(function() {
     $('#grilla-capuso').DataTable();
     $('#grilla-clases').DataTable();
     $('#grilla-tipsue').DataTable();
+    $('#grilla-retrasados').DataTable();
+    $('#grilla-nuevos').DataTable();
 });
 
