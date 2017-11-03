@@ -4,12 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SCRPU</title>
+<!-- css -->
 <link rel="stylesheet" href="public/css/easy-responsive-tabs.css ">
 <link rel="stylesheet" href="assets/datatables/DataTables-1.10.16/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/bootstrap/css/styles.css">
 <link rel="stylesheet" href="public/css/estilo.css">
 <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.css">
+<!-- script -->
+ 
 </head>
 <body>
 <nav class="navbar navbar-inverse visible-xs">
@@ -285,7 +288,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <span class="glyphicon glyphicon-flash text-success"></span><a href="http://www.jquery2dotnet.com">News</a>
+                    <span class="glyphicon glyphicon-flash text-success"></span><a href="?c=class04tramite">Estados</a>
                   </td>
                 </tr>
                 <tr>

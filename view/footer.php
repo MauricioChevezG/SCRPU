@@ -11,7 +11,7 @@
 
   
 
-	<script src="assets/bootstrap/js/jquery.min.js"></script>
+ <script src="assets/bootstrap/js/jquery.min.js"></script>
   <script src="assets/jquery-ui/jquery-ui.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/datatables/DataTables-1.10.16/js/jquery.dataTables.min.js"></script>

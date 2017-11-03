@@ -1,4 +1,7 @@
     <br>
+    <center>
+<h2>Estados del Tramites</h2>
+</center><br>
     <div id="parentHorizontalTab">
             <ul class="resp-tabs-list hor_1">
                 <li href="#" onclick="vistaRetrasados();">*Tramites Retrasados*</li>

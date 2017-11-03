@@ -22,5 +22,9 @@ $(document).ready(function() {
     $('#grilla-tipsue').DataTable();
     $('#grilla-retrasados').DataTable();
     $('#grilla-nuevos').DataTable();
+    $('#grilla-inspeccion').DataTable();
+    $('#grilla-oficina').DataTable();
+    $('#grilla-aceptados').DataTable();
+    $('#grilla-denegados').DataTable();
 });
 
