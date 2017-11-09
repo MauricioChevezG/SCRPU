@@ -44,8 +44,14 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <!--<script src="js/sb-admin-charts.min.js"></script>-->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/jquery-ui/jquery-ui.js"></script>
     <script src="assets/datatables/DataTables-1.10.16/js/jquery.dataTables.min.js"></script>
     <script src="public/js/indicetablas.js"></script>
+    <script src="public/js/rutasVistas.js"></script>
+    <script src="public/js/fechas-jquery.js"></script>
+    <script src="public/js/easyResponsiveTabs.js"></script>
+    <script src="public/js/funcionesResponsiveTab.js"></script>
   </div>
 </body>
 
