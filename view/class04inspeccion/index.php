@@ -1,28 +1,14 @@
-   
-        <br/>
-        <!--Horizontal Tab-->
-        <div id="parentHorizontalTab">
-            <ul class="resp-tabs-list hor_1">
-                <li>Horizontal 1</li>
-                <li>Horizontal 2</li>
-                <li>Horizontal 3</li>
-            </ul>
+<?php $result = $this->pu04inspeccion->listar(); ?>
 
-            <div class="resp-tabs-container hor_1">
-                <div class="container-fluid">
-                    <!-- contenido de tab 1 -->
-
-
-<?php $result = $this->class04inspeccion->listar(); ?>
-    
-        <h2>Listado de Tramites</h2>   
+    <div class="container">
+        <h2>Listado de Trámites</h2>   
     <a href="?c=class04inspeccion&m=agregar" class="btn btn-primary" role="button">Registrar</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-inspeccion" >
         <thead>
           <tr>
-            <th>Tramite</th>
+            <th>Trámite</th>
             <th>Fecha</th>
             <th>Terreno F R</th>
             <th>Norte</th>
@@ -65,7 +51,7 @@
           <?php else: ?>
             <div style="background-color:#b2ff59" class="alert alert-info">
               <center>
-                <strong>¡Información!</strong> No hay información sobre puestos.
+                <strong>¡Información!</strong> No hay información sobre trámites.
               </center>
             </div>
           <?php endif ?>
@@ -73,25 +59,4 @@
 
       </table>
 
-      </div>
-                <div class="container">
-                <!-- contenido de tab 2 -->
-                    <br>
-                    <br>
-                    <p>Tab 2 Container</p>
-                </div>
-                <div class="container">
-                    <!-- contenido de tab 3 -->
-                    <br>
-                    <br>
-                    <p>Tab 3 Container</p>
-                </div>
-            </div>
-        </div>
-
-        <br/>
-        <div id="nested-tabInfo">
-            Selected tab: <span class="tabName"></span>
-        </div>
-        <br/>
-        <br/>
+    </div>

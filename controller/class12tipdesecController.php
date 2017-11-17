@@ -27,7 +27,7 @@ class class12tipdesecController
 		else{
 			require_once 'view/header.php';
 			require_once 'view/class12tipdesec/agregar.php';
-			require_once 'view/footer.php.php';
+			require_once 'view/footer.php';
 		}
 	}
 	public function editar()

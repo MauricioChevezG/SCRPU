@@ -1,6 +1,7 @@
 <?php 
 require_once 'conexion.php';
-
+//`pu10aspbio`
+//`PU10IDASBIO``PU10DESCABIO`class10aspbio
 class class10aspbio  extends Conexion
 {
 	
@@ -34,26 +35,26 @@ class class10aspbio  extends Conexion
 
 	public function listar()
 	{
-		$sql = "CALL SP10_ASPBIO_MOSTRAR();";
+		$sql = "CALL SP10_ASPBIO_MOSTRAR() ;";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
 
 	public function guardar()
 	{
-		$sql = "call SP10_ASPBIO_GUARDAR('$this->PU10IDASBIO','$this->PU10DESCABIO');";
+		$sql = "call SP10_ASPBIO_MOSTRAR('$this->PU10IDASBIO','$this->PU10DESCABIO')";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function actualizar()
 	{
-		$sql = "call SP10_ASPBIO_ACTUALIZAR('$this->PU10IDASBIO','$this->PU10DESCABIO');";
+		$sql = "call SP10_ASPBIO_ACTUALIZAR('$this->PU10IDASBIO','$this->PU10DESCABIO')";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function eliminar()
 	{
-		$sql = "call SP10_ASPBIO_ELIMINAR('$this->PU10IDASBIO');";
+		$sql = "call SP10_ASPBIO_ELIMINAR('$this->PU10IDASBIO')";
 		$this->conexion->consultaSimple($sql);
 	}
 

@@ -26,7 +26,7 @@ class class06actdes  extends Conexion
 
 	public function buscar($PU06IDACTDES)
 	{
-		$sql =  "call SP06_ACTDES_BUSCAR()";
+		$sql = "SELECT * FROM pu06actdes WHERE PU06IDACTDES ='". $PU06IDACTDES ."';";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class06actdes = $this->convertToclass06actdes($result);
 		return $class06actdes;
@@ -41,19 +41,19 @@ class class06actdes  extends Conexion
 
 	public function guardar()
 	{
-		$sql = "call SP06_ACTDES_GUARDAR('$this->PU06IDACTDES','$this->PU06DESAD')";
+		$sql = "call SP04_ACTDES_GUARDAR('$this->PU06IDACTDES','$this->PU06DESAD')";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function actualizar()
 	{
-		$sql = "call SP06_ACTDES_ACTUALIZAR('$this->PU06IDACTDES','$this->PU06DESAD')";
+		$sql = "call SP04_ACTDES_ACTUALIZAR('$this->PU06IDACTDES','$this->PU06DESAD')";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function eliminar()
 	{
-		$sql = "call SP06_ACTDES_ELIMINAR('$this->PU06IDACTDES')";
+		$sql = "call SP04_ACTDES_ELIMINAR('$this->PU06IDACTDES')";
 		$this->conexion->consultaSimple($sql);
 	}
 

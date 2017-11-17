@@ -5,8 +5,8 @@
 class Conexion
 {
 	private $dbInfo = array('host' => 'localhost',
-							'user' => 'root',
-							'pass' => '',
+							'user' => 'mauricio',
+							'pass' => '504050029',
 							'db' => 'pu_ingenieria' );
 	private $database;
 

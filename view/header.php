@@ -1,14 +1,3 @@
-
-<!-- css -->
-<!-- 
-<link rel="stylesheet" href="public/css/easy-responsive-tabs.css ">
-<link rel="stylesheet" href="assets/datatables/DataTables-1.10.16/css/jquery.dataTables.css">
-<link rel="stylesheet" href="assets/datatables/DataTables-1.10.16/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/bootstrap/css/styles.css">
-<link rel="stylesheet" href="public/css/estilo.css">
-<link rel="stylesheet" href="assets/jquery-ui/jquery-ui.css"> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,19 +9,27 @@
   <meta name="author" content="">
   <title>SB Admin - Start Bootstrap Template</title>
   <!-- Bootstrap core CSS-->
+  <!-- css de los tabs -->
   <link rel="stylesheet" href="public/css/easy-responsive-tabs.css ">
+  <!-- css de datatable -->
   <link rel="stylesheet" href="assets/datatables/DataTables-1.10.16/css/jquery.dataTables.min.css">
+  <!-- ccs de date piker  -->
   <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/styles.css">
-  <link rel="stylesheet" href="public/css/estilo.css">
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- para los container well -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
+  <!-- para el formato principal y sub menu -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <!-- Custom fonts for this template-->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link  rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css">
   <!-- Page level plugin CSS-->
-  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/datatables/dataTables.bootstrap4.css">
   <!-- Custom styles for this template-->
-  <link href="css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/sb-admin.css">
 </head>
+
+
+
+
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation y cambio de color de NAVBAR-->
@@ -277,7 +274,7 @@
     </div>
   </nav>
   <div class="content-wrapper">
-    <div class="container-fluid">
+    <div class="container">
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
@@ -287,3 +284,8 @@
       </ol>
 <!-- /.container-fluid-->
   <!-- /.continua en footer-->
+
+
+
+
+  
