@@ -97,6 +97,8 @@ CREATE TABLE `pu04regtra` (
 
 LOCK TABLES `pu04regtra` WRITE;
 
+insert  into `pu04regtra`(`PU04IDTRA`,`PU04FETRA`,`PU07IDTFR`,`PU04NORTE`,`PU04ESTE`,`PU04ALTITUD`,`PU12IDTDESEC`) values (1,'0000-00-00',1,2,3,4,1),(2,'0000-00-00',1,2334,2344,2333,1),(3,'0000-00-00',1,1,1,1,1);
+
 UNLOCK TABLES;
 
 /*Table structure for table `pu04tramite` */
@@ -114,7 +116,7 @@ CREATE TABLE `pu04tramite` (
 
 LOCK TABLES `pu04tramite` WRITE;
 
-insert  into `pu04tramite`(`PU04IDTRA`,`PU04FEINICIO`,`PU04ESTADO`) values (1,'0000-00-00','Retrasado'),(2,'0000-00-00','Nuevos'),(3,'0000-00-00','Oficina'),(4,'0000-00-00','Inspeccion'),(5,'0000-00-00','Aceptados'),(6,'0000-00-00','Denegados');
+insert  into `pu04tramite`(`PU04IDTRA`,`PU04FEINICIO`,`PU04ESTADO`) values (1,'2000-10-10','Retrasado'),(2,'2000-10-10','Retrasado'),(3,'2000-10-10','Retrasado'),(4,'2000-10-10','Retrasado'),(5,'2000-10-10','Retrasado'),(6,'2000-10-10','Retrasado'),(7,'2000-10-10','Retrasado'),(8,'2000-10-10','Retrasado'),(9,'2000-10-10','Retrasado'),(10,'2000-10-10','Retrasado'),(11,'2000-10-10','Retrasado'),(12,'2000-10-10','Retrasado'),(13,'2000-10-10','Retrasado'),(14,'2000-10-10','Retrasado'),(15,'2000-10-10','Retrasado'),(16,'2000-10-10','Retrasado'),(17,'2000-10-10','Retrasado'),(18,'2000-10-10','Retrasado'),(19,'2000-10-10','Retrasado'),(20,'2000-10-10','Retrasado'),(22,'2000-10-10','Nuevos'),(23,'2000-10-10','Nuevos'),(24,'2000-10-10','Nuevos'),(25,'2000-10-10','Nuevos'),(26,'2000-10-10','Nuevos'),(27,'2000-10-10','Nuevos'),(28,'2000-10-10','Nuevos'),(29,'2000-10-10','Nuevos'),(30,'2000-10-10','Nuevos'),(31,'2000-10-10','Nuevos'),(32,'2000-10-10','Nuevos'),(33,'2000-10-10','Nuevos'),(34,'2000-10-10','Nuevos'),(35,'2000-10-10','Nuevos'),(36,'2000-10-10','Nuevos'),(37,'2000-10-10','Nuevos'),(38,'2000-10-10','Nuevos'),(39,'2000-10-10','Nuevos'),(40,'2000-10-10','Nuevos'),(41,'2000-10-10','Oficina'),(42,'2000-10-10','Oficina'),(43,'2000-10-10','Oficina'),(44,'2000-10-10','Oficina'),(45,'2000-10-10','Oficina'),(46,'2000-10-10','Oficina'),(47,'2000-10-10','Oficina'),(48,'2000-10-10','Oficina'),(49,'2000-10-10','Oficina'),(50,'2000-10-10','Oficina'),(51,'2000-10-10','Oficina'),(52,'2000-10-10','Oficina'),(53,'2000-10-10','Oficina'),(54,'2000-10-10','Oficina'),(55,'2000-10-10','Oficina'),(56,'2000-10-10','Oficina'),(57,'2000-10-10','Oficina'),(58,'2000-10-10','Oficina'),(59,'2000-10-10','Oficina'),(60,'2000-10-10','Oficina'),(61,'2000-10-10','Inspeccion'),(62,'2000-10-10','Inspeccion'),(63,'2000-10-10','Inspeccion'),(64,'2000-10-10','Inspeccion'),(65,'2000-10-10','Inspeccion'),(66,'2000-10-10','Inspeccion'),(67,'2000-10-10','Inspeccion'),(68,'2000-10-10','Inspeccion'),(69,'2000-10-10','Inspeccion'),(70,'2000-10-10','Inspeccion'),(71,'2000-10-10','Inspeccion'),(72,'2000-10-10','Inspeccion'),(73,'2000-10-10','Inspeccion'),(74,'2000-10-10','Inspeccion'),(75,'2000-10-10','Inspeccion'),(76,'2000-10-10','Inspeccion'),(77,'2000-10-10','Inspeccion'),(78,'2000-10-10','Inspeccion'),(79,'2000-10-10','Inspeccion'),(80,'2000-10-10','Inspeccion'),(81,'2000-10-10','Aceptados'),(82,'2000-10-10','Aceptados'),(83,'2000-10-10','Aceptados'),(84,'2000-10-10','Aceptados'),(85,'2000-10-10','Aceptados'),(86,'2000-10-10','Aceptados'),(87,'2000-10-10','Aceptados'),(88,'2000-10-10','Aceptados'),(89,'2000-10-10','Aceptados'),(90,'2000-10-10','Aceptados'),(91,'2000-10-10','Aceptados'),(92,'2000-10-10','Aceptados'),(93,'2000-10-10','Aceptados'),(94,'2000-10-10','Aceptados'),(95,'2000-10-10','Aceptados'),(96,'2000-10-10','Aceptados'),(97,'2000-10-10','Aceptados'),(98,'2000-10-10','Aceptados'),(99,'2000-10-10','Aceptados'),(100,'2000-10-10','Aceptados'),(101,'2000-10-10','Denegados'),(102,'2000-10-10','Denegados'),(103,'2000-10-10','Denegados'),(104,'2000-10-10','Denegados'),(105,'2000-10-10','Denegados'),(106,'2000-10-10','Denegados'),(107,'2000-10-10','Denegados'),(108,'2000-10-10','Denegados'),(109,'2000-10-10','Denegados'),(110,'2000-10-10','Denegados'),(111,'2000-10-10','Denegados'),(112,'2000-10-10','Denegados'),(113,'2000-10-10','Denegados'),(114,'2000-10-10','Denegados'),(115,'2000-10-10','Denegados'),(116,'2000-10-10','Denegados'),(117,'2000-10-10','Denegados'),(118,'2000-10-10','Denegados'),(119,'2000-10-10','Denegados'),(120,'2000-10-10','Denegados');
 
 UNLOCK TABLES;
 
@@ -123,8 +125,8 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `pu05unitra`;
 
 CREATE TABLE `pu05unitra` (
-  `PU06IDACTDES` int(11) NOT NULL,
   `PU04IDTRA` int(11) NOT NULL,
+  `PU06IDACTDES` int(11) NOT NULL,
   KEY `FK_PU04IDTRAUNITRA` (`PU04IDTRA`),
   KEY `FK_PU06IDACTDESUNITRA` (`PU06IDACTDES`),
   CONSTRAINT `FK_PU04IDTRAUNITRA` FOREIGN KEY (`PU04IDTRA`) REFERENCES `pu04regtra` (`PU04IDTRA`),
@@ -134,6 +136,8 @@ CREATE TABLE `pu05unitra` (
 /*Data for the table `pu05unitra` */
 
 LOCK TABLES `pu05unitra` WRITE;
+
+insert  into `pu05unitra`(`PU04IDTRA`,`PU06IDACTDES`) values (1,2),(2,2),(2,2);
 
 UNLOCK TABLES;
 
@@ -151,6 +155,8 @@ CREATE TABLE `pu06actdes` (
 
 LOCK TABLES `pu06actdes` WRITE;
 
+insert  into `pu06actdes`(`PU06IDACTDES`,`PU06DESAD`) values (1,'Residencial'),(2,'Comercial'),(3,'Comercial-industrial');
+
 UNLOCK TABLES;
 
 /*Table structure for table `pu07terrft` */
@@ -166,6 +172,8 @@ CREATE TABLE `pu07terrft` (
 /*Data for the table `pu07terrft` */
 
 LOCK TABLES `pu07terrft` WRITE;
+
+insert  into `pu07terrft`(`PU07IDTFR`,`PU07NOMTFR`) values (1,'Si existe.'),(2,'No existe');
 
 UNLOCK TABLES;
 
@@ -183,6 +191,8 @@ CREATE TABLE `pu09desceg` (
 
 LOCK TABLES `pu09desceg` WRITE;
 
+insert  into `pu09desceg`(`PU09IDDEG`,`PU09DESCREG`) values (1,'TopografÃ­a plana'),(2,'TopografÃ­a semiplano'),(3,'TopografÃ­a con depresiÃ³n'),(4,'Existen movimientos de tierra'),(5,'Futuro movimientos de tierra'),(6,'TopografÃ­a irregular');
+
 UNLOCK TABLES;
 
 /*Table structure for table `pu09tradeg` */
@@ -190,8 +200,8 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `pu09tradeg`;
 
 CREATE TABLE `pu09tradeg` (
-  `PU09IDDEG` int(11) NOT NULL,
   `PU04IDTRA` int(11) NOT NULL,
+  `PU09IDDEG` int(11) NOT NULL,
   KEY `FK_PU09IDDEGREGTRA` (`PU04IDTRA`),
   KEY `FK_PU06IDACTDESDESCEG` (`PU09IDDEG`),
   CONSTRAINT `FK_PU06IDACTDESDESCEG` FOREIGN KEY (`PU09IDDEG`) REFERENCES `pu09desceg` (`PU09IDDEG`),
@@ -201,6 +211,8 @@ CREATE TABLE `pu09tradeg` (
 /*Data for the table `pu09tradeg` */
 
 LOCK TABLES `pu09tradeg` WRITE;
+
+insert  into `pu09tradeg`(`PU04IDTRA`,`PU09IDDEG`) values (1,1),(2,4),(2,5),(2,4),(2,5);
 
 UNLOCK TABLES;
 
@@ -218,6 +230,8 @@ CREATE TABLE `pu10aspbio` (
 
 LOCK TABLES `pu10aspbio` WRITE;
 
+insert  into `pu10aspbio`(`PU10IDASBIO`,`PU10DESCABIO`) values (1,'VegetaciÃ³n de jardÃ­n'),(2,'Tipo pasto'),(3,'Bosque secundario'),(4,'Bosque primario'),(5,'Arboles dispersos');
+
 UNLOCK TABLES;
 
 /*Table structure for table `pu11uniabio` */
@@ -225,8 +239,8 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `pu11uniabio`;
 
 CREATE TABLE `pu11uniabio` (
-  `PU10IDASBIO` int(11) NOT NULL,
   `PU04IDTRA` int(11) NOT NULL,
+  `PU10IDASBIO` int(11) NOT NULL,
   KEY `FK_PU10IDASBIOREGTRA` (`PU04IDTRA`),
   KEY `FK_PU10IDASBIOASPBIO` (`PU10IDASBIO`),
   CONSTRAINT `FK_PU10IDASBIOASPBIO` FOREIGN KEY (`PU10IDASBIO`) REFERENCES `pu10aspbio` (`PU10IDASBIO`),
@@ -236,6 +250,8 @@ CREATE TABLE `pu11uniabio` (
 /*Data for the table `pu11uniabio` */
 
 LOCK TABLES `pu11uniabio` WRITE;
+
+insert  into `pu11uniabio`(`PU04IDTRA`,`PU10IDASBIO`) values (1,1),(2,4),(2,5),(2,4),(2,5);
 
 UNLOCK TABLES;
 
@@ -253,6 +269,8 @@ CREATE TABLE `pu12tipdesec` (
 
 LOCK TABLES `pu12tipdesec` WRITE;
 
+insert  into `pu12tipdesec`(`PU12IDTDESEC`,`PU12TIPODES`) values (1,'Tipo residencial'),(2,'Tipo Institucional'),(3,'Tipo Comercial      '),(4,'No existen desarrollos en la z'),(5,'Tipo Residencial y Comercial'),(6,'No existen desarrollos en la z');
+
 UNLOCK TABLES;
 
 /*Table structure for table `pu13aarep` */
@@ -269,6 +287,8 @@ CREATE TABLE `pu13aarep` (
 
 LOCK TABLES `pu13aarep` WRITE;
 
+insert  into `pu13aarep`(`PU13IDAAP`,`PU13DESCAAP`) values (1,'Quebradas'),(2,'Pozos'),(3,'Rio'),(4,'Naciente');
+
 UNLOCK TABLES;
 
 /*Table structure for table `pu14trarep` */
@@ -276,8 +296,8 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `pu14trarep`;
 
 CREATE TABLE `pu14trarep` (
-  `PU13IDAAP` int(11) NOT NULL,
   `PU04IDTRA` int(11) NOT NULL,
+  `PU13IDAAP` int(11) NOT NULL,
   KEY `FK_PU13IDAAPREGTRA` (`PU04IDTRA`),
   KEY `FK_PU13IDAAPAAREP` (`PU13IDAAP`),
   CONSTRAINT `FK_PU13IDAAPAAREP` FOREIGN KEY (`PU13IDAAP`) REFERENCES `pu13aarep` (`PU13IDAAP`),
@@ -287,6 +307,8 @@ CREATE TABLE `pu14trarep` (
 /*Data for the table `pu14trarep` */
 
 LOCK TABLES `pu14trarep` WRITE;
+
+insert  into `pu14trarep`(`PU04IDTRA`,`PU13IDAAP`) values (1,2),(2,3),(2,3);
 
 UNLOCK TABLES;
 
@@ -328,6 +350,8 @@ CREATE TABLE `pu16servae` (
 
 LOCK TABLES `pu16servae` WRITE;
 
+insert  into `pu16servae`(`PU16IDSAE`,`PU16DESCAE`) values (1,'Servicios de luz  ya instalado'),(2,'Servicios de agua ya instalado');
+
 UNLOCK TABLES;
 
 /*Table structure for table `pu17serae` */
@@ -363,6 +387,8 @@ CREATE TABLE `pu18calleser` (
 
 LOCK TABLES `pu18calleser` WRITE;
 
+insert  into `pu18calleser`(`PU18IDCSCLS`,`PU18DESCS`) values (1,'Existen casas frente a calle p'),(2,'No existen casas frente a call');
+
 UNLOCK TABLES;
 
 /*Table structure for table `pu19serpacsca` */
@@ -397,6 +423,8 @@ CREATE TABLE `pu20desas` (
 /*Data for the table `pu20desas` */
 
 LOCK TABLES `pu20desas` WRITE;
+
+insert  into `pu20desas`(`PU20IDDESAS`,`PU20DESCS`) values (1,'Existe desarrollo'),(2,'No existe desarrollo');
 
 UNLOCK TABLES;
 
@@ -506,6 +534,8 @@ CREATE TABLE `pu26planreg` (
 /*Data for the table `pu26planreg` */
 
 LOCK TABLES `pu26planreg` WRITE;
+
+insert  into `pu26planreg`(`PU26IDPLAN`,`PU26PLNDESC`) values (1,'Fuera del plan regulador'),(2,'Ubicada por plan regulador');
 
 UNLOCK TABLES;
 
@@ -736,6 +766,30 @@ DELETE FROM PU02INFUSU
 END */$$
 DELIMITER ;
 
+/* Procedure structure for procedure `SP01_REGINFUSU_BUSCAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP01_REGINFUSU_BUSCAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP01_REGINFUSU_BUSCAR`(IN CEDU INT(11))
+BEGIN
+   SELECT PU01REGUSU.`PU01CEDUSU` AS 'Cédula', PU01REGUSU.`PU01NOMUSU` AS 'Nombre',
+    PU01REGUSU.`PU01APE1USU` AS 'Primer Apellido', PU01REGUSU.`PU01APE2USU` AS 'Segundo Apellido',
+   PU02INFUSU.`PU02TELUSU` AS 'Teléfono',PU02INFUSU.`PU02CORUSU` AS 'Correo', 
+   CASE PU02INFUSU.`PU03IDPUES`WHEN "1" THEN "Coordinador"
+			       WHEN "2" THEN "Asistente"   
+			       WHEN "3" THEN "Alcalde"
+			       WHEN "4" THEN "Administrador"
+			       END AS 'Puesto'
+   FROM PU01REGUSU
+		INNER JOIN PU02INFUSU
+		ON PU01REGUSU.`PU01CEDUSU` = PU02INFUSU.`PU01CEDUSU`
+		WHERE PU01REGUSU.`PU01CEDUSU`=CEDU;
+		
+END */$$
+DELIMITER ;
+
 /* Procedure structure for procedure `SP01_REGINFUSU_GUARDAR` */
 
 /*!50003 DROP PROCEDURE IF EXISTS  `SP01_REGINFUSU_GUARDAR` */;
@@ -771,30 +825,6 @@ FROM `pu01regusu`
         INNER JOIN `pu02infusu`
         ON pu01regusu.`PU01CEDUSU` = `pu02infusu`.`PU01CEDUSU`;       
         END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP01_REGINFUSU_BUSCAR` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP01_REGINFUSU_BUSCAR` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP01_REGINFUSU_BUSCAR`(IN CEDU INT(11))
-BEGIN
-   SELECT PU01REGUSU.`PU01CEDUSU` AS 'Cédula', PU01REGUSU.`PU01NOMUSU` AS 'Nombre',
-    PU01REGUSU.`PU01APE1USU` AS 'Primer Apellido', PU01REGUSU.`PU01APE2USU` AS 'Segundo Apellido',
-   PU02INFUSU.`PU02TELUSU` AS 'Teléfono',PU02INFUSU.`PU02CORUSU` AS 'Correo', 
-   CASE PU02INFUSU.`PU03IDPUES`WHEN "1" THEN "Coordinador"
-			       WHEN "2" THEN "Asistente"   
-			       WHEN "3" THEN "Alcalde"
-			       WHEN "4" THEN "Administrador"
-			       END AS 'Puesto'
-   FROM PU01REGUSU
-		INNER JOIN PU02INFUSU
-		ON PU01REGUSU.`PU01CEDUSU` = PU02INFUSU.`PU01CEDUSU`
-		WHERE PU01REGUSU.`PU01CEDUSU`=CEDU;
-		
-END */$$
 DELIMITER ;
 
 /* Procedure structure for procedure `SP03_PUESTOS_ACTUALIZAR` */
@@ -861,6 +891,105 @@ DELIMITER $$
 BEGIN
 SELECT `PU03IDPUES`,`PU03PUESTO`
  FROM PU03PUESTOS;
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_REGISTROTRA_DEG_GUARDAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_DEG_GUARDAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_DEG_GUARDAR`( IN IDTRA INT(11),IN PU09IDDEG INT (11))
+BEGIN
+-- INSERT DE LA DESCRIPCIÓN DEL ESPACIO GEOGRÁFICO
+INSERT INTO pu09tradeg (PU04IDTRA,PU09IDDEG)
+ VALUES (IDTRA,PU09IDDEG);
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_REGISTROTRA_ELIMINAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_ELIMINAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_ELIMINAR`(IN IDTRA INT(11))
+BEGIN
+DELETE FROM pu09tradeg
+  WHERE PU04IDTRA = IDTRA;
+  
+DELETE FROM pu11uniabio
+ WHERE PU04IDTRA = IDTRA;
+ 
+ DELETE FROM pu14trarep
+  WHERE PU04IDTRA = IDTRA;
+  
+DELETE FROM pu05unitra
+ WHERE PU04IDTRA = IDTRA;
+ 
+ DELETE FROM pu04regtra
+ WHERE PU04IDTRA = IDTRA;
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR`()
+BEGIN
+  SELECT DISTINCT pu04regtra.PU04IDTRA AS 'Numero Trámite', pu04regtra.PU04FETRA AS 'Fecha', pu07terrft.PU07NOMTFR AS 'T.F.R',
+   pu04regtra.PU04NORTE AS 'Norte', pu04regtra.PU04ESTE AS 'Este', pu04regtra.PU04ALTITUD AS 'Altitud',
+   pu12tipdesec.PU12TIPODES AS 'Tipo Desarrollo'
+   
+   FROM ((pu04regtra INNER JOIN pu12tipdesec
+   ON pu04regtra.PU12IDTDESEC = pu12tipdesec.PU12IDTDESEC)
+   INNER JOIN pu07terrft ON pu04regtra.`PU07IDTFR` = pu07terrft.PU07IDTFR);
+       END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR_INFOR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR_INFOR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR_INFOR`(IN IDTRA INT(11))
+BEGIN
+   SELECT DISTINCT pu04regtra.PU04IDTRA AS 'Numero Trámite', pu04regtra.PU04FETRA AS 'Fecha', pu07terrft.PU07NOMTFR AS 'T.F.R',
+   pu04regtra.PU04NORTE AS 'Norte', pu04regtra.PU04ESTE AS 'Este', pu04regtra.PU04ALTITUD AS 'Altitud',
+   pu12tipdesec.PU12TIPODES AS 'Tipo Desarrollo'
+   
+   FROM ((pu04regtra INNER JOIN pu12tipdesec
+   ON pu04regtra.PU12IDTDESEC = pu12tipdesec.PU12IDTDESEC)
+   INNER JOIN pu07terrft ON pu04regtra.`PU07IDTFR` = pu07terrft.PU07IDTFR)
+   
+  WHERE pu04regtra.PU04IDTRA = 1 AND pu04regtra.PU07IDTFR>0;
+   
+		
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR_INFOR_ACT_D` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR_INFOR_ACT_D` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR_INFOR_ACT_D`(IN IDTRA INT(11))
+BEGIN
+ SELECT 
+ DISTINCT pu06actdes.PU06DESAD AS 'Actividad Desarrollar'
+   
+   FROM ((pu04regtra INNER JOIN pu05unitra ON pu04regtra.PU04IDTRA = pu05unitra.PU04IDTRA)
+	INNER JOIN pu06actdes ON pu05unitra.PU06IDACTDES = pu06actdes.`PU06IDACTDES`)
+	
+	WHERE pu04regtra.PU04IDTRA = IDTRA  AND pu05unitra.PU04IDTRA = IDTRA  AND pu05unitra.PU06IDACTDES>0;
+   
+		
 END */$$
 DELIMITER ;
 
@@ -1008,68 +1137,147 @@ SET PU06IDACTDES = PU06IDACTDES_06
 END */$$
 DELIMITER ;
 
-/* Procedure structure for procedure `SP04_REGISTROTRA_ELIMINAR` */
+/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR_INFOR_A_A_P` */
 
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_ELIMINAR` */;
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR_INFOR_A_A_P` */;
 
 DELIMITER $$
 
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_ELIMINAR`(IN IDTRA INT(11))
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR_INFOR_A_A_P`(IN IDTRA INT(11))
 BEGIN
-DELETE FROM pu09tradeg
-  WHERE PU04IDTRA = IDTRA;
-  
-DELETE FROM pu11uniabio
- WHERE PU04IDTRA = IDTRA;
- 
- DELETE FROM pu14trarep
-  WHERE PU04IDTRA = IDTRA;
-  
-DELETE FROM pu05unitra
- WHERE PU04IDTRA = IDTRA;
- 
- DELETE FROM pu04regtra
- WHERE PU04IDTRA = IDTRA;
+ SELECT 
+ DISTINCT pu13aarep.PU13DESCAAP AS 'Afectacion de Areas de Proteccion'
+   
+   FROM ((pu04regtra INNER JOIN pu14trarep ON pu04regtra.PU04IDTRA = pu14trarep.PU04IDTRA)
+	INNER JOIN pu13aarep ON pu14trarep.PU13IDAAP = pu13aarep.PU13IDAAP)
+	
+	WHERE pu04regtra.PU04IDTRA = IDTRA  AND pu14trarep.PU04IDTRA = IDTRA  AND pu14trarep.PU13IDAAP>0;
+   
+		
 END */$$
 DELIMITER ;
 
-/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR` */
+/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR_INFOR_A_B` */
 
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR`()
-BEGIN
-  SELECT DISTINCT pu04regtra.PU04IDTRA AS 'Numero Trámite', pu04regtra.PU04FETRA AS 'Fecha', pu07terrft.PU07NOMTFR AS 'T.F.R',
-   pu04regtra.PU04NORTE AS 'Norte', pu04regtra.PU04ESTE AS 'Este', pu04regtra.PU04ALTITUD AS 'Altitud',
-   pu12tipdesec.PU12TIPODES AS 'Tipo Desarrollo'
-   
-   FROM ((pu04regtra INNER JOIN pu12tipdesec
-   ON pu04regtra.PU12IDTDESEC = pu12tipdesec.PU12IDTDESEC)
-   INNER JOIN pu07terrft ON pu04regtra.`PU07IDTFR` = pu07terrft.PU07IDTFR);
-       END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR_INFOR` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR_INFOR` */;
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR_INFOR_A_B` */;
 
 DELIMITER $$
 
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR_INFOR`(IN IDTRA INT(11))
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR_INFOR_A_B`(IN IDTRA INT(11))
 BEGIN
-   SELECT DISTINCT pu04regtra.PU04IDTRA AS 'Numero Trámite', pu04regtra.PU04FETRA AS 'Fecha', pu07terrft.PU07NOMTFR AS 'T.F.R',
-   pu04regtra.PU04NORTE AS 'Norte', pu04regtra.PU04ESTE AS 'Este', pu04regtra.PU04ALTITUD AS 'Altitud',
-   pu12tipdesec.PU12TIPODES AS 'Tipo Desarrollo'
+ SELECT 
+ DISTINCT pu10aspbio.PU10DESCABIO AS 'Aspectos Biofisicos'
    
-   FROM ((pu04regtra INNER JOIN pu12tipdesec
-   ON pu04regtra.PU12IDTDESEC = pu12tipdesec.PU12IDTDESEC)
-   INNER JOIN pu07terrft ON pu04regtra.`PU07IDTFR` = pu07terrft.PU07IDTFR)
-   
-  WHERE pu04regtra.PU04IDTRA = 1 AND pu04regtra.PU07IDTFR>0;
+   FROM ((pu04regtra INNER JOIN pu11uniabio ON pu04regtra.PU04IDTRA = pu11uniabio.PU04IDTRA)
+	INNER JOIN pu10aspbio ON pu11uniabio.PU10IDASBIO = pu10aspbio.PU10IDASBIO)
+	
+	WHERE pu04regtra.PU04IDTRA = IDTRA  AND pu11uniabio.PU04IDTRA = IDTRA  AND pu11uniabio.PU10IDASBIO>0;
    
 		
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR_INFOR_D_E_G` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR_INFOR_D_E_G` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR_INFOR_D_E_G`(IN IDTRA INT(11))
+BEGIN
+ SELECT 
+ DISTINCT pu09desceg.PU09DESCREG AS 'Descripcion del Espacio Geografico'
+   
+   FROM ((pu04regtra INNER JOIN pu09tradeg ON pu04regtra.`PU04IDTRA` = pu09tradeg.`PU04IDTRA`)
+	INNER JOIN pu09desceg ON pu09tradeg.`PU09IDDEG` = pu09desceg.`PU09IDDEG`)
+	
+	WHERE pu04regtra.PU04IDTRA = IDTRA  AND pu09tradeg.`PU04IDTRA`= IDTRA  AND pu09tradeg.`PU09IDDEG`>0;
+   
+		
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_REGISTROTR_GUARDAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTR_GUARDAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTR_GUARDAR`( IN IDTRA INT(11), IN FETRA DATE,IN IDTFR INT(11), 
+IN PU04NORTE INT(11), IN PU04ESTE INT(11), IN PU04ALTITUD INT(11), IN IDTDESEC INT(11))
+BEGIN
+-- INSERT DE LA INFORMACIÓN REQUERIDA POR LA TABLA PRINCIPAL DE TRÁMITE
+INSERT INTO pu04regtra (PU04IDTRA, PU04FETRA,PU07IDTFR,PU04NORTE,PU04ESTE,PU04ALTITUD,PU12IDTDESEC)
+ VALUES (IDTRA, FETRA,IDTFR,PU04NORTE,PU04ESTE,PU04ALTITUD,IDTDESEC);
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_TRAMITE_GUARDAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_GUARDAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`mauricio`@`localhost` PROCEDURE `SP04_TRAMITE_GUARDAR`(IDTRA  INT(11),FEINICIO date,ESTADO varchar(20))
+BEGIN
+ insert into `pu04tramite`(`PU04IDTRA`,`PU04FEINICIO`,`PU04ESTADO`)
+ values(IDTRA,FEINICIO,ESTADO);
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_TRAMITE_MOSTRARACEPTADOS` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_MOSTRARACEPTADOS` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`mauricio`@`localhost` PROCEDURE `SP04_TRAMITE_MOSTRARACEPTADOS`()
+BEGIN
+SELECT `PU04IDTRA`,`PU04FEINICIO`,`PU04ESTADO`
+FROM `pu04tramite`
+WHERE `PU04ESTADO`='Aceptados';
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_TRAMITE_MOSTRARDENEGADOS` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_MOSTRARDENEGADOS` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_TRAMITE_MOSTRARDENEGADOS`()
+BEGIN
+SELECT `PU04IDTRA`,`PU04FEINICIO`,`PU04ESTADO`
+FROM `pu04tramite`
+WHERE `PU04ESTADO`='Denegados';
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_TRAMITE_MOSTRARINSPECCION` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_MOSTRARINSPECCION` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_TRAMITE_MOSTRARINSPECCION`()
+BEGIN
+SELECT `PU04IDTRA`,`PU04FEINICIO`,`PU04ESTADO`
+FROM `pu04tramite`
+WHERE `PU04ESTADO`='Inspección';
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP04_TRAMITE_MOSTRARNUEVOS` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_MOSTRARNUEVOS` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_TRAMITE_MOSTRARNUEVOS`()
+BEGIN
+SELECT `PU04IDTRA`,`PU04FEINICIO`,`PU04ESTADO`
+FROM `pu04tramite`
+WHERE `PU04ESTADO`='Nuevos';
 END */$$
 DELIMITER ;
 
@@ -1184,182 +1392,6 @@ VALUES (IDTRA,PU06IDACTDES_06);
 END */$$
 DELIMITER ;
 
-/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR_INFOR_ACT_D` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR_INFOR_ACT_D` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR_INFOR_ACT_D`(IN IDTRA INT(11))
-BEGIN
- SELECT 
- DISTINCT pu06actdes.PU06DESAD AS 'Actividad Desarrollar'
-   
-   FROM ((pu04regtra INNER JOIN pu05unitra ON pu04regtra.PU04IDTRA = pu05unitra.PU04IDTRA)
-	INNER JOIN pu06actdes ON pu05unitra.PU06IDACTDES = pu06actdes.`PU06IDACTDES`)
-	
-	WHERE pu04regtra.PU04IDTRA = IDTRA  AND pu05unitra.PU04IDTRA = IDTRA  AND pu05unitra.PU06IDACTDES>0;
-   
-		
-END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR_INFOR_A_A_P` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR_INFOR_A_A_P` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR_INFOR_A_A_P`(IN IDTRA INT(11))
-BEGIN
- SELECT 
- DISTINCT pu13aarep.PU13DESCAAP AS 'Afectacion de Areas de Proteccion'
-   
-   FROM ((pu04regtra INNER JOIN pu14trarep ON pu04regtra.PU04IDTRA = pu14trarep.PU04IDTRA)
-	INNER JOIN pu13aarep ON pu14trarep.PU13IDAAP = pu13aarep.PU13IDAAP)
-	
-	WHERE pu04regtra.PU04IDTRA = IDTRA  AND pu14trarep.PU04IDTRA = IDTRA  AND pu14trarep.PU13IDAAP>0;
-   
-		
-END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR_INFOR_A_B` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR_INFOR_A_B` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR_INFOR_A_B`(IN IDTRA INT(11))
-BEGIN
- SELECT 
- DISTINCT pu10aspbio.PU10DESCABIO AS 'Aspectos Biofisicos'
-   
-   FROM ((pu04regtra INNER JOIN pu11uniabio ON pu04regtra.PU04IDTRA = pu11uniabio.PU04IDTRA)
-	INNER JOIN pu10aspbio ON pu11uniabio.PU10IDASBIO = pu10aspbio.PU10IDASBIO)
-	
-	WHERE pu04regtra.PU04IDTRA = IDTRA  AND pu11uniabio.PU04IDTRA = IDTRA  AND pu11uniabio.PU10IDASBIO>0;
-   
-		
-END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP04_REGISTROTRA_MOSTRAR_INFOR_D_E_G` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_REGISTROTRA_MOSTRAR_INFOR_D_E_G` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_REGISTROTRA_MOSTRAR_INFOR_D_E_G`(IN IDTRA INT(11))
-BEGIN
- SELECT 
- DISTINCT pu09desceg.PU09DESCREG AS 'Descripcion del Espacio Geografico'
-   
-   FROM ((pu04regtra INNER JOIN pu09tradeg ON pu04regtra.`PU04IDTRA` = pu09tradeg.`PU04IDTRA`)
-	INNER JOIN pu09desceg ON pu09tradeg.`PU09IDDEG` = pu09desceg.`PU09IDDEG`)
-	
-	WHERE pu04regtra.PU04IDTRA = IDTRA  AND pu09tradeg.`PU04IDTRA`= IDTRA  AND pu09tradeg.`PU09IDDEG`>0;
-   
-		
-END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP04_TRAMITE_ACTUALIZARESTADO` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_ACTUALIZARESTADO` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_TRAMITE_ACTUALIZARESTADO`(IN IDTRA INT(11),IN ESTADO VARCHAR(20))
-BEGIN
-UPDATE `pu04tramite`
-SET `PU04ESTADO`=ESTADO
-WHERE `PU04IDTRA`=IDTRA;
-END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP04_TRAMITE_ELIMINAR` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_ELIMINAR` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_TRAMITE_ELIMINAR`(IN IDTRA INT(11))
-BEGIN
-DELETE  FROM `pu04tramite`
-WHERE `PU04IDTRA`=IDTRA;
-END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP04_TRAMITE_GUARDAR` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_GUARDAR` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_TRAMITE_GUARDAR`(IN IDTRA INT(11), IN FEINICIO DATE,IN ESTADO VARCHAR(20))
-BEGIN
-INSERT INTO `pu04tramite` (`PU04IDTRA`, `PU04FEINICIO`,`PU04ESTADO`)
-VALUES (IDTRA,FEINICIO,ESTADO);
-END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP04_TRAMITE_MOSTRARACEPTADOS` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_MOSTRARACEPTADOS` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_TRAMITE_MOSTRARACEPTADOS`()
-BEGIN
-SELECT `PU04IDTRA`,`PU04FEINICIO`,`PU04ESTADO`
-FROM `pu04tramite`
-WHERE `PU04ESTADO`='Aceptados';
-END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP04_TRAMITE_MOSTRARDENEGADOS` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_MOSTRARDENEGADOS` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_TRAMITE_MOSTRARDENEGADOS`()
-BEGIN
-SELECT `PU04IDTRA`,`PU04FEINICIO`,`PU04ESTADO`
-FROM `pu04tramite`
-WHERE `PU04ESTADO`='Denegados';
-END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP04_TRAMITE_MOSTRARINSPECCION` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_MOSTRARINSPECCION` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_TRAMITE_MOSTRARINSPECCION`()
-BEGIN
-SELECT `PU04IDTRA`,`PU04FEINICIO`,`PU04ESTADO`
-FROM `pu04tramite`
-WHERE `PU04ESTADO`='Inspección';
-END */$$
-DELIMITER ;
-
-/* Procedure structure for procedure `SP04_TRAMITE_MOSTRARNUEVOS` */
-
-/*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_MOSTRARNUEVOS` */;
-
-DELIMITER $$
-
-/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP04_TRAMITE_MOSTRARNUEVOS`()
-BEGIN
-SELECT `PU04IDTRA`,`PU04FEINICIO`,`PU04ESTADO`
-FROM `pu04tramite`
-WHERE `PU04ESTADO`='Nuevos';
-END */$$
-DELIMITER ;
-
 /* Procedure structure for procedure `SP04_TRAMITE_MOSTRAROFICINA` */
 
 /*!50003 DROP PROCEDURE IF EXISTS  `SP04_TRAMITE_MOSTRAROFICINA` */;
@@ -1453,6 +1485,19 @@ BEGIN
 	SELECT `PU06IDACTDES`,`PU06DESAD`
 	FROM pu06actdes;
     END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP06_ACTDES_TRA_GUARDAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP06_ACTDES_TRA_GUARDAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP06_ACTDES_TRA_GUARDAR`(IN idtra INT(11), IN idactdes int(11))
+BEGIN
+INSERT INTO `pu05unitra`(`PU04IDTRA`, `PU06IDACTDES`)
+ VALUES (idtra, idactdes);
+END */$$
 DELIMITER ;
 
 /* Procedure structure for procedure `SP07_TERRFT_ACTUALIZAR` */
@@ -1584,10 +1629,22 @@ DELIMITER $$
 
 /*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP09_DESCEG_MOSTRAR`()
 BEGIN
-	
-	SELECT `PU09IDDEG`,`PU09DESCREG`
-	FROM pu09desceg;
-    END */$$
+SELECT `PU09IDDEG`,`PU09DESCREG`
+FROM `pu09desceg`;
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP09_DESCEG_TRA_GUARDAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP09_DESCEG_TRA_GUARDAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP09_DESCEG_TRA_GUARDAR`(IN IDTRA INT(11),IN IDDEG INT(11))
+BEGIN
+INSERT INTO PU09tradeg (PU04IDTRA,PU09IDDEG)
+ VALUES (IDTRA,IDDEG);
+END */$$
 DELIMITER ;
 
 /* Procedure structure for procedure `SP10_ASPBIO_ACTUALIZAR` */
@@ -1641,6 +1698,19 @@ BEGIN
 	SELECT `PU10IDASBIO`,`PU10DESCABIO`
 	FROM pu10aspbio;
     END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP10_ASPBIO_TRA_GUARDAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP10_ASPBIO_TRA_GUARDAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP10_ASPBIO_TRA_GUARDAR`(IN IDTRA INT(11), IN IDASPBIO INT(11))
+BEGIN
+INSERT INTO pu11uniabio (PU04IDTRA,PU10IDASBIO)
+ VALUES (IDTRA, IDASPBIO);
+END */$$
 DELIMITER ;
 
 /* Procedure structure for procedure `SP12_TIPDESEC_ACTUALIZAR` */
@@ -1761,6 +1831,19 @@ BEGIN
 	 SELECT `PU13IDAAP`,`PU13DESCAAP`
 	 FROM pu13aarep ;
     END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `SP13_AAREP_TRA_GUARDAR` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `SP13_AAREP_TRA_GUARDAR` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP13_AAREP_TRA_GUARDAR`( IN idtra INT(11),IN idaap int(11))
+BEGIN
+INSERT INTO `pu14trarep` (`PU04IDTRA`,`PU13IDAAP`)
+ VALUES (idtra, idaap);
+END */$$
 DELIMITER ;
 
 /* Procedure structure for procedure `SP15_SERV_ACTUALIZAR` */

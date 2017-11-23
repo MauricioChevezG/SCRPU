@@ -1,6 +1,12 @@
 <?php $result = $this->pu04inspeccion->listar(); ?>
+    <html>
+<head>
+  <title>Nuevo Tramite</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <div class="container">
+</head>
+<body>
+    <div class="container-fluid">
         <h2>Listado de Trámites</h2>   
     <a href="?c=class04inspeccion&m=agregar" class="btn btn-primary" role="button">Registrar</a>
     <br><br>    
@@ -60,3 +66,5 @@
       </table>
 
     </div>
+    </body>
+</html>
