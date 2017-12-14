@@ -1,12 +1,6 @@
 <?php $result = $this->pu04inspeccion->listar(); ?>
-    <html>
-<head>
-  <title>Nuevo Tramite</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-</head>
-<body>
-    <div class="container-fluid">
+    <div class="container">
         <h2>Listado de Trámites</h2>   
     <a href="?c=class04inspeccion&m=agregar" class="btn btn-primary" role="button">Registrar</a>
     <br><br>    
@@ -16,11 +10,9 @@
           <tr>
             <th>Trámite</th>
             <th>Fecha</th>
-            <th>Terreno F R</th>
             <th>Norte</th>
             <th>Este</th>
             <th>Altitud</th>
-            <th>Tipo Desarrollo</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -32,8 +24,6 @@
               <td><?php echo $row[2]; ?></td>
               <td><?php echo $row[3]; ?></td>
               <td><?php echo $row[4]; ?></td>
-              <td><?php echo $row[5]; ?></td>
-              <td><?php echo $row[6]; ?></td>
               <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones
                   <span class="caret"></span></button>
@@ -66,5 +56,3 @@
       </table>
 
     </div>
-    </body>
-</html>
