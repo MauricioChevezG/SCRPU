@@ -5,11 +5,9 @@ class PU04INSPECCION extends Conexion
 {
 	private $PU04IDTRA;
 	private $PU04FETRA;
-	private $PU07IDTFR;
 	private $PU04NORTE;
 	private $PU04ESTE;
 	private $PU04ALTITUD;
-	private $PU12IDTDESEC;
 	
 	private $conexion;
 	
@@ -35,19 +33,19 @@ class PU04INSPECCION extends Conexion
 		return $result;
 	}
 
-	public function guardar($pu09tradeg,$pu10aspbio,$pu13aap,$pu05actdes)
+	public function guardar($pu07terrft,$pu12tipdesec,$pu09tradeg,$pu10aspbio,$pu13aap,$pu05actdes)
 	{
 		$sql = "call SP04_REGISTROTR_GUARDAR('$this->PU04IDTRA','$this->PU04FETRA','$this->PU04NORTE',
 		'$this->PU04ESTE','$this->PU04ALTITUD');";
 		$this->conexion->consultaSimple($sql);
 		
-		foreach ($pu07terrft as $idtfr) {			
-			$sql1 = "call SP07_TERRFT_TRA_GUARDAR('$this->PU04IDTRA','$idtfr');";
+		foreach ($pu07terrft as $terrftId) {			
+			$sql1 = "call SP07_TERRFT_TRA_GUARDAR('$this->PU04IDTRA','$terrftId');";
 			$this->conexion->consultaSimple($sql1);
 		}
 
-		foreach ($pu07terrft as $idtfr) {			
-			$sql2 = "call SP07_TERRFT_TRA_GUARDAR('$this->PU04IDTRA','$idtfr');";
+		foreach ($pu12tipdesec as $tipdesecId) {			
+			$sql2 = "call SP12_TIPDESEC_TRA_GUARDAR('$this->PU04IDTRA','$tipdesecId');";
 			$this->conexion->consultaSimple($sql2);
 		}
 		//Inserción de aspecto a la tabla pivote
@@ -61,13 +59,13 @@ class PU04INSPECCION extends Conexion
 			$this->conexion->consultaSimple($sql4);
 		}
 		//Inserción de pu13aap a la tabla pivote
-		foreach ($pu13aap as $pu13aapId) {			
-			$sql5 = "CALL SP13_AAREP_TRA_GUARDAR('$this->PU04IDTRA','$pu13aapId');";
+		foreach ($pu13aap as $aapId) {			
+			$sql5 = "CALL SP13_AAREP_TRA_GUARDAR('$this->PU04IDTRA','$aapId');";
 			$this->conexion->consultaSimple($sql5);
 		}
 		//Inserción de pu13aap a la tabla pivote
-		foreach ($pu05actdes as $pu05actdesId) {			
-			$sql6 = "CALL SP06_ACTDES_TRA_GUARDAR('$this->PU04IDTRA','$pu05actdesId');";
+		foreach ($pu05actdes as $actdesId) {			
+			$sql6 = "CALL SP06_ACTDES_TRA_GUARDAR('$this->PU04IDTRA','$actdesId');";
 			$this->conexion->consultaSimple($sql6);
 		}
 	}

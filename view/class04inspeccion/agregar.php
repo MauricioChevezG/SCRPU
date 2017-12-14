@@ -1,7 +1,9 @@
-<?php $result = $this->pu09tradeg->listar(); ?> 
-<?php $result2 = $this->pu10aspbio->listar(); ?> 
-<?php $result3 = $this->pu13aap->listar(); ?> 
-<?php $result4 = $this->pu05actdes->listar(); ?> 
+<?php $result = $this->pu07terrft->listar(); ?> 
+<?php $result1 = $this->pu12tipdesec->listar(); ?> 
+<?php $result2 = $this->pu09tradeg->listar(); ?> 
+<?php $result3 = $this->pu10aspbio->listar(); ?> 
+<?php $result4 = $this->pu13aap->listar(); ?> 
+<?php $result5 = $this->pu05actdes->listar(); ?> 
 
 
 <center>
@@ -43,15 +45,13 @@
     </div>
   <br>
   </div>
-
-
   <br>
   <div class="container well">
     <div class="form-group">
       <p>
         <b>Existe Terreno Frente a ruta:</b>
       </p>
-      <?php while ($row = mysqli_fetch_array($result1)):?>
+      <?php while ($row = mysqli_fetch_array($result)):?>
       <label class="checkbox-inline">
        <input type="checkbox" value="<?php echo $row['pu07idtfr'];?>" name="pu07terrft[]"><?php echo $row['PU07NOMTFR']; ?>
       </label>
@@ -85,7 +85,7 @@
       <p>
         <b>Descripción del Espacio Geográfico :</b>
       </p>
-      <?php while ($row = mysqli_fetch_array($result)):?>
+      <?php while ($row = mysqli_fetch_array($result2)):?>
       <label class="checkbox-inline">
       <input type="checkbox" value="<?php echo $row['pu09iddeg'];?>" name="pu09tradeg[]"><?php echo $row['PU09DESCREG']; ?>
       </label>
@@ -99,7 +99,7 @@
       <p>
         <b>Aspectos Biofísicos :</b>
       </p>
-      <?php while ($row = mysqli_fetch_array($result2)):?>
+      <?php while ($row = mysqli_fetch_array($result3)):?>
       <label class="checkbox-inline">
       <input type="checkbox" value="<?php echo $row['pu10idasbio'];?>" name="pu10aspbio[]"><?php echo $row['PU10DESCABIO']; ?>
       </label>
@@ -113,7 +113,7 @@
       <p>
         <b>Afectación de Áreas de Protección :</b>
       </p>
-      <?php while ($row = mysqli_fetch_array($result3)):?>
+      <?php while ($row = mysqli_fetch_array($result4)):?>
       <label class="checkbox-inline">
       <input type="checkbox" value="<?php echo $row['pu13idaap'];?>" name="pu13aap[]"><?php echo $row['PU13DESCAAP']; ?>
       </label>
@@ -127,7 +127,7 @@
       <p>
         <b>Actividades a Desarrollar :</b>
       </p>
-      <?php while ($row = mysqli_fetch_array($result4)):?>
+      <?php while ($row = mysqli_fetch_array($result5)):?>
       <label class="checkbox-inline">
       <input type="checkbox" value="<?php echo $row['pu06idactdes'];?>" name="pu05actdes[]"><?php echo $row['PU06DESAD']; ?>
       </label>
