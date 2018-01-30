@@ -34,7 +34,9 @@ class class04inspeccionController
 			$this->pu04inspeccion->setAtributo('PU04NORTE',$_POST['PU04NORTE']);
 			$this->pu04inspeccion->setAtributo('PU04ESTE',$_POST['PU04ESTE']);
 			$this->pu04inspeccion->setAtributo('PU04ALTITUD',$_POST['PU04ALTITUD']);
-			$this->pu04inspeccion->guardar($_POST['pu07terrft'],$_POST['pu12tipdesec'],$_POST['pu09tradeg'],$_POST['pu10aspbio'],$_POST['pu13aap'],$_POST['pu05actdes']);
+			$this->pu04inspeccion->guardar($_POST['pu07terrft'],$_POST['pu12tipdesec']
+		);
+			/*$this->pu04inspeccion->guardar($_POST['pu07terrft'],$_POST['pu12tipdesec'],$_POST['pu09tradeg'],$_POST['pu10aspbio'],$_POST['pu13aap'],$_POST['pu05actdes']);*/
 			header('location:?c=class04inspeccion&m=index');
 		}
 		else{

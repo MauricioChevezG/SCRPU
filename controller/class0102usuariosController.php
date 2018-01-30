@@ -26,7 +26,7 @@ class class0102usuariosController
 			$this->class0102usuarios->setAtributo('PU03IDPUES',$_POST['PU03IDPUES']);
 			$this->class0102usuarios->setAtributo('PU02USUARIO',$_POST['PU02USUARIO']);
 			$this->class0102usuarios->setAtributo('PU02CLAVE',$_POST['PU02CLAVE']);
-			$this->class0102usuarios->guardarclass0102usuarios();
+			$this->class0102usuarios->guardar();
 			header('location:?c=class0102usuarios&m=index');
 		}
 		else{

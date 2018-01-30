@@ -1,53 +1,75 @@
 <?php 
-require_once 'model/PU04INSPECCION.php';
-require_once 'model/class06actdes.php';
-require_once 'model/class07terrft.php';
-require_once 'model/class09desceg.php';
-require_once 'model/class10aspbio.php';
-require_once 'model/class12tipdesec.php';
-require_once 'model/class13aarep.php';
-class class04inspeccionController
+require_once 'conexion.php';
+
+class PU04INSPECCION extends Conexion
 {
-	private $pu04inspeccion;
-	private $pu07terrft;
-	private $pu12tipdesec;
-	private $pu09tradeg;
-	private $pu10aspbio;
-	private $pu13aap;
-	private $pu05actdes;
+	private $PU04IDTRA;
+	private $PU04FETRA;
+	private $PU04NORTE;
+	private $PU04ESTE;
+	private $PU04ALTITUD;
+	
+	private $conexion;
+	
 	function __construct()
 	{
-		$this->pu04inspeccion= new PU04INSPECCION();
+		$this->conexion = new Conexion();
 	}
-	public function index()
+	
+	public function setAtributo($nombre, $valor)
 	{
-		require_once 'view/header.php';
-		require_once 'view/class04inspeccion/index.php';
-		require_once 'view/footer.php';
+		$this->$nombre = ucfirst(strtolower($valor)); 
+	}
 
-	}
-	public function agregar()
+	public function getAtributo($nombre)
 	{
-		if($_POST){
-			$this->pu04inspeccion->setAtributo('PU04IDTRA',$_POST['PU04IDTRA']);
-			$this->pu04inspeccion->setAtributo('PU04FETRA',$_POST['PU04FETRA']);
-			$this->pu04inspeccion->setAtributo('PU04NORTE',$_POST['PU04NORTE']);
-			$this->pu04inspeccion->setAtributo('PU04ESTE',$_POST['PU04ESTE']);
-			$this->pu04inspeccion->setAtributo('PU04ALTITUD',$_POST['PU04ALTITUD']);
-			$this->pu04inspeccion->guardar($_POST['pu07terrft'],$_POST['pu12tipdesec'],$_POST['pu09tradeg'],$_POST['pu10aspbio'],$_POST['pu13aap'],$_POST['pu05actdes']);
-			header('location:?c=class04inspeccion&m=index');
+		return $this->$nombre;
+	}
+
+	public function listar()
+	{
+		$sql = "CALL SP04_REGISTROTRA_MOSTRAR();";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;
+	}
+
+	public function guardar($pu07terrft,$pu12tipdesec)
+/*	public function guardar($pu07terrft,$pu12tipdesec,$pu09tradeg,$pu10aspbio,$pu13aap,$pu05actdes)*/
+	{
+		$sql = "call SP04_REGISTROTR_GUARDAR('$this->PU04IDTRA','$this->PU04FETRA','$this->PU04NORTE',
+		'$this->PU04ESTE','$this->PU04ALTITUD');";
+		$this->conexion->consultaSimple($sql);
+		
+		foreach ($pu07terrft as $terrftId) {			
+			$sql1 = "call SP07_TERRFT_TRA_GUARDAR('$this->PU04IDTRA','$terrftId');";
+			$this->conexion->consultaSimple($sql1);
 		}
-		else{
-			$this->pu07terrft = new class07terrft();
-			$this->pu12tipdesec = new class12tipdesec();
-			$this->pu09tradeg = new class09desceg();
-			$this->pu10aspbio = new class10aspbio();
-			$this->pu13aap = new class13aarep();
-			$this->pu05actdes = new class06actdes();
-			require_once 'view/header.php';
-			require_once 'view/class04inspeccion/agregar.php';
-			require_once 'view/footer.php';
+
+		foreach ($pu12tipdesec as $tipdesecId) {			
+			$sql2 = "call SP12_TIPDESEC_TRA_GUARDAR('$this->PU04IDTRA','$tipdesecId');";
+			$this->conexion->consultaSimple($sql2);
 		}
+		
+/*		//Inserción de aspecto a la tabla pivote
+		foreach ($pu09tradeg as $tradegId) {			
+			$sql3 = "call SP09_DESCEG_TRA_GUARDAR('$this->PU04IDTRA','$tradegId');";
+			$this->conexion->consultaSimple($sql3);
+		}
+		//Inserción de pu10aspbio a la tabla pivote
+		foreach ($pu10aspbio as $aspbioId) {			
+			$sql4 = "CALL SP10_ASPBIO_TRA_GUARDAR('$this->PU04IDTRA','$aspbioId');";
+			$this->conexion->consultaSimple($sql4);
+		}
+		//Inserción de pu13aap a la tabla pivote
+		foreach ($pu13aap as $aapId) {			
+			$sql5 = "CALL SP13_AAREP_TRA_GUARDAR('$this->PU04IDTRA','$aapId');";
+			$this->conexion->consultaSimple($sql5);
+		}
+		//Inserción de pu13aap a la tabla pivote
+		foreach ($pu05actdes as $actdesId) {			
+			$sql6 = "CALL SP06_ACTDES_TRA_GUARDAR('$this->PU04IDTRA','$actdesId');";
+			$this->conexion->consultaSimple($sql6);
+		}*/
 	}
 }
 ?>
