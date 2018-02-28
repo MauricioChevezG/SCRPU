@@ -26,7 +26,7 @@ class class07terrft  extends Conexion
 
 	public function buscar($PU07IDTFR)
 	{
-		$sql = "call SP07_TERRFT_BUSCAR('".$PU07IDTFR."')";
+		$sql = "call SP07_TERRFT_BUSCAR('".$PU07IDTFR."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$class07terrft = $this->convertToclass07terrft($result);
 		return $class07terrft;
@@ -41,7 +41,7 @@ class class07terrft  extends Conexion
 
 	public function guardar()
 	{
-		$sql = "call SP07_TERRFT_GUARDAR('$this->PU07IDTFR','$this->PU07NOMTFR')";
+		$sql = "call SP07_TERRFT_GUARDAR('$this->PU07IDTFR','$this->PU07NOMTFR');";
 		$this->conexion->consultaSimple($sql);
 	}
 

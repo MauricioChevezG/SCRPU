@@ -1,7 +1,6 @@
 <?php 
 require_once 'conexion.php';
-//`pu13aarep`
-//`PU13IDAAP``PU13DESCAAP`
+
 class class13aarep  extends Conexion
 {
 	
@@ -42,19 +41,19 @@ class class13aarep  extends Conexion
 
 	public function guardar()
 	{
-		$sql = "call SP13_AAREP_GUARDAR('$this->PU13IDAAP','$this->PU13DESCAAP')";
+		$sql = "call SP13_AAREP_GUARDAR('$this->PU13IDAAP','$this->PU13DESCAAP');";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function actualizar()
 	{
-		$sql = "call SP13_AAREP_ACTUALIZAR('$this->PU13IDAAP','$this->PU13DESCAAP')";
+		$sql = "call SP13_AAREP_ACTUALIZAR('$this->PU13IDAAP','$this->PU13DESCAAP');";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function eliminar()
 	{
-		$sql = "call SP13_AAREP_ELIMINAR('$this->PU13IDAAP')";
+		$sql = "call SP13_AAREP_ELIMINAR('$this->PU13IDAAP');";
 		$this->conexion->consultaSimple($sql);
 	}
 

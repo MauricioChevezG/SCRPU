@@ -42,19 +42,19 @@ class class09desceg  extends Conexion
 
 	public function guardar()
 	{
-		$sql = "call SP09_DESCEG_GUARDAR('$this->PU09IDDEG','$this->PU09DESCREG')";
+		$sql = "call SP09_DESCEG_GUARDAR('$this->PU09IDDEG','$this->PU09DESCREG');";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function actualizar()
 	{
-		$sql = "call SP09_DESCEG_ACTUALIZAR('$this->PU09IDDEG','$this->PU09DESCREG')";
+		$sql = "call SP09_DESCEG_ACTUALIZAR('$this->PU09IDDEG','$this->PU09DESCREG');";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function eliminar()
 	{
-		$sql = "call SP09_DESCEG_ELIMINAR('$this->PU09IDDEG')";
+		$sql = "call SP09_DESCEG_ELIMINAR('$this->PU09IDDEG');";
 		$this->conexion->consultaSimple($sql);
 	}
 
@@ -64,7 +64,6 @@ class class09desceg  extends Conexion
 		while ($row = mysqli_fetch_array($result)) {
 			$class09desceg->setAtributo('PU09IDDEG',$row[0]);
 			$class09desceg->setAtributo('PU09DESCREG',$row[1]);
-	
 		}
 		return $class09desceg;
 	}

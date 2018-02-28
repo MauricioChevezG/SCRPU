@@ -62,9 +62,8 @@ class class16servae  extends Conexion
 		while ($row = mysqli_fetch_array($result)) {
 			$class16servae->setAtributo('PU16IDSAE',$row[0]);
 			$class16servae->setAtributo('PU16DESCAE',$row[1]);
-	
 		}
 		return $class16servae;
 	}
 }
- ?>
+?>

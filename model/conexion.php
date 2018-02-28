@@ -5,8 +5,8 @@
 class Conexion
 {
 	private $dbInfo = array('host' => 'localhost',
-							'user' => 'mauricio',
-							'pass' => '504050029',
+							'user' => 'root',
+							'pass' => '',
 							'db' => 'pu_ingenieria' );
 	private $database;
 
@@ -28,7 +28,7 @@ class Conexion
 	public function ConsultaSimple($sql)
 	{
 		$this->database->query($sql);
-		$this->database->close();
+		//$this->database->close();
 	}
 	/**
 	*	Si es exitosa, mysqli_query() retornará un objeto mysqli_result.
@@ -36,7 +36,7 @@ class Conexion
 	public function ConsultaRetorno($sql)
 	{
 		$result = $this->database->query($sql);
-	    $this->database->close();
+	   // $this->database->close();
 		return $result;
 	}
 }

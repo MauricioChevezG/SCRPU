@@ -1,7 +1,6 @@
 <?php 
 require_once 'conexion.php';
-//`pu12tipdesec`
-//`PU12IDTDESEC``PU12TIPODES`
+
 class class12tipdesec  extends Conexion
 {
 	
@@ -64,7 +63,6 @@ class class12tipdesec  extends Conexion
 		while ($row = mysqli_fetch_array($result)) {
 			$class12tipdesec->setAtributo('PU12IDTDESEC',$row[0]);
 			$class12tipdesec->setAtributo('PU12TIPODES',$row[1]);
-	
 		}
 		return $class12tipdesec;
 	}
