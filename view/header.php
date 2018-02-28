@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php 
+session_start();
+if(isset($_SESSION['usuario']) && isset($_SESSION['puesto'])) {
+    $usuario = $_SESSION['usuario'];
+    echo($usuario);
+    $puesto = $_SESSION['puesto'];
+} else {
+    die('$'."_SESSION['usuario'] no esta registrado en usuarios de prioridad!");
+}
+?>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +18,8 @@
   <meta name="author" content="">
   <title>SB Admin - Start Bootstrap Template</title>
   <!-- Bootstrap core CSS-->
+  <!-- Jquery Confirm v3 -->
+  <link rel="stylesheet" href="assets/jquery-confirm/dist/jquery-confirm.min.css">
   <!-- css de los tabs -->
   <link rel="stylesheet" href="public/css/easy-responsive-tabs.css ">
   <!-- css de datatable -->
@@ -261,7 +272,7 @@
             <a class="dropdown-item small" href="#">View all alerts</a>
           </div>
         </li> -->
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <form class="form-inline my-2 my-lg-0 mr-lg-2">
             <div class="input-group">
               <input class="form-control" type="text" placeholder="Search for...">
@@ -272,10 +283,14 @@
               </span>
             </div>
           </form>
-        </li>
+        </li>-->
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+          <div class="dropdown">
+              <button class="btn dropdown-toggle fluid" type="button" data-toggle="dropdown" id="loguser"><?php echo $usuario; ?>, <?php echo $puesto; ?><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a name="cerrar" id="cerrar" onclick="cerrarSesion()">Cerrar Sesion <span class="fa fa-fw fa-sign-out"></span></a></li>
+                </ul>
+            </div>
         </li>
       </ul>
     </div>

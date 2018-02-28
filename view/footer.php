@@ -55,7 +55,7 @@
     <script src="public/js/fechas-jquery.js"></script>
     <script src="public/js/easyResponsiveTabs.js"></script>
     <script src="public/js/funcionesResponsiveTab.js"></script>
-
+    <script src="assets/jquery-confirm/dist/jquery-confirm.min.js"></script>
 </body>
 
 </html>
