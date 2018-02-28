@@ -13,11 +13,14 @@
 
 <form action="?c=class04inspeccion&m=agregar" method="post">
   <div class="container-fluid  well   "> 
+
+    
    <div class="  form-group  ">
     
        <div class="form-group">
-        <label for="PU04IDTRA">Id Trámite:</label>
-        <input type="text" class="form-control" id="PU04IDTRA" name="PU04IDTRA">
+          <label for="PU04IDTRA">Código Trámite</label>
+        <input type="text" class="form-control" id="PU04IDTRA" name="PU04IDTRA" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly>
+        <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
       </div>
 
 </div>

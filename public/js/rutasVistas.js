@@ -1,3 +1,27 @@
+function vistaEspacio(){
+		$("#tabconten1").load("?c=class04deg&m=listar");
+	}
+	
+function vistaAspecto(){
+		$("#tabconten2").load("?c=class04listaspecto&m=listar");
+	}
+
+function vistaAreaApro(){
+		$("#tabconten3").load("?c=class04editaarep&m=listar");
+	}
+
+function vistaEditactdes(){
+		$("#tabconten4").load("?c=class04editactdes&m=editarActividades");
+    }
+
+
+
+
+
+
+
+
+
 // coloca el  contenido especifico en un div especifico de mi pagina principal
 function vistaRetrasados(){
 		$("#tabcontenido1").load("?c=classlistretrasados&m=listarRetrasado");	
@@ -17,3 +41,7 @@ function vistaAceptados(){
 function vistaDenegados(){
 		$("#tabcontenido6").load("?c=classlistdenegados&m=listarDenegados");
     }
+
+
+
+

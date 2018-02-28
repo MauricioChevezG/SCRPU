@@ -28,7 +28,7 @@ class class04inspeccion extends Conexion
 
 	public function listar()
 	{
-		$sql = "CALL SP04_REGISTROTRA_MOSTRAR();";
+		$sql = "CALL SP00_LISTAR_INGRESO_TRAMITE();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

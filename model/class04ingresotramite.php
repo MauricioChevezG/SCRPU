@@ -33,7 +33,7 @@ class class04ingresotramite  extends Conexion
 
 	public function listar()
 	{
-		$sql = "CALL SP04_REGTRAMITEINFO_MOSTRAR();";
+		$sql = "CALL SP00_LISTAR_INGRESO_TRAMITE();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

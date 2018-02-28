@@ -40,6 +40,9 @@ class class04inspeccionController
 			header('location:?c=class04inspeccion&m=index');
 		}
 		else{
+			
+$this->pu04inspeccion = $this->pu04inspeccion->buscarTraIng($_REQUEST['id']);
+
 			$this->pu09tradeg = new class09desceg();
 			$this->pu10aspbio = new class10aspbio();
 			$this->pu13aap = new class13aarep();

@@ -69,7 +69,7 @@ class PU04INSPECCION extends Conexion
 	///
 	public function listar()
 	{
-		$sql = "CALL SP04_REGISTROTRA_MOSTRAR();";
+		$sql = "CALL SP00_LISTAR_INGRESO_TRAMITE();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
@@ -81,6 +81,15 @@ class PU04INSPECCION extends Conexion
 		$tramite = $this->convertToTramite($result);
 		return $tramite;
 	}
+//////////////////////////////////////////////////////////
+public function buscarTraIng($idtramite)
+	{
+		$sql4 = "SELECT * FROM pu04tramite1 WHERE PU04IDTRA ='".$idtramite."'";
+		$result = $this->conexion->consultaRetorno($sql4);
+		$tramite = $this->convertToTramite($result);
+		return $tramite;
+	}
+
 
 /*	public function eliminar()
 	{

@@ -1,4 +1,5 @@
 
+
     <center>
     <h2>Editar usuario: <?php echo $this->class0102usuarios->getAtributo('PU01NOMUSU');?> </h2>
 </center>

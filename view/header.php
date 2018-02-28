@@ -67,6 +67,8 @@
             <li>
               <a href="?c=class0102usuarios">Usuarios</a>
             </li>
+          
+
             <li>
               <a href="?c=class03puestos">Puestos</a>
             </li>
@@ -117,9 +119,11 @@
             <span class="nav-link-text">Módulo Oficina</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
-            <li>
+            
+              <li>
               <a href="?c=class04ingresotramite">Ingreso de Tramite</a>
             </li>
+
             <li>
               <a href="?c=class04tramite">Estados</a>
             </li>

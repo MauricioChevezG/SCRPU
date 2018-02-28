@@ -6,13 +6,12 @@
     <a href="?c=class04_deg&m=agregar_DEG" class="btn btn-primary" role="button">Registrar con tab</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
-      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-inspeccion" >
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-puestos">
         <thead>
           <tr>
-            <th>Trámite</th>
+            <th>Código de Tramite</th>
             <th>Fecha</th>
-            <th>Norte</th>
-            <th>Este</th>
+            <th>Ubicacion</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -22,7 +21,7 @@
               <td><?php echo $row[0]; ?></td>
               <td><?php echo $row[1]; ?></td>
               <td><?php echo $row[2]; ?></td>
-              <td><?php echo $row[3]; ?></td>
+              
               <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones
                   <span class="caret"></span></button>
@@ -44,8 +43,8 @@
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                      <li>
-                      <a href="?c=class04deg&m=agregar_DEG&id=<?php echo $row[0]; ?>">
-                       <span class="glyphicon glyphicon-eye-open"></span> Prueba</a>
+                      <a href="?c=class04inspeccion&m=agregar&id=<?php echo $row[0]; ?>">
+                       <span class="glyphicon glyphicon-eye-open"></span> Inspección</a>
                     </li>
                   </ul>
                 </div></td>

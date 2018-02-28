@@ -38,7 +38,7 @@
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                       <li>
-                      <a href="?c=class04inspeccion&m=tramite&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class04inspeccion&m=agregar&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> Tramite</a>
                     </li>
                   </ul>
