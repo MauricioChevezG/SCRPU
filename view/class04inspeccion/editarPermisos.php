@@ -20,18 +20,19 @@
   <div class="resp-tabs-container hor_1">
     <div class="container-fluid" id="tabconten1">
       <!-- contenido de tab 1 -->
-                    <form method="POST" action="?c=class04inspeccion&m=editarActividades">
+         <form method="POST" action="?c=class04inspeccion&m=editarActividades">
           <div class="form-group">
             <label for="id">Código Trámite</label>
-            <input type="text" class="form-control" id="id" name="id" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly> <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
+            <input type="text" class="form-control" id="id" name="id" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly> 
+            <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
           </div>
-          <?php foreach( $idactividades as $idaspecto ): ?>
-          <?php $isCheck = $this->pu04inspeccion->tieneActividades($idtramite, $idaspecto['PU06IDACTDES']);?>
+          <?php foreach( $idactividades as $idactividad ): ?>
+          <?php $isCheck = $this->pu04inspeccion->tieneActividades($idtramite, $idactividad['PU06IDACTDES']);?>
           <div class="checkbox">
             <label>
-            <input type="checkbox" name="idactdes<?php echo $idaspecto['pu06idactdes']; ?>"
+            <input type="checkbox" name="idactdes<?php echo $idactividad['PU06IDACTDES']; ?>"
              <?php if($isCheck['total']) {echo "checked";} ?>
-            /> <?php echo $idaspecto['PU06DESAD'] ;?>
+            /> <?php echo $idactividad['PU06DESAD'] ;?>
             </label>
           </div>
           <?php endforeach; ?>

@@ -92,8 +92,8 @@ $this->pu04inspeccion = $this->pu04inspeccion->buscarTraIng($_REQUEST['id']);
 			   $actividades = $this->pu04inspeccion->getTodasActividades();
 			    $this->pu04inspeccion->eliminarActividades($_REQUEST['id']);
 			    foreach ($actividades as $idactdes):
-    				if( isset($_REQUEST['idactdes'.$idactdes['PU06IDACTDES']] ) )
-      				$this->pu04inspeccion->asignarActividades($_REQUEST['id'], $idactdes['PU06IDACTDES']);
+    			if( isset($_REQUEST['idactdes'.$idactdes['PU06IDACTDES']] ) )
+      			$this->pu04inspeccion->asignarActividades($_REQUEST['id'], $idactdes['PU06IDACTDES']);
   				endforeach;
 				header('location:?c=class04inspeccion&m=editarActividades&id='.$_REQUEST['id']);
 		}
