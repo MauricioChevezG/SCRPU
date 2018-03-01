@@ -1,5 +1,4 @@
 <?php $result = $this->class21servicios->listar(); ?>
-
     <h2>Listado del Servicios</h2>   
      <a href="?c=class21servicios&m=agregar" class="btn btn-primary" role="button">Registrar Desarrollo</a>
     <br>
