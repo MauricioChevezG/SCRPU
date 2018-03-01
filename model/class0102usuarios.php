@@ -50,7 +50,7 @@ class class0102usuarios extends Conexion
 	public function guardar()
 	{
 		$sql = "call SP01_REGINFUSU_GUARDAR('$this->PU01CEDUSU','$this->PU01NOMUSU','$this->PU01APE1USU','$this->PU01APE2USU',
-	'$this->PU02TELUSU','$this->PU02CORUSU','$this->PU03IDPUES','$this->PU02class0102usuarios','$this->PU02CLAVE');";	
+	'$this->PU02TELUSU','$this->PU02CORUSU','$this->PU03IDPUES','$this->PU02USUARIO','$this->PU02CLAVE');";	
 
 		$this->conexion->consultaSimple($sql);
 	}
