@@ -1,16 +1,16 @@
 <?php $result = $this->class04ingresotramite->listar(); ?>
 
-        <h2>Listado de Tramite</h2>   
-    <a href="?c=class04ingresotramite&m=agregar"  class="btn btn-primary" role="button">Registrar Tramite</a>
+        <h2>Listado de Trámites Ingresados</h2>   
+    <a href="?c=class04ingresotramite&m=agregar"  class="btn btn-primary" role="button">Registrar Trámite</a>
    <br>
    <br>   
     <?php if ($result->num_rows): ?>
       <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-puestos">
         <thead>
           <tr>
-            <th>Código de Tramite</th>
+            <th>Código de trámite</th>
             <th>Fecha</th>
-            <th>Ubicacion</th>
+            <th>Ubicación del trámite</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -39,7 +39,7 @@
                     </li>
                       <li>
                       <a href="?c=class04inspeccion&m=agregar&id=<?php echo $row[0]; ?>">
-                       <span class="glyphicon glyphicon-eye-open"></span> Tramite</a>
+                       <span class="glyphicon glyphicon-eye-open"></span> Trámite</a>
                     </li>
                   </ul>
                 </div></td>

@@ -73,6 +73,12 @@ class PU04INSPECCION extends Conexion
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
+	public function listarTraRealizado()
+	{
+		$sql = "CALL SP00_LISTAR_TRAMITE_REALIZADO();";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;
+	}
 	/////////////////////////////////////////////////////////////
 	public function buscar($idtramite)
 	{
