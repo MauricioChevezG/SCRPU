@@ -4,29 +4,26 @@
 <?php $result4 = $this->pu04inspeccion->getTodasActividades(); ?>
 <?php $result5 = $this->pu07terrfr->listar(); ?>
 <?php $result6 = $this->pu12tipdesec->listar(); ?>
+<?php $result7 = $this->pu21servicios->listar(); ?>
+<?php $result8 = $this->pu22tredv->listar(); ?>
 
-  
+
  
- <div class="form-group">
-       <center><h1>Agregar nuevo trámite</h1></center>
+<form action="?c=class04inspeccion&m=agregar" method="post"> 
+ 
+ <div class="  form-group  ">
+     <div class=" col-xs-2 text-left">
+       <h4>Realizando el trámite a : <input type="text" class="form-control" id="PU04IDTRA" name="PU04IDTRA" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly>
+        <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?></h4>
       </div>
+    </div><br>
 
-<form action="?c=class04inspeccion&m=agregar" method="post">
   <div class="container-fluid  well   "> 
-
-    
-   <div class="  form-group  ">
-    
-       <div class="form-group">
-          <label for="PU04IDTRA">Código Trámite</label>
-        <input type="text" class="form-control" id="PU04IDTRA" name="PU04IDTRA" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly>
-        <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
-      </div>
-
+   
+<div class=" col-xs-2 text-left">
+  <h5>Localización GPS:</h5>
 </div>
-
-      <div class="container-fluid  well   "> 
-    <center><h4>Localización GPS:</h4></center>
+      <div class="container-fluid  well   ">     
     
 
   <div class="  form-group  ">
@@ -118,12 +115,35 @@
       </div>
     </div><br>
 
+    <div class="container-fluid  well   "> 
+       <div class="form-group">
+        <p><b>Servicios de Agua y Electricidad :</b></p>
+      <?php while ($row = mysqli_fetch_array($result7)):?>
+        <label class="checkbox-inline">
+          <input type="checkbox" value="<?php echo $row['PU21IDSERVI'];?>" name="pu21servicios[]"><?php echo $row['PU21DESCSERVI']; ?>
+        </label>
+      <?php endwhile; ?>
+      </div>
+    </div><br>
+
+    <div class="container-fluid  well   "> 
+       <div class="form-group">
+        <p><b>Tipo de Red Vial :</b></p>
+      <?php while ($row = mysqli_fetch_array($result8)):?>
+        <label class="checkbox-inline">
+          <input type="checkbox" value="<?php echo $row['PU22IDTREDV'];?>" name="pu22tredv[]"><?php echo $row['PU22DESCTRV']; ?>
+        </label>
+      <?php endwhile; ?>
+      </div>
+    </div><br>
+
+    
 
     
 
 
 
       <button type="submit" class="btn btn-success">Guardar</button> 
-      <a href="?c=class04inspeccion&m=index" class="btn btn-danger" role="button">Regresar</a>    
+      <a href="?c=class04inspeccion&m=index1" class="btn btn-danger" role="button">Regresar</a>    
     </form>
 

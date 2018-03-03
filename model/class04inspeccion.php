@@ -4,7 +4,6 @@ require_once 'conexion.php';
 class class04inspeccion extends Conexion
 {
 	private $PU04IDTRA;
-	private $PU04FETRA;
 	private $PU04NORTE;
 	private $PU04ESTE;
 	private $PU04ALTITUD;
@@ -33,16 +32,10 @@ class class04inspeccion extends Conexion
 		return $result;
 	}
 	
-	public function listarTraRealizado()
-	{
-		$sql = "CALL SP00_LISTAR_TRAMITE_REALIZADO();";
-		$result = $this->conexion->consultaRetorno($sql);
-		return $result;
-	}
  	
  	public function guardar($pu09tradeg,$pu10aspbio,$pu13aap,$pu05actdes)
 	{
-		$sql = "call SP04_REGISTROTR_GUARDAR('$this->PU04IDTRA','$this->PU04FETRA',	'$this->PU04NORTE',
+		$sql = "call SP04_REGISTROTR_GUARDAR('$this->PU04IDTRA','$this->PU04NORTE',
 		'$this->PU04ESTE','$this->PU04ALTITUD');";
 		$this->conexion->consultaSimple($sql);
 		//Inserción de aspecto a la tabla pivote

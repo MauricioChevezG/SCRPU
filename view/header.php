@@ -99,9 +99,6 @@ if(isset($_SESSION['usuario']) && isset($_SESSION['puesto'])) {
               <a href="?c=class12tipdesec">Tipo de Desarrollo en el Sector</a>
             </li>
             <li>
-              <a href="?c=class21servicios">Servicios</a>
-            </li>
-            <li>
               <a href="?c=class16servae">Servicio de Electricidad y Agua</a>
             </li>
             <li>
@@ -111,10 +108,7 @@ if(isset($_SESSION['usuario']) && isset($_SESSION['puesto'])) {
               <a href="?c=class20desas">Desarrolo de Servidumbre</a>
             </li>
             <li>
-              <a href="?c=class22tredv">Tipo de Red Vial</a>
-            </li>
-            <li>
-              <a href="?c=class16servae">Servicio de Electricidad y Agua</a>
+              <a href="?c=class22serrvi">Servicio de Red Vial</a>
             </li>
             <li>
               <a href="?c=class26planreg">Plan Retulador</a>

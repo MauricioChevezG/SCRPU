@@ -14,21 +14,8 @@ function vistaEditactdes(){
 		$("#tabconten4").load("?c=class04editactdes&m=editarActividades");
     }
 
-function cerrarSesion(){
-    $.confirm({
-    title: 'Cerrando Sesion',
-    content: 'Desea continuar?',
-    buttons: {
-        confirm: function () {
-            content: 'Confirmar';
-            window.location = "?c=classlogin&m=index";
-        },
-        cancel: function () {
-            
-        }
-    }
-});
-}
+
+
 
 
 
@@ -54,6 +41,9 @@ function vistaAceptados(){
 function vistaDenegados(){
 		$("#tabcontenido6").load("?c=classlistdenegados&m=listarDenegados");
     }
+
+
+
 function cerrarSesion(){
     $.confirm({
     title: 'Cerrando Sesion',
@@ -69,7 +59,3 @@ function cerrarSesion(){
     }
 });
 }
-
-
-
-

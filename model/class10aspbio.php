@@ -41,7 +41,7 @@ class class10aspbio  extends Conexion
 
 	public function guardar()
 	{
-		$sql = "call SP10_ASPBIO_MOSTRAR('$this->PU10IDASBIO','$this->PU10DESCABIO');";
+		$sql = "call SP10_ASPBIO_GUARDAR('$this->PU10IDASBIO','$this->PU10DESCABIO');";
 		$this->conexion->consultaSimple($sql);
 	}
 

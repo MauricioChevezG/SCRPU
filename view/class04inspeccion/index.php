@@ -1,9 +1,8 @@
 <?php $result = $this->pu04inspeccion->listar(); ?>
 
     <div class="container-fluid">
-        <h2>Listado de Trámites Ingresados</h2>   
-    <a href="?c=class04inspeccion&m=index1" class="btn btn-primary" role="button">Ver Inspacionados</a>
-   
+        <h2>Listado de Trámites</h2>   
+    <a href="?c=class04inspeccion&m=index1" class="btn btn-primary" role="button">Ver Trámites Inspecionados</a>
     <br><br>    
     <?php if ($result->num_rows): ?>
       <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-puestos">
@@ -11,19 +10,17 @@
           <tr>
             <th>Código de Trámite</th>
             <th>Fecha</th>
-            <th>Ubicación del trámite</th>
+            <th>Ubicación</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody>       
           <?php while ($row = mysqli_fetch_array($result)):?>
             <tr>
               <td><?php echo $row[0]; ?></td>
               <td><?php echo $row[1]; ?></td>
               <td><?php echo $row[2]; ?></td>
-              
-              <td>
-                <div class="dropdown">
+              <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
@@ -45,7 +42,11 @@
                     </li>
                      <li>
                       <a href="?c=class04inspeccion&m=agregar&id=<?php echo $row[0]; ?>">
-                       <span class="glyphicon glyphicon-eye-open"></span> Inspección</a>
+                       <span class="glyphicon glyphicon-eye-open"></span> Trámite</a>
+                    </li>
+                    <li>
+                      <a href="?c=class04inspeccion&m=agregarespaciogeo&id=<?php echo $row[0]; ?>">
+                       <span class="glyphicon glyphicon-eye-open"></span> Inspeccionar</a>
                     </li>
                   </ul>
                 </div></td>

@@ -5,8 +5,8 @@ require_once 'conexion.php';
 */
 class class22tredv extends Conexion
 {
-	private $PU22IDTREDV;
-	private $PU22DESCTRV;
+	private $PU21IDSERVICIO;
+	private $PU21DESCSERVICIO;
 
 	private $conexion;
 	function __construct()
@@ -14,20 +14,20 @@ class class22tredv extends Conexion
 		$this->conexion = new Conexion();
 	}
 	//Manda un atributo convertido en minuscula, o ya sea solamente el primer caracter
-	public function setAtributo($PU22DESCTRV,$valor){
-		$this->$PU22DESCTRV = ucfirst(strtolower($valor));
+	public function setAtributo($PU21DESCSERVICIO,$valor){
+		$this->$PU21DESCSERVICIO = ucfirst(strtolower($valor));
 	}
 
-	public function getAtributo($PU22DESCTRV){
-		return $this->$PU22DESCTRV;
+	public function getAtributo($PU21DESCSERVICIO){
+		return $this->$PU21DESCSERVICIO;
 	}
 
-	public function buscar($PU22IDTREDV){
-		$sql = "CALL SP22_TREDV_BUSCAR('".$PU22IDTREDV."');";
+	/*public function buscar($PU21IDSERVICIO){
+		$sql = "CALL SP22_SERRVI_BUSCAR('".$PU21IDSERVICIO."');";
 		$result = $this->conexion->ConsultaRetorno($sql);
 		$class22tredv = $this->convertToclass22tredv($result);
 		return $class22tredv;
-	}
+	}*/
 
 	public function listar(){
 		$sql = " CALL SP22_TREDV_MOSTRAR();";
@@ -35,28 +35,28 @@ class class22tredv extends Conexion
 		return $result;
 	}
 
-	public function guardar(){
-		$sql = "CALL SP22_TREDV_GUARDAR('$this->PU22IDTREDV','$this->PU22DESCTRV');";
+	/*public function guardar(){
+		$sql = "CALL SP22_SERRVI_GUARDAR('$this->PU21IDSERVICIO','$this->PU21DESCSERVICIO');";
 		$this->conexion->ConsultaSimple($sql);
 	}
 
 	public function actualizar(){
-		$sql = "CALL SP22_TREDV_ACTUALIZAR('$this->PU22IDTREDV','$this->PU22DESCTRV');";
+		$sql = "CALL SP22_SERRVI_ACTUALIZAR('$this->PU21IDSERVICIO','$this->PU21DESCSERVICIO');";
 		$this->conexion->ConsultaSimple($sql);
 	}
 
 	public function eliminar(){
-		$sql = "CALL SP22_TREDV_ELIMINAR('$this->PU22IDTREDV');";
+		$sql = "CALL SP22_SERRVI_ELIMINAR('$this->PU21IDSERVICIO');";
 		$this->conexion->ConsultaSimple($sql);
 	}
 
 	public function convertToclass22tredv($result){
 		$class22tredv = new class22tredv();
 		while ($row = mysqli_fetch_array($result)) {
-			$class22tredv->setAtributo('PU22IDTREDV',$row[0]);
-			$class22tredv->setAtributo('PU22DESCTRV',$row[1]);
+			$class22tredv->setAtributo('PU21IDSERVICIO',$row[0]);
+			$class22tredv->setAtributo('PU21DESCSERVICIO',$row[1]);
 		}
 		return $class22tredv;
-	}
+	}*/
 }
  ?>

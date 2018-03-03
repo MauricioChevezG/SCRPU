@@ -1,7 +1,7 @@
 <?php $result = $this->pu04inspeccion->listarTraRealizado(); ?>
 
     <div class="container-fluid">
-        <h2>Trámites Inspeccionados</h2>   
+        <h2> Trámites Inspeccionados</h2>   
     <a href="?c=class04inspeccion&m=index" class="btn btn-primary" role="button">Regresar</a>
    
     <br><br>    
@@ -9,9 +9,11 @@
       <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-puestos">
         <thead>
           <tr>
-            <th>Código de trámite</th>
-            <th>Fecha</th>
-            <th>Ubicación del trámite</th>
+            <th>Trámite</th>
+            <th>Fecha Inspección</th>
+            <th>Este</th>
+            <th>Norte</th>
+            <th>Altitud</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -21,6 +23,8 @@
               <td><?php echo $row[0]; ?></td>
               <td><?php echo $row[1]; ?></td>
               <td><?php echo $row[2]; ?></td>
+              <td><?php echo $row[3]; ?></td>
+              <td><?php echo $row[4]; ?></td>
               
               <td>
                 <div class="dropdown">
