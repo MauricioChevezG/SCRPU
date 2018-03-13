@@ -66,6 +66,33 @@ class class04inspeccionController
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+
+
+public function agregarTra()
+	{
+		if($_POST){
+			$this->pu04inspeccion->setAtributo('PU04IDTRA',$_POST['id']);
+			$this->pu04inspeccion->setAtributo('PU04NORTE',$_POST['PU04NORTE']);
+			$this->pu04inspeccion->setAtributo('PU04ESTE',$_POST['PU04ESTE']);
+			$this->pu04inspeccion->setAtributo('PU04ALTITUD',$_POST['PU04ALTITUD']);
+			$this->pu04inspeccion->agregarTra();
+			header('location:?c=class04inspeccion&m=agregarTra&id='.$_REQUEST['id']);
+		}
+		else{
+
+			$this->pu04inspeccion = $this->pu04inspeccion->buscarTraIng($_REQUEST['id']);
+
+		
+			require_once 'view/header.php';
+			require_once 'view/class04inspeccion/agregarTramite.php';
+			require_once 'view/footer.php';
+		}
+	}
+
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	///
 	public function agregarespaciogeo()
 	{
@@ -178,6 +205,26 @@ class class04inspeccionController
       			$this->pu04inspeccion->asignarDesarrolloSec($_REQUEST['id'], $iddesarrollosc['PU12IDTDESEC']);
   				endforeach;
 				header('location:?c=class04inspeccion&m=editarDesarrolloSec&id='.$_REQUEST['id']);
+		}
+		else{
+			$this->pu04inspeccion = $this->pu04inspeccion->buscar($_REQUEST['id']);
+
+			require_once 'view/header.php';
+			require_once 'view/class04inspeccion/editarPermisos.php';
+			require_once 'view/footer.php';
+		}
+	}
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	public function editarEspaciosGeo()
+	{
+		if($_POST){
+			   $espacios = $this->pu04inspeccion->getTodasEspaciosGeo();
+			    $this->pu04inspeccion->eliminarEspaciosGeo($_REQUEST['id']);
+			    foreach ($espacios as $idespacio):
+    			if( isset($_REQUEST['idespacio'.$idespacio['PU09IDDEG']] ) )
+      			$this->pu04inspeccion->asignarEspaciosGeo($_REQUEST['id'], $idespacio['PU09IDDEG']);
+  				endforeach;
+				header('location:?c=class04inspeccion&m=editarEspaciosGeo&id='.$_REQUEST['id']);
 		}
 		else{
 			$this->pu04inspeccion = $this->pu04inspeccion->buscar($_REQUEST['id']);

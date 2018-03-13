@@ -404,5 +404,13 @@ class PU04INSPECCION extends Conexion
 		return $result;
 	}
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	///
+	//////////////////////// DENTRO DEL MODELO 04INPECCION
+public function agregarTra()
+	{
+		$sql = "CALL SP04_REGISTROTRAMITE_GUARDAR('$this->PU04IDTRA','$this->PU04NORTE','$this->PU04ESTE','$this->PU04ALTITUD');";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;	
+	}
 }
 ?>
