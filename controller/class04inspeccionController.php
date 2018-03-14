@@ -58,7 +58,7 @@ class class04inspeccionController
 			$this->pu12tipdesec = new class12tipdesec();
 			$this->pu21servicios = new class21servicios();
 			$this->pu22tredv = new class22tredv();
-
+			$this->idtipopatentes = new class24infest();
 			require_once 'view/header.php';
 			require_once 'view/class04inspeccion/agregar.php';
 			require_once 'view/footer.php';
@@ -66,7 +66,14 @@ class class04inspeccionController
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	
+	public function editarAcceso()
+	{
+		$this->pu04inspeccion = $this->pu04inspeccion->buscarTraIng($_REQUEST['id']);
+
+			require_once 'view/header.php';
+			require_once 'view/class04inspeccion/editarAcceso.php';
+			require_once 'view/footer.php';
+	}
 	
 
 
@@ -305,6 +312,27 @@ public function agregarTra()
       			$this->pu04inspeccion->asignarTipoRed($_REQUEST['id'], $idtiporedvial['PU22IDTREDV']);
   				endforeach;
 				header('location:?c=class04inspeccion&m=editarTipoRed&id='.$_REQUEST['id']);
+		}
+		else{
+			$this->pu04inspeccion = $this->pu04inspeccion->buscar($_REQUEST['id']);
+
+			require_once 'view/header.php';
+			require_once 'view/class04inspeccion/editarPermisos.php';
+			require_once 'view/footer.php';
+		}
+	}
+
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	public function editarPatente()
+	{
+		if($_POST){
+			   $tipopatente = $this->pu04inspeccion->getTodasPatente();
+			    $this->pu04inspeccion->eliminarPatente($_REQUEST['id']);
+			    foreach ($tipopatente as $idtipopatente):
+    			if( isset($_REQUEST['idtipopatente'.$idtipopatente['PU24IDINFR']] ) )
+      			$this->pu04inspeccion->asignarPatente($_REQUEST['id'], $idtipopatente['PU24IDINFR']);
+  				endforeach;
+				header('location:?c=class04inspeccion&m=editarPatente&id='.$_REQUEST['id']);
 		}
 		else{
 			$this->pu04inspeccion = $this->pu04inspeccion->buscar($_REQUEST['id']);

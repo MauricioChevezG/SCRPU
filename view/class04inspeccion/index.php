@@ -49,7 +49,7 @@
                        <span class="glyphicon glyphicon-eye-open"></span> Trámite</a>
                     </li>
                     <li>
-                      <a href="?c=class04inspeccion&m=agregarespaciogeo&id=<?php echo $row[0]; ?>">
+                      <a href="?c=class04inspeccion&m=editarAcceso&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> Inspeccionar</a>
                     </li>
                   </ul>

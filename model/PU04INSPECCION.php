@@ -390,7 +390,7 @@ class PU04INSPECCION extends Conexion
 	public function tieneTipoRed($idtramite, $idtiporedvial)
 	{
 		
-		$sql24 = "SELECT COUNT(*) AS total8 FROM pu22traserv WHERE PU04IDTRA='".$idtramite."' AND PU22IDTREDV='".$idtiporedvial."';";
+	$sql24 = "SELECT COUNT(*) AS total8 FROM pu22traserv WHERE PU04IDTRA='".$idtramite."' AND PU22IDTREDV='".$idtiporedvial."';";
 		$result24 = $this->conexion->consultaRetorno($sql24);
 		$row = mysqli_fetch_array($result24);		
 		return $row;
@@ -404,13 +404,53 @@ class PU04INSPECCION extends Conexion
 		return $result;
 	}
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	public function eliminarPatente($idtramite)
+	{
+		$sql30 = "DELETE FROM pu25patent WHERE PU04IDTRA = '".$idtramite."';";	
+		$this->conexion->consultaSimple($sql30);		
+	}
+
+	public function asignarPatente($idtramite, $idtipopatente)
+	{
+		$sql31 = "INSERT INTO pu25patent VALUES ('".$idtramite."','".$idtipopatente."');";
+		$this->conexion->consultaSimple($sql31);	
+	}
+
+	public function tienePatente($idtramite, $idtipopatente)
+	{
+		
+		$sql32 = "SELECT COUNT(*) AS total9 FROM pu25patent WHERE PU04IDTRA='".$idtramite."' AND PU24IDINFR='".$idtipopatente."';";
+		$result32 = $this->conexion->consultaRetorno($sql32);
+		$row = mysqli_fetch_array($result32);		
+		return $row;
+
+	
+	}
+	public function getTodasPatente()
+	{
+		$sql33 = "SELECT * FROM pu24infest";
+		$result = $this->conexion->consultaRetorno($sql33);
+		return $result;
+	}
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	///
 	//////////////////////// DENTRO DEL MODELO 04INPECCION
-public function agregarTra()
+	public function agregarTra()
 	{
 		$sql = "CALL SP04_REGISTROTRAMITE_GUARDAR('$this->PU04IDTRA','$this->PU04NORTE','$this->PU04ESTE','$this->PU04ALTITUD');";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;	
 	}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	///
+	//////////////////////// DENTRO DEL MODELO 04INPECCION
+	public function agregarObservacion()
+	{
+		$sql = "CALL SP04_REGISTROTRAMITE_GUARDAR('$this->PU04IDTRA','$this->PU04OBSERVACIONES');";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;	
+	}
+
 }
 ?>
