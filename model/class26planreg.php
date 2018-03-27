@@ -39,6 +39,19 @@ class class26planreg  extends Conexion
 		return $result;
 	}
 
+	public function listarNicoya()
+	{
+		$sql = "call SP26_PLANREGACTIVI_NICOYA_MOSTRAR();";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;
+	}
+	public function listarSamara()
+	{
+		$sql = "call SP26_PLANREGACTIVI_SAMARA_MOSTRAR();";
+		$result = $this->conexion->consultaRetorno($sql);
+		return $result;
+	}
+
 	public function guardar()
 	{
 		$sql = "CALL SP26_PLANREG_GUARDAR('$this->PU26IDPLAN','$this->PU26PLNDESC')";
@@ -67,5 +80,9 @@ class class26planreg  extends Conexion
 		}
 		return $class26planreg;
 	}
+
+	
+
+
 }
  ?>

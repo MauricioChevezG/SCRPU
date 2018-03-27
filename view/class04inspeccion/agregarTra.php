@@ -1,7 +1,7 @@
 
     <br>
     <center>
-<h2>Características a Estudiar</h2>
+<h2>Características a Estudiar.</h2>
 </center><br>
 
 

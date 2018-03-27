@@ -1,12 +1,17 @@
 <?php 
 require_once 'conexion.php';
-
 class PU04INSPECCION extends Conexion
 {
 	private $PU04IDTRA;
 	private $PU04NORTE;
 	private $PU04ESTE;
 	private $PU04ALTITUD;
+	private $PU04OBSERVACIONES;
+	private $PU09OBSERVACIONES;
+	private $PU10OBSERVACIONES;
+	private $PU06OBSERVACIONES;
+	private $PU12OBSERVACIONES;
+	private $PU24TIPOCONSTRUCCION;
 	
 	private $conexion;
 	
@@ -25,8 +30,46 @@ class PU04INSPECCION extends Conexion
 		return $this->$nombre;
 	}
 
+	public function guardarInspeccion()
+	{
+		$sql = "call SP04_TRAMITEESTADO_GUARDAR('$this->PU04IDTRA');";
+		$this->conexion->consultaSimple($sql);
+	}	
+
+		public function guardarObservacion()
+	{
+		$sql = "call SP04_OBSERVACIONES_TRAMITE_GUARDAR('$this->PU04IDTRA','$this->PU04OBSERVACIONES');";
+		$this->conexion->consultaSimple($sql);
+	}	
 	
+	public function guardarObservacionDesceg()
+	{
+		$sql = "call SP09_OBSERVACIONES_DESCEG_GUARDAR('$this->PU04IDTRA','$this->PU09OBSERVACIONES');";
+		$this->conexion->consultaSimple($sql);
+	}
+	public function guardarObservacionAspBio()
+	{
+		$sql = "call SP10_OBSERVACIONES_DESCEG_GUARDAR('$this->PU04IDTRA','$this->PU10OBSERVACIONES');";
+		$this->conexion->consultaSimple($sql);
+	}	
+	public function guardarObservacionActdes()
+	{
+		$sql = "call SP06_OBSERVACIONES_ACTDES_GUARDAR('$this->PU04IDTRA','$this->PU06OBSERVACIONES');";
+		$this->conexion->consultaSimple($sql);
+	}	
+	public function guardarObservacionTipdesc()
+	{
+		$sql = "call SP12_OBSERVACIONES_TIPDESC_GUARDAR('$this->PU04IDTRA','$this->PU12OBSERVACIONES');";
+		$this->conexion->consultaSimple($sql);
+	}	
 	
+	public function guardarTipoInfra()
+	{
+		$sql = "call SP24_TIPODECONTRUCCION_INFEST_GUARDAR('$this->PU04IDTRA','$this->PU24TIPOCONSTRUCCION');";
+		$this->conexion->consultaSimple($sql);
+	}	
+	
+
  	
  	public function guardar($pu09tradeg,$pu10aspbio,$pu13aap,$pu05actdes,$pu07terrft,$pu12tipdesec,
  		$pu21servicios,$pu22tredv)
@@ -438,10 +481,13 @@ class PU04INSPECCION extends Conexion
 	//////////////////////// DENTRO DEL MODELO 04INPECCION
 	public function agregarTra()
 	{
-		$sql = "CALL SP04_REGISTROTRAMITE_GUARDAR('$this->PU04IDTRA','$this->PU04NORTE','$this->PU04ESTE','$this->PU04ALTITUD');";
+		$sql = "CALL SP04_REGISTROTR_GUARDAR('$this->PU04IDTRA','$this->PU04NORTE','$this->PU04ESTE','$this->PU04ALTITUD');";
 		$result = $this->conexion->consultaRetorno($sql);
-		return $result;	
+		return $result;
+    
+   
 	}
+  
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	///
 	//////////////////////// DENTRO DEL MODELO 04INPECCION
@@ -451,6 +497,5 @@ class PU04INSPECCION extends Conexion
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;	
 	}
-
 }
 ?>

@@ -34,6 +34,24 @@ class class04inspeccionController
 		require_once 'view/class04inspeccion/index1.php';
 		require_once 'view/footer.php';
 	}
+	public function terminarInspeccion()
+	{
+		if($_POST){
+			$this->pu04inspeccion->setAtributo('PU04IDTRA',$_POST['id']);
+			$this->pu04inspeccion->guardarInspeccion();
+			header('location:?c=class04inspeccion&m=agregarTra&id='.$_REQUEST['id']);
+			}
+		else{
+				
+		require_once 'view/header.php';
+		require_once 'view/class04inspeccion/index1.php';
+		require_once 'view/footer.php';
+		}
+		
+	}
+
+
+		
 	public function agregar()
 	{
 		if($_POST){
@@ -97,7 +115,119 @@ public function agregarTra()
 			require_once 'view/footer.php';
 		}
 	}
+	/////////////////////////////////////////////////////////////////////////////////////////
+	///
+	public function guardarObservacion()
+	{
+		if($_POST){
+			$this->pu04inspeccion->setAtributo('PU04IDTRA',$_POST['id']);
+			$this->pu04inspeccion->setAtributo('PU04OBSERVACIONES',$_POST['PU04OBSERVACIONES']);
+			$this->pu04inspeccion->guardarObservacion();
+			header('location:?c=class04inspeccion&m=guardarObservacion&id='.$_REQUEST['id']);
+		}
+		else{
 
+			$this->pu04inspeccion = $this->pu04inspeccion->buscarTraIng($_REQUEST['id']);
+
+		
+			require_once 'view/header.php';
+			require_once 'view/class04inspeccion/agregarTramite.php';
+			require_once 'view/footer.php';
+		}
+	}
+
+		public function guardarObservacionDesceg()
+	{
+		if($_POST){
+			$this->pu04inspeccion->setAtributo('PU04IDTRA',$_POST['id']);
+			$this->pu04inspeccion->setAtributo('PU09OBSERVACIONES',$_POST['PU09OBSERVACIONES']);
+			$this->pu04inspeccion->guardarObservacionDesceg();
+			header('location:?c=class04inspeccion&m=guardarObservacionDesceg&id='.$_REQUEST['id']);
+		}
+		else{
+
+			$this->pu04inspeccion = $this->pu04inspeccion->buscarTraIng($_REQUEST['id']);
+
+		
+			require_once 'view/header.php';
+			require_once 'view/class04inspeccion/agregarTramite.php';
+			require_once 'view/footer.php';
+		}
+	}
+	public function guardarObservacionAspBio()
+	{
+		if($_POST){
+			$this->pu04inspeccion->setAtributo('PU04IDTRA',$_POST['id']);
+			$this->pu04inspeccion->setAtributo('PU10OBSERVACIONES',$_POST['PU10OBSERVACIONES']);
+			$this->pu04inspeccion->guardarObservacionAspBio();
+			header('location:?c=class04inspeccion&m=guardarObservacionAspBio&id='.$_REQUEST['id']);
+		}
+		else{
+
+			$this->pu04inspeccion = $this->pu04inspeccion->buscarTraIng($_REQUEST['id']);
+
+		
+			require_once 'view/header.php';
+			require_once 'view/class04inspeccion/agregarTramite.php';
+			require_once 'view/footer.php';
+		}
+	}
+	public function guardarObservacionActdes()
+	{
+		if($_POST){
+			$this->pu04inspeccion->setAtributo('PU04IDTRA',$_POST['id']);
+			$this->pu04inspeccion->setAtributo('PU06OBSERVACIONES',$_POST['PU06OBSERVACIONES']);
+			$this->pu04inspeccion->guardarObservacionActdes();
+			header('location:?c=class04inspeccion&m=guardarObservacionActdes&id='.$_REQUEST['id']);
+		}
+		else{
+
+			$this->pu04inspeccion = $this->pu04inspeccion->buscarTraIng($_REQUEST['id']);
+
+		
+			require_once 'view/header.php';
+			require_once 'view/class04inspeccion/agregarTramite.php';
+			require_once 'view/footer.php';
+		}
+	}
+	public function guardarObservacionTipdesc()
+	{
+		if($_POST){
+			$this->pu04inspeccion->setAtributo('PU04IDTRA',$_POST['id']);
+			$this->pu04inspeccion->setAtributo('PU12OBSERVACIONES',$_POST['PU12OBSERVACIONES']);
+			$this->pu04inspeccion->guardarObservacionTipdesc();
+			header('location:?c=class04inspeccion&m=guardarObservacionTipdesc&id='.$_REQUEST['id']);
+		}
+		else{
+
+			$this->pu04inspeccion = $this->pu04inspeccion->buscarTraIng($_REQUEST['id']);
+
+		
+			require_once 'view/header.php';
+			require_once 'view/class04inspeccion/agregarTramite.php';
+			require_once 'view/footer.php';
+		}
+	}
+
+	public function guardarTipoInfra()
+	{
+		if($_POST){
+			$this->pu04inspeccion->setAtributo('PU04IDTRA',$_POST['id']);
+			$this->pu04inspeccion->setAtributo('PU24TIPOCONSTRUCCION',$_POST['PU24TIPOCONSTRUCCION']);
+			$this->pu04inspeccion->guardarTipoInfra();
+			header('location:?c=class04inspeccion&m=guardarTipoInfra&id='.$_REQUEST['id']);
+		}
+		else{
+
+			$this->pu04inspeccion = $this->pu04inspeccion->buscarTraIng($_REQUEST['id']);
+
+		
+			require_once 'view/header.php';
+			require_once 'view/class04inspeccion/agregarTramite.php';
+			require_once 'view/footer.php';
+		}
+	}
+	
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	///

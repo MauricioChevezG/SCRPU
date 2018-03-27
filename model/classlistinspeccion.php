@@ -13,12 +13,13 @@ class classlistinspeccion extends Conexion
 		$this->conexion = new Conexion();
 	}
 	
-	public function listarInspeccion()
+	public function listar()
 	{
-		$sql = "CALL SP04_TRAMITE_MOSTRARINSPECCION();";
+		$sql = "CALL SP00_LISTAR_TRAMITE_REALIZADO();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
+	
 
 }
  ?>

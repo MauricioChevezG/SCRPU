@@ -9,8 +9,9 @@
         <thead>
           <tr>
             <th>Código de Trámite</th>
-            <th>Fecha</th>
-            <th>Ubicación</th>
+            <th>Fecha de ingreso</th>
+            <th>Fecha de Plataforma</th>
+             <th>Distrito</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -20,6 +21,7 @@
               <td><?php echo $row[0]; ?></td>
               <td><?php echo $row[1]; ?></td>
               <td><?php echo $row[2]; ?></td>
+              <td><?php echo $row[3]; ?></td>
               <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones
                   <span class="caret"></span></button>

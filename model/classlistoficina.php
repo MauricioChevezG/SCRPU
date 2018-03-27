@@ -13,9 +13,9 @@ class classlistoficina extends Conexion
 		$this->conexion = new Conexion();
 	}
 	
-	public function listarOficina()
+public function listar()
 	{
-		$sql = "CALL SP04_TRAMITE_MOSTRAROFICINA();";
+		$sql = "CALL SP00_LISTAR_TRAMITE_OFICINA();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

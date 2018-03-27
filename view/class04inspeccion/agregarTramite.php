@@ -13,7 +13,7 @@
 
 <form method="POST" action="?c=class04inspeccion&m=agregarTra">
           <div class="form-group">
-            <h4>Realizando estudio al trámite</h4>
+            <h4>Realizando estudio al Trámite:</h4>
 
 <div class="col-xs-2">
   <input type="text" class="form-control" id="id" name="id" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>"  readonly> <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
@@ -40,6 +40,8 @@
       </div>
 
 <button type="submit" class="btn btn-success ">Guardar</button>
+ 
+      <a href="?c=class04inspeccion&m=terminarInspeccion" class="btn btn-success" role="button">Terminar Inspección</a> 
           <br>
 
        </div>
@@ -54,7 +56,7 @@
   <ul class="resp-tabs-list hor_1">
     <li href="#tabconten1">Espacio Geográfico</li>
     <li href="#tabconten2">Aspectos Biofísicos</li>
-    <li href="#tabconten3">Áreas de Protección</li>
+    <!--<li  href="#tabconten3">Áreas de Protección</li>-->
     <li href="#tabconten5">Actividades a Desarrollar</li>
     <li href="#tabconten6">Desarrollo en el Sector</li>
     <li href="#tabconten7">Tipo de Red Vial</li>
@@ -63,14 +65,14 @@
   </ul> 
   <div class="resp-tabs-container hor_1">
     <div class="container-fluid" id="tabconten1">
-      <!-- contenido de tab 1 -->
-
-         <form method="POST" action="?c=class04inspeccion&m=editarEspaciosGeo">
+      
+<form method="POST" action="?c=class04inspeccion&m=editarEspaciosGeo">
           <div class="form-group">
             <label for="id">Código Trámite</label>
             <input type="text" class="form-control" id="id" name="id" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly> 
             <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
           </div>
+          
           <?php foreach( $idespacios as $espacio ): ?>
           <?php $isCheck = $this->pu04inspeccion->tieneEspaciosGeo($idtramite, $espacio['PU09IDDEG']);?>
           <div class="checkbox">
@@ -81,11 +83,40 @@
             </label>
           </div>
           <?php endforeach; ?>
+
+          
           <button type="submit" class="btn btn-success">Guardar</button>
-          <br>
+          
+      
+      
         </form>
+        <form method="POST" action="?c=class04inspeccion&m=guardarObservacionDesceg">
+
+          <div class="form-group">
+            <label for="id">Código Trámite</label>
+            <input type="text" class="form-control" id="id" name="id" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly> 
+            <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
+          </div>
+           <div class="col-xs-2 text-left">
+         
+        <label for="PU09OBSERVACIONES">Otra descripción de Espacios Geográficos:</label>
+        <input type="text" class="form-control" id="PU09OBSERVACIONES" name="PU09OBSERVACIONES"><br>
+        
+            </div>
+        <button type="submit" class="btn btn-success">Guardar descripción</button>
+           </form>
+
 
     </div>
+      <!-- contenido de tab 1 -->
+
+
+
+
+
+
+    
+
     <div class="container-fluid" id="tabconten2">
       <!-- contenido de tab 2 -->
 
@@ -99,42 +130,47 @@
           <?php foreach( $idaspectosbio as $idaspecto ): ?>
           <?php $isCheck = $this->pu04inspeccion->tieneAspectosBio($idtramite, $idaspecto['PU10IDASBIO']);?>
           <div class="checkbox">
-            <label for="id">Código Trámite</label>
+            <label>
             <input type="checkbox" name="idaspecto<?php echo $idaspecto['PU10IDASBIO']; ?>"
              <?php if($isCheck['total5']) {echo "checked";} ?>
             /> <?php echo $idaspecto['PU10DESCABIO'] ;?>
             </label>
           </div>
           <?php endforeach; ?>
+
           <button type="submit" class="btn btn-success">Guardar</button>
           <br>
+
+          
         </form>
 
-    </div>
-    <div class="container-fluid" id="tabconten3">
-      <!-- contenido de tab 3 -->
-    <form method="POST" action="?c=class04inspeccion&m=editarAreasPro">
+        <form method="POST" action="?c=class04inspeccion&m=guardarObservacionAspBio">
+
           <div class="form-group">
             <label for="id">Código Trámite</label>
             <input type="text" class="form-control" id="id" name="id" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly> 
             <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
           </div>
-          <?php foreach( $idareas as $idarea ): ?>
-          <?php $isCheck = $this->pu04inspeccion->tieneAreasPro($idtramite, $idarea['PU13IDAAP']);?>
-          <div class="checkbox">
-            <label>
-            <input type="checkbox" name="idareasp<?php echo $idarea['PU13IDAAP']; ?>"
-             <?php if($isCheck['total7']) {echo "checked";} ?>
-            /> <?php echo $idarea['PU13DESCAAP'] ;?>
-            </label>
-          </div>
-          <?php endforeach; ?>
-          <button type="submit" class="btn btn-success">Guardar</button>
-          <br>
-        </form>
+           <div class="col-xs-2 text-left">
+         
+        <label for="PU10OBSERVACIONES">Otra descripción de Aspectos Biofísicos:</label>
+        <input type="text" class="form-control" id="PU10OBSERVACIONES" name="PU10OBSERVACIONES"><br>
+        
+            </div>
+        <button type="submit" class="btn btn-success">Guardar descripción</button>
+           </form>
 
     </div>
-    <div class="container-fluid" id="tabconten4">
+
+
+
+
+
+
+
+
+   
+    <div class="container-fluid" id="tabconten5">
       <!-- contenido de tab 4 -->
       
           <form method="POST" action="?c=class04inspeccion&m=editarActividades">
@@ -155,11 +191,34 @@
           <?php endforeach; ?>
           <button type="submit" class="btn btn-success">Guardar</button>
           <br>
+
         </form>
 
+        <form method="POST" action="?c=class04inspeccion&m=guardarObservacionActdes">
+
+          <div class="form-group">
+            <label for="id">Código Trámite</label>
+            <input type="text" class="form-control" id="id" name="id" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly> 
+            <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
+          </div>
+           <div class="col-xs-2 text-left">
+         
+        <label for="PU06OBSERVACIONES">Otra descripción de Actividades a Desarrollar:</label>
+        <input type="text" class="form-control" id="PU06OBSERVACIONES" name="PU06OBSERVACIONES"><br>
+        
+            </div>
+        <button type="submit" class="btn btn-success">Guardar descripción</button>
+           </form>
+
     </div>
+
+
+
+
+
+
     
-    <div class="container-fluid" id="tabconten5">
+    <div class="container-fluid" id="tabconten4">
       <!-- contenido de tab 6 -->
 
   
@@ -182,8 +241,34 @@
           <?php endforeach; ?>
           <button type="submit" class="btn btn-success">Guardar</button>
           <br>
+
         </form>
+
+        <form method="POST" action="?c=class04inspeccion&m=guardarObservacionTipdesc">
+
+          <div class="form-group">
+            <label for="id">Código Trámite</label>
+            <input type="text" class="form-control" id="id" name="id" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly> 
+            <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
+          </div>
+           <div class="col-xs-2 text-left">
+         
+        <label for="PU12OBSERVACIONES">Otra descripción de Tipo desarrollo en el sector:</label>
+        <input type="text" class="form-control" id="PU12OBSERVACIONES" name="PU12OBSERVACIONES"><br>
+        
+            </div>
+        <button type="submit" class="btn btn-success">Guardar descripción</button>
+           </form>
+
+
     </div>
+
+
+
+
+
+
+
 
 
 
@@ -217,6 +302,7 @@
 
 
 
+
     <div class="container-fluid" id="tabconten8">
       <!-- contenido de tab 5 -->
         <form method="POST" action="?c=class04inspeccion&m=editarPatente">
@@ -237,20 +323,72 @@
           <?php endforeach; ?>
           <button type="submit" class="btn btn-success ">Guardar</button>
           <br>
+
+       
+
         </form>
+
+        <form method="POST" action="?c=class04inspeccion&m=guardarTipoInfra">
+
+          <div class="form-group">
+            <label for="id">Código Trámite</label>
+            <input type="text" class="form-control" id="id" name="id" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly> 
+            <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
+          </div>
+           <div class="col-xs-2 text-left">
+         
+        <label for="PU24TIPOCONSTRUCCION">Infraestructura observada en el terreno:</label>
+        <input type="text" class="form-control" id="PU24TIPOCONSTRUCCION" name="PU24TIPOCONSTRUCCION"><br>
+        
+            </div>
+        <button type="submit" class="btn btn-success">Guardar descripción</button>
+           </form>
       
 
     </div>
 
+
+
+
+
+
+
+
+
     <div class="container-fluid" id="tabconten9">
       <!-- contenido de tab 7 -->
 
+            <form method="POST" action="?c=class04inspeccion&m=guardarObservacion">
+      <div class="container-fluid">
+        <div class="form-group">
+            <label for="id">Código Trámite</label>
+            <input type="text" class="form-control" id="id" name="id" value="<?php echo $this->pu04inspeccion->getAtributo('PU04IDTRA');?>" readonly> 
+            <?php  $idtramite = $this->pu04inspeccion->getAtributo('PU04IDTRA'); ?>
+          </div>
+        <label for="PU04OBSERVACIONES">Observaciones Generales:</label>
+        <textarea class="form-control" id="PU04OBSERVACIONES" name="PU04OBSERVACIONES" rows="10"></textarea>
+      </div>
+         <br>
+          <button type="submit" class="btn btn-success ">Guardar</button>
+          <br>
+        </form>
+    
 
     </div>
 
 
+
+
+
+
+
+
+
+
   </div>
 </div>
+
+
 <br/>
 <div id="nested-tabInfo2">
    Tab Seleccionado: <span class="tabName"></span>

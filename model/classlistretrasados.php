@@ -13,9 +13,9 @@ class classlistretrasados extends Conexion
 		$this->conexion = new Conexion();
 	}
 	
-	public function listarRetrasado()
+	public function listar()
 	{
-		$sql = "CALL SP04_TRAMITE_MOSTRARRETRASADOS();";
+		$sql = "CALL SP00_LISTAR_TRAMITE_ATRASADO();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

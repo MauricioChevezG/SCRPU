@@ -13,9 +13,9 @@ class classlistdenegados extends Conexion
 		$this->conexion = new Conexion();
 	}
 	
-	public function listarDenegados()
+	public function listar()
 	{
-		$sql = "CALL SP04_TRAMITE_MOSTRARDENEGADOS();";
+		$sql = "CALL SP00_LISTAR_TRAMITE_DENEGADOS();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

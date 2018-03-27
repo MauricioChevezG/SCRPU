@@ -131,6 +131,9 @@ if(isset($_SESSION['usuario']) && isset($_SESSION['puesto'])) {
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             
+            <li>
+              <a href="?c=class04oficina">Oficina</a>
+            </li>
               <li>
               <a href="?c=class04ingresotramite">Ingreso de Tramite</a>
             </li>

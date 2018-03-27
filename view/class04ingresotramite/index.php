@@ -2,15 +2,19 @@
 
         <h2>Trámites Ingresados</h2>   
     <a href="?c=class04ingresotramite&m=agregar"  class="btn btn-primary" role="button">Registrar Trámite</a>
-   <br>
+   <br> <br>
+   <a href="?c=class04ingresotramite&m=graficoBarras"  class="btn btn-info" role="button">Graficar Trámite</a>
+   <a href="?c=class04ingresotramite&m=Barras"  class="btn btn-info" role="button">Graficar </a>
+   <br><br>
    <br>   
     <?php if ($result->num_rows): ?>
       <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-puestos">
         <thead>
           <tr>
             <th>Código de Trámite</th>
-            <th>Fecha</th>
-            <th>Ubicación</th>
+            <th>Fecha de ingreso</th>
+            <th>Fecha de Plataforma</th>
+            <th>Distrito</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -19,7 +23,8 @@
             <tr>
               <td><?php echo $row[0]; ?></td>
               <td><?php echo $row[1]; ?></td>
-               <td><?php echo $row[2]; ?></td>
+              <td><?php echo $row[2]; ?></td>
+              <td><?php echo $row[3]; ?></td>
             
               <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones

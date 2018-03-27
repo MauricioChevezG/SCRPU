@@ -13,12 +13,13 @@ class classlistaceptados extends Conexion
 		$this->conexion = new Conexion();
 	}
 	
-	public function listarAceptados()
+	public function listar()
 	{
-		$sql = "CALL SP04_TRAMITE_MOSTRARACEPTADOS();";
+		$sql = "CALL SP00_LISTAR_TRAMITE_ACEPTADO();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
+
 
 }
  ?>

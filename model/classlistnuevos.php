@@ -13,9 +13,9 @@ class classlistnuevos extends Conexion
 		$this->conexion = new Conexion();
 	}
 	
-	public function listarNuevo()
+	public function listar()
 	{
-		$sql = "CALL SP04_TRAMITE_MOSTRARNUEVOS();";
+		$sql = "CALL SP00_LISTAR_INGRESO_TRAMITE();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}

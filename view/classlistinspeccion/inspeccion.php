@@ -1,11 +1,13 @@
-<?php $result = $this->classlistinspeccion->listarInspeccion(); ?>  
+<?php $result = $this->classlistinspeccion->listar(); ?>  
     <?php if ($result->num_rows): ?>
-      <table class="display table table-bordered" cellspacing="0" border="0" width="100%"  id="grilla-inspeccion">
+      <table class="display table table-bordered" cellpadding="0" cellspacing="0" border="0" width="100%" id="grilla-puestos">
         <thead>
           <tr>
-            <th>Tramite</th>
+            <th>Código de Trámite</th>
             <th>Fecha</th>
-            <th>Estado</th>
+            <th>Este</th>
+            <th>Norte</th>
+            <th>Altitud</th>
           </tr>
         </thead>
         <tbody>
@@ -14,6 +16,8 @@
               <td><?php echo $row[0]; ?></td>
               <td><?php echo $row[1]; ?></td>
               <td><?php echo $row[2]; ?></td>
+              <td><?php echo $row[3]; ?></td>
+              <td><?php echo $row[4]; ?></td>
               </tr>
             <?php endwhile; ?>
           <?php else: ?>
